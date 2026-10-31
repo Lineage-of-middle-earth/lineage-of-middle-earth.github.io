@@ -1,0 +1,591 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Lineages of Middle-earth</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Marcellus+SC&family=Alegreya:ital,wght@0,400;0,600;1,400&family=Alegreya+Sans+SC:wght@500;700&display=swap">
+<style>
+/* Layout: a single scroll — header, people tabs, then a sideways-branching tree drawn with ruled connectors, like a herald's roll. */
+:root{
+  --bg:#eceee8; --panel:#f7f8f4; --ink:#1c2320; --muted:#5b655f; --rule:#b9bfb5; --accent:#8c5f1a;
+  --elf:#3d6f9e; --half:#6f4f9a; --men:#9a3b33; --hob:#4f7a32; --dwa:#b0601c;
+  --hl:#f2d98a; --branch:#8a7a5a;
+  --f-display:"Marcellus SC","Trajan Pro",Georgia,serif;
+  --f-body:"Alegreya",Georgia,"Times New Roman",serif;
+  --f-label:"Alegreya Sans SC","Gill Sans",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#111518; --panel:#181d21; --ink:#e3e6df; --muted:#9aa49d; --rule:#3a4440; --accent:#d9a650;
+  --elf:#86b4e0; --half:#b79be0; --men:#e08a80; --hob:#9cc77a; --dwa:#e7a062; --hl:#5c4a17; --branch:#7d6c4c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111518; --panel:#181d21; --ink:#e3e6df; --muted:#9aa49d; --rule:#3a4440; --accent:#d9a650;
+  --elf:#86b4e0; --half:#b79be0; --men:#e08a80; --hob:#9cc77a; --dwa:#e7a062; --hl:#5c4a17; --branch:#7d6c4c; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 56px}
+.wrap{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
+header h1{font-family:var(--f-display);font-weight:400;font-size:clamp(30px,5vw,48px);line-height:1.1;margin:0;text-wrap:balance;letter-spacing:.02em}
+header p{margin:8px 0 0;color:var(--muted);max-width:68ch}
+.age{font-family:var(--f-label);letter-spacing:.12em;font-size:13px;color:var(--accent);text-transform:uppercase}
+nav.tabs{display:flex;flex-wrap:wrap;gap:8px}
+nav.tabs button{font-family:var(--f-label);font-size:15px;letter-spacing:.05em;display:flex;align-items:center;gap:8px;
+  background:var(--panel);color:var(--ink);border:1px solid var(--rule);border-radius:999px;padding:7px 14px 7px 10px;cursor:pointer}
+nav.tabs button[aria-selected="true"]{border-color:var(--c);box-shadow:inset 0 0 0 1px var(--c);color:var(--c)}
+nav.tabs button:focus-visible,.tog:focus-visible,input:focus-visible,.jump:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+nav.tabs .cnt{font-size:12px;background:var(--hl);color:var(--ink);border-radius:999px;padding:0 7px}
+svg.em{width:20px;height:20px;flex:none;fill:none;stroke:var(--c);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.tools input{font:inherit;font-size:16px;padding:8px 12px;border:1px solid var(--rule);border-radius:8px;background:var(--panel);color:var(--ink);min-width:0;flex:1 1 240px;max-width:380px}
+.tools button,.zoom button{font-family:var(--f-label);font-size:14px;letter-spacing:.05em;background:none;border:1px solid var(--rule);color:var(--ink);border-radius:8px;padding:8px 12px;cursor:pointer}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-family:var(--f-label);font-size:13px;color:var(--muted);letter-spacing:.04em}
+.legend span{display:flex;align-items:center;gap:6px}
+.key-dot{width:9px;height:9px;border-radius:50%;background:var(--accent);display:inline-block}
+section.panel{background:var(--panel);border:1px solid var(--rule);border-radius:12px;padding-block:20px 24px;padding-inline:clamp(14px,3vw,28px)}
+.ph{display:flex;gap:14px;align-items:flex-start}
+.ph svg.em{width:40px;height:40px;stroke-width:1.3}
+.ph h2{font-family:var(--f-display);font-weight:400;font-size:26px;margin:0;color:var(--c);line-height:1.2}
+.ph p{margin:4px 0 0;color:var(--muted);max-width:72ch}
+.scroll{overflow-x:auto;margin-top:18px;padding-bottom:6px}
+/* tree: top-down genealogy chart */
+.stage{overflow:auto;margin-top:18px;padding:10px 4px 18px;border-top:1px solid var(--rule);max-height:78vh}
+.forest{display:flex;flex-direction:column;gap:42px;width:max-content;min-width:100%;padding-top:8px}
+ul.tree,ul.tree ul{list-style:none;margin:0;padding:0;display:flex;justify-content:center}
+ul.tree ul{position:relative;padding-top:26px}
+ul.tree li{position:relative;display:flex;flex-direction:column;align-items:center;padding:26px 7px 0}
+ul.tree>li{padding-top:0}
+ul.tree li::before,ul.tree li::after{content:"";position:absolute;top:0;right:50%;width:50%;height:26px;border-top:2px solid var(--branch)}
+ul.tree li::after{right:auto;left:50%;border-left:2px solid var(--branch)}
+ul.tree>li::before,ul.tree>li::after,ul.tree li:only-child::before,ul.tree li:only-child::after{display:none}
+ul.tree li:only-child{padding-top:0}
+ul.tree li:first-child::before,ul.tree li:last-child::after{border:0}
+ul.tree li:last-child::before{border-right:2px solid var(--branch);border-radius:0 10px 0 0}
+ul.tree li:first-child::after{border-radius:10px 0 0 0}
+ul.tree ul::before{content:"";position:absolute;top:0;left:50%;height:26px;border-left:2px solid var(--branch)}
+li.closed>ul{display:none}
+.card{position:relative;width:156px;background:var(--panel);border:1px solid var(--rule);border-radius:12px;padding:12px 10px 10px;display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center}
+.card.key{border-color:color-mix(in srgb,var(--c) 55%,var(--rule))}
+.card.hit{background:var(--hl)}
+.med{position:relative;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;
+  background:radial-gradient(circle at 35% 30%,color-mix(in srgb,var(--c) 22%,var(--panel)),color-mix(in srgb,var(--c) 45%,var(--panel)));
+  border:2px solid var(--c)}
+.card.key .med{box-shadow:0 0 0 3px var(--panel),0 0 0 5px var(--accent)}
+.med svg.em{position:absolute;inset:8px;width:auto;height:auto;opacity:.22;stroke:var(--ink)}
+.med b{position:relative;font-family:var(--f-display);font-weight:400;font-size:20px;letter-spacing:.04em;color:var(--ink)}
+.med img{position:absolute;inset:0;width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:50% 18%;z-index:1}
+.med.has svg.em,.med.has b{visibility:hidden}
+.nm{font-weight:600;line-height:1.2;font-size:15.5px;text-wrap:balance}
+.sub{font-family:var(--f-label);font-size:12px;letter-spacing:.03em;color:var(--muted);line-height:1.3}
+.sp{font-size:13px;color:var(--muted);line-height:1.3;border-top:1px dashed var(--rule);padding-top:4px;width:100%}
+.sp b{font-weight:600;color:var(--ink)}
+.note{font-style:italic;font-size:12.5px;color:var(--muted);line-height:1.35}
+.tog{position:absolute;bottom:-11px;left:50%;transform:translateX(-50%);z-index:1;font-family:var(--f-label);font-size:13px;width:22px;height:22px;border:1px solid var(--rule);background:var(--bg);color:var(--ink);border-radius:50%;cursor:pointer;line-height:1;padding:0}
+.jump{font-family:var(--f-label);font-size:12px;letter-spacing:.03em;color:var(--c2);border:1px dashed var(--c2);border-radius:999px;padding:1px 9px;cursor:pointer;background:none;margin-top:2px}
+.gap{font-family:var(--f-label);font-size:12.5px;color:var(--muted);letter-spacing:.04em;border:1.5px dashed var(--branch);border-radius:999px;padding:4px 12px;background:var(--bg);max-width:200px;text-align:center}
+.zoom{display:flex;gap:6px;align-items:center;margin-left:auto;font-family:var(--f-label);font-size:13px;color:var(--muted)}
+footer{color:var(--muted);font-size:14.5px;max-width:80ch}
+@media (prefers-reduced-motion:no-preference){.node.hit{transition:background .2s}}
+</style>
+
+<style>
+/* Gallery-first redesign: neutral surfaces, big image cards, sticky filter bar, profile drawer */
+:root{--bg:#f6f6f7;--panel:#fff;--ink:#0f0f11;--muted:#6c6c75;--rule:#e6e6ea;--hl:#ffeaa0;
+  --f-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;--f-label:"Inter",system-ui,sans-serif}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0b0b0d;--panel:#151518;--ink:#f2f2f3;--muted:#8d8d95;--rule:#26262b;--hl:#5c4a17}}
+:root[data-theme="dark"]{--bg:#0b0b0d;--panel:#151518;--ink:#f2f2f3;--muted:#8d8d95;--rule:#26262b;--hl:#5c4a17}
+body{font-size:15px;line-height:1.5}
+.nm{font-weight:600;font-size:14px}
+.age{font-family:var(--f-label);font-weight:600;font-size:12px;letter-spacing:.1em}
+header h1{font-size:clamp(32px,5vw,52px)}
+.bar{position:sticky;top:0;z-index:20;margin:0 -16px;padding:12px 16px;display:flex;flex-direction:column;gap:10px;
+  background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--rule)}
+nav.tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+nav.tabs::-webkit-scrollbar{display:none}
+nav.tabs button{flex:none;font-family:var(--f-body);font-weight:500;font-size:14px;letter-spacing:0;border-color:transparent;background:transparent;padding:7px 14px 7px 10px;transition:background .15s}
+nav.tabs button:hover{background:var(--panel)}
+nav.tabs button[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink);box-shadow:none}
+nav.tabs button[aria-selected="true"] svg.em{stroke:var(--bg)}
+nav.tabs button[aria-selected="true"] .cnt{background:var(--hl);color:#111}
+.tools input[type=search]{border-radius:999px;padding:9px 16px;background:var(--panel);border-color:var(--rule)}
+.tools button,.zoom button{font-family:var(--f-body);font-weight:500;letter-spacing:0;border-radius:999px;background:var(--panel)}
+.seg{display:inline-flex;background:var(--panel);border:1px solid var(--rule);border-radius:999px;padding:3px}
+.seg button{border:0;background:none;padding:6px 14px;border-radius:999px;font-family:var(--f-body);font-weight:500;font-size:14px;color:var(--muted);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.chk{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--muted);cursor:pointer}
+.tools input[type=checkbox]{flex:none;min-width:0;width:16px;height:16px;padding:0;accent-color:var(--accent)}
+body[data-view="grid"] .treeonly{display:none}
+body[data-view="tree"] .gridonly{display:none}
+.legend{font-family:var(--f-body);font-size:12.5px}
+section.panel{background:transparent;border:0;padding:6px 0 0}
+.ph h2{font-family:var(--f-display);font-size:28px}
+.gmeta{margin-top:14px;font-size:13px;color:var(--muted)}
+.empty{color:var(--muted);padding:40px 0;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(176px,1fr));gap:22px 18px;margin-top:14px}
+.gc{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;gap:10px;min-width:0}
+.gimg{position:relative;aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:var(--panel);border:1px solid var(--rule);transition:transform .18s,box-shadow .18s}
+.gc:hover .gimg{transform:translateY(-3px);box-shadow:0 14px 30px -14px rgba(0,0,0,.45)}
+.gc:focus-visible .gimg{outline:2px solid var(--accent);outline-offset:3px}
+.gc.hit .gimg{box-shadow:0 0 0 3px var(--hl)}
+.gimg img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block}
+.gfb{position:absolute;inset:0;display:grid;place-items:center;background:radial-gradient(circle at 35% 25%,color-mix(in srgb,var(--c) 18%,var(--panel)),color-mix(in srgb,var(--c) 42%,var(--panel)))}
+.gfb b{font-family:var(--f-display);font-weight:400;font-size:44px;color:var(--ink);opacity:.85}
+.gbadge{position:absolute;top:8px;left:8px;background:rgba(0,0,0,.62);color:#fff;font-size:11px;font-weight:500;border-radius:999px;padding:3px 9px;backdrop-filter:blur(6px)}
+.gnm{font-weight:600;font-size:14.5px;line-height:1.25}
+.gsub{font-size:12.5px;color:var(--muted);line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:2px}
+.card{cursor:pointer;border-radius:14px;transition:box-shadow .15s}
+.card:hover{box-shadow:0 8px 22px -12px rgba(0,0,0,.4)}
+.card[data-hit]{background:var(--hl)}
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.45);opacity:0;pointer-events:none;transition:opacity .2s;z-index:40}
+.scrim.on{opacity:1;pointer-events:auto}
+#drawer{position:fixed;top:0;right:0;bottom:0;width:min(430px,100%);background:var(--panel);border-left:1px solid var(--rule);z-index:50;transform:translateX(102%);transition:transform .25s ease;overflow:auto;visibility:hidden}
+#drawer.on{transform:none;visibility:visible}
+.dclose{position:absolute;top:12px;right:12px;z-index:2;width:34px;height:34px;border-radius:50%;border:0;background:rgba(0,0,0,.55);color:#fff;font-size:20px;line-height:1;cursor:pointer}
+.dimg{position:relative;height:340px;background:var(--bg)}
+.dimg img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block}
+.dbody{padding:20px 22px 32px;display:flex;flex-direction:column;gap:14px}
+.dbody h2{font-family:var(--f-display);font-weight:400;font-size:28px;line-height:1.15;margin:0}
+.dsub{margin:-8px 0 0;color:var(--muted)}
+.dtags{display:flex;gap:6px;flex-wrap:wrap}
+.dtag{font-size:12px;font-weight:600;border-radius:999px;padding:3px 10px;color:var(--c);border:1px solid var(--c)}
+.dtag.key{color:var(--accent);border-color:var(--accent)}
+.drow h3{margin:0 0 6px;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.drow>div,.drow>p{margin:0}
+.dnote{font-style:italic;color:var(--muted);font-size:14px}
+.chips{display:flex;flex-direction:column;gap:6px}
+.chip{display:flex;align-items:center;gap:10px;padding:6px 10px 6px 6px;border:1px solid var(--rule);border-radius:12px;background:none;color:inherit;font:inherit;text-align:left;width:100%;cursor:pointer}
+.chip:hover{background:var(--bg)}
+.chip .av{width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:50% 18%;flex:none;display:grid;place-items:center;background:color-mix(in srgb,var(--c) 28%,var(--panel));font-family:var(--f-display);font-size:14px}
+.chip span.t{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.chip small{color:var(--muted);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media (max-width:700px){
+  #drawer{top:auto;width:100%;max-height:90vh;border-left:0;border-top:1px solid var(--rule);border-radius:20px 20px 0 0;transform:translateY(102%)}
+  .dimg{height:260px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:18px 12px}
+}
+</style>
+
+<style>
+/* tree as a pannable canvas */
+.stage{position:relative;overflow:hidden;height:min(76vh,860px);max-height:none;padding:0;border:1px solid var(--rule);border-radius:16px;
+  background-color:var(--panel);background-image:radial-gradient(var(--rule) 1.3px,transparent 1.4px);background-size:24px 24px;
+  cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none}
+.stage.panning,.stage.panning *{cursor:grabbing!important}
+.stage .forest{position:absolute;left:0;top:0;min-width:0;padding:0;transform-origin:0 0;will-change:transform}
+.stage::after{content:"Drag to pan · Scroll to move · Ctrl + scroll or pinch to zoom";position:absolute;left:14px;bottom:10px;font-size:12px;color:var(--muted);
+  background:color-mix(in srgb,var(--panel) 85%,transparent);padding:3px 10px;border-radius:999px;pointer-events:none}
+</style>
+
+<style>
+.stool{position:absolute;top:10px;right:10px;z-index:5;display:flex;align-items:center;gap:2px;background:color-mix(in srgb,var(--panel) 90%,transparent);border:1px solid var(--rule);border-radius:999px;padding:3px;backdrop-filter:blur(8px);font-size:13px;cursor:default}
+.stool button{border:0;background:none;color:var(--ink);min-width:30px;height:28px;border-radius:999px;cursor:pointer;font:inherit;padding:0 8px}
+.stool button:hover{background:var(--bg)}
+.stool .zl{min-width:46px;text-align:center;color:var(--muted)}
+.stage:fullscreen{width:100vw;height:100vh;border-radius:0;border:0}
+.stage.pfs{position:fixed;inset:0;z-index:60;height:100vh;border-radius:0;border:0}
+</style>
+<style>
+.dabout{font-size:14.5px;line-height:1.6;color:var(--ink)}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0;font-size:13.5px}
+.facts dt{color:var(--muted)}
+.facts dd{margin:0;font-weight:500}
+.dsrc{margin:6px 0 0;font-size:12px;color:var(--muted)}
+.dsrc a{color:inherit}
+</style>
+<div class="wrap">
+<header>
+  <div class="age">The Silmarillion · The Hobbit · The Lord of the Rings · Appendices</div>
+  <h1>Lineages of Middle-earth</h1>
+  <p>The great houses of Elves, Men, Hobbits and Dwarves, from the First Age to the Fourth. Pick a people, follow the branches down the generations, collapse any branch with its round button, zoom out to see a whole house at once, or search a name across every tree. Dashed links jump to where a line continues in another people's tree.</p>
+</header>
+
+<div class="bar">
+<nav class="tabs" id="tabs" role="tablist"></nav>
+
+<div class="tools">
+  <input id="q" type="search" placeholder="Search a name, e.g. Gimli, Elrond, Took" aria-label="Search names">
+  <div class="seg" role="group" aria-label="View"><button id="vg" type="button">Gallery</button><button id="vt" type="button">Tree</button></div>
+  <label class="chk gridonly"><input type="checkbox" id="keyonly"> Key characters</label>
+  <span class="treeonly"><button id="expand" type="button">Expand all</button> <button id="collapse" type="button">Collapse all</button></span>
+  <span class="zoom treeonly"><button id="zo" type="button" aria-label="Zoom out">−</button><span id="zl" class="zl">100%</span><button id="zi" type="button" aria-label="Zoom in">+</button><button id="fit" type="button">Fit</button><button id="fsb" type="button">⤢ Full screen</button></span>
+</div>
+</div>
+<div class="legend">
+  <span><i class="key-dot"></i> Gold ring: character in The Lord of the Rings or The Hobbit</span>
+  <span>⚭ married to</span>
+  <span>Click any person for their profile</span>
+  <span>Dates: Year of the Sun / Third Age (T.A.) / Shire Reckoning (S.R.)</span>
+</div>
+
+<section class="panel" id="panel" aria-live="polite"></section>
+
+<footer>Compiled from Tolkien's published texts, chiefly the Appendices to The Lord of the Rings and The Silmarillion. Where Tolkien changed his mind (for example Gil-galad's parentage) the published reading is shown and the alternative noted. Long royal lines are abridged where marked; every person named in the novels' family trees for the main characters is included.</footer>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside id="drawer" role="dialog" aria-modal="true" aria-label="Person details"></aside>
+<script src="portraits.js"></script>
+<script src="details.js"></script>
+<script>
+const EM={
+ elves:'<path d="M12 2.5v19M2.5 12h19M5.3 5.3l13.4 13.4M18.7 5.3 5.3 18.7"/><circle cx="12" cy="12" r="3.2"/>',
+ half:'<path d="M12 3l1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6z"/><path d="M4.5 16.5a9 6 0 0 0 15 0"/>',
+ men:'<path d="M12 21V8"/><path d="M12 13 7.5 9.5M12 11l4.5-3.5M12 15.5l3.5-2.5"/><path d="M8.5 5.5 12 3l3.5 2.5"/><path d="M8 21h8"/>',
+ rohan:'<path d="M4 19c2-5 4-8 8-9 2-.5 3-2 3.5-4l2 2-1 2c1.5 1 2.5 3 2.5 5"/><path d="M8 19v-4M15 19v-4"/>',
+ hobbits:'<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="0.8" fill="currentColor"/><path d="M3.5 12h17M12 3.5v17" stroke-dasharray="1.5 2.5"/>',
+ dwarves:'<path d="M2.5 20 9 9l3 4 3-6 6.5 13z"/><path d="M14 2.5h5M16.5 2.5V8"/>'
+};
+const em=(k,c)=>`<svg class="em" viewBox="0 0 24 24" style="--c:${c}" aria-hidden="true">${EM[k]}</svg>`;
+
+/* n name, s subtitle, sp spouse, k key character, c children, nt note, j jump to tab, gap = abridged generations */
+const T={
+elves:{label:"Elves",c:"var(--elf)",e:"elves",title:"The House of Finwë and the Sindar",
+ intro:"Finwë led the Noldor to Valinor. His sons by two wives founded the three princely houses whose feuds and oaths drive the First Age. Beside them stand Thingol and Melian of Doriath, ancestors of the Half-elven.",
+ roots:[
+ {n:"Finwë",s:"High King of the Noldor · slain by Morgoth",sp:"Míriel Serindë (1st), Indis of the Vanyar (2nd)",c:[
+  {n:"Fëanor",s:"son of Míriel · maker of the Silmarils",sp:"Nerdanel",nt:"His seven sons swore the Oath of Fëanor to recover the Silmarils.",c:[
+   {n:"Maedhros",s:"the Tall"},{n:"Maglor",s:"the singer"},{n:"Celegorm",s:"the Fair"},{n:"Caranthir",s:"the Dark"},
+   {n:"Curufin",s:"the Crafty",c:[{n:"Celebrimbor",s:"Lord of Eregion · forger of the Three Rings",k:1}]},
+   {n:"Amrod"},{n:"Amras"}]},
+  {n:"Fingolfin",s:"son of Indis · High King in exile",sp:"Anairë",c:[
+   {n:"Fingon",s:"the Valiant · High King",c:[{n:"Ereinion Gil-galad",s:"last High King of the Noldor",k:1,nt:"Published Silmarillion makes him Fingon's son; Tolkien's late notes make him a son of Orodreth instead."}]},
+   {n:"Turgon",s:"King of Gondolin",sp:"Elenwë",c:[{n:"Idril Celebrindal",sp:"Tuor, a Man",j:"half",c:[]}]},
+   {n:"Aredhel",s:"the White Lady",sp:"Eöl the Dark Elf",c:[{n:"Maeglin",s:"betrayer of Gondolin"}]},
+   {n:"Argon"}]},
+  {n:"Findis",s:"daughter of Indis"},{n:"Írimë (Lalwen)",s:"daughter of Indis"},
+  {n:"Finarfin",s:"son of Indis · King of the Noldor in Valinor",sp:"Eärwen of Alqualondë",c:[
+   {n:"Finrod Felagund",s:"King of Nargothrond"},
+   {n:"Orodreth",s:"King of Nargothrond",nt:"Later texts make Orodreth a son of Angrod instead.",c:[{n:"Finduilas"}]},
+   {n:"Angrod"},
+   {n:"Aegnor"},
+   {n:"Galadriel",s:"Lady of Lothlórien · bearer of Nenya",k:1,sp:"Celeborn of Doriath",c:[
+     {n:"Celebrían",sp:"Elrond Half-elven",j:"half",nt:"Mother of Elladan, Elrohir and Arwen."}]}]}
+ ]},
+ {n:"Elwë Singollo · Thingol",s:"King of Doriath",sp:"Melian the Maia",c:[{n:"Lúthien Tinúviel",sp:"Beren, son of Barahir",j:"half"}]},
+ {n:"Elmo",s:"brother of Thingol",c:[{n:"Galadhon",c:[{n:"Celeborn",s:"Lord of Lothlórien",k:1,sp:"Galadriel"},{n:"Galathil",c:[{n:"Nimloth",sp:"Dior Eluchíl",j:"half"}]}]}]},
+ {n:"Oropher",s:"King of the Woodland Realm",c:[{n:"Thranduil",s:"Elvenking of Mirkwood",k:1,c:[{n:"Legolas Greenleaf",s:"of the Fellowship",k:1}]}]},
+ {n:"Círdan",s:"the Shipwright · Lord of the Grey Havens",k:1,nt:"Of the Teleri; no recorded children. Gave Narya to Gandalf."}
+ ]},
+half:{label:"Half-elven",c:"var(--half)",e:"half",title:"The Peredhil",
+ intro:"Three unions of Elves and Men (Beren and Lúthien, Tuor and Idril, and their descendants) produced the Half-elven. Elrond and Elros were given the choice of kindred: Elrond chose the Elves, Elros the Men, and founded Númenor.",
+ roots:[
+ {n:"Beren Erchamion",s:"Man of the House of Bëor",sp:"Lúthien, daughter of Thingol",c:[
+  {n:"Dior Eluchíl",s:"Thingol's Heir · held the Silmaril",sp:"Nimloth",c:[
+   {n:"Eluréd",s:"lost as a child"},{n:"Elurín",s:"lost as a child"},
+   {n:"Elwing the White",sp:"Eärendil the Mariner"}]}]},
+ {n:"Tuor",s:"Man of the House of Hador",sp:"Idril, daughter of Turgon",c:[
+  {n:"Eärendil the Mariner",s:"bears the Silmaril as a star",sp:"Elwing",c:[
+   {n:"Elrond",s:"Lord of Rivendell · bearer of Vilya",k:1,sp:"Celebrían, daughter of Galadriel",c:[
+     {n:"Elladan",k:1},{n:"Elrohir",k:1},
+     {n:"Arwen Undómiel",s:"chose mortality",k:1,sp:"Aragorn II Elessar",j:"men"}]},
+   {n:"Elros Tar-Minyatur",s:"first King of Númenor · d. S.A. 442",j:"men"}]}]}
+ ]},
+men:{label:"Men of the West",c:"var(--men)",e:"men",title:"Númenor, Arnor, Gondor",
+ intro:"From Elros came the Kings of Númenor. Through the Lords of Andúnië the line passed to Elendil, who founded Arnor and Gondor. Isildur's heirs became the Chieftains of the Dúnedain, ending in Aragorn, who reunited both kingdoms.",
+ roots:[
+ {n:"Elros Tar-Minyatur",s:"1st King of Númenor",c:[
+  {n:"Vardamir Nólimon",s:"2nd King",c:[{gap:"… Tar-Amandil, 3rd King …",c:[
+   {n:"Tar-Elendil",s:"4th King",c:[
+    {n:"Tar-Meneldur",s:"5th King · line of the later Kings",c:[{gap:"… down to …",c:[
+      {n:"Ar-Pharazôn the Golden",s:"25th & last King · drowned with Númenor"}]}]},
+    {n:"Silmariën",s:"his daughter",c:[{n:"Valandil",s:"1st Lord of Andúnië",c:[{gap:"… Lords of Andúnië …",c:[
+     {n:"Amandil",s:"last Lord of Andúnië",c:[
+      {n:"Elendil the Tall",s:"High King of Arnor & Gondor · d. S.A. 3441",c:[
+       {n:"Isildur",s:"cut the Ring from Sauron's hand · d. T.A. 2",k:1,c:[
+        {n:"Elendur, Aratan, Ciryon",s:"slain at the Gladden Fields"},
+        {n:"Valandil",s:"3rd King of Arnor",c:[{gap:"… Kings of Arnor, Arthedain, Chieftains …",c:[
+         {n:"Arador",s:"14th Chieftain",c:[
+          {n:"Arathorn II",s:"15th Chieftain",sp:"Gilraen",c:[
+           {n:"Aragorn II Elessar",s:"King of the Reunited Kingdom · T.A. 2931 – F.A. 120",k:1,sp:"Arwen Undómiel",c:[
+            {n:"Eldarion",s:"King after him"},{n:"daughters",s:"unnamed in the text"}]}]}]}]}]}]},
+       {n:"Anárion",s:"co-king of Gondor · d. S.A. 3440",c:[{n:"Meneldil",s:"3rd King of Gondor",c:[{gap:"… thirty Kings of Gondor …",c:[
+         {n:"Eärnur",s:"last King of Gondor · lost T.A. 2050",nt:"After him Gondor was ruled by the Ruling Stewards."}]}]}]}]}]}]}]}]}]}]}]}]},
+ {n:"Húrin of Emyn Arnen",s:"Steward to King Minardil",nt:"Founder of the House of the Stewards.",c:[{gap:"… Ruling Stewards from Mardil …",c:[
+  {n:"Ecthelion II",s:"25th Ruling Steward",c:[
+   {n:"Denethor II",s:"26th & last Ruling Steward",k:1,sp:"Finduilas of Dol Amroth",c:[
+    {n:"Boromir",s:"of the Fellowship",k:1},
+    {n:"Faramir",s:"Prince of Ithilien",k:1,sp:"Éowyn of Rohan",j:"rohan",c:[{n:"Elboron",c:[{n:"Barahir",s:"author of the Tale of Aragorn and Arwen"}]}]}]}]}]}]},
+ {n:"Adrahil",s:"Prince of Dol Amroth",c:[
+  {n:"Imrahil",s:"Prince of Dol Amroth",k:1,c:[{n:"Elphir"},{n:"Erchirion"},{n:"Amrothos"},{n:"Lothíriel",sp:"Éomer King",j:"rohan"}]},
+  {n:"Finduilas",sp:"Denethor II"}]}
+ ]},
+rohan:{label:"Rohan",c:"var(--men)",e:"rohan",title:"The Kings of the Mark",
+ intro:"Eorl the Young rode to Gondor's aid in T.A. 2510 and was given Calenardhon, which became Rohan. Three lines of kings followed; the Third Line ended in Théoden, and passed through his sister to Éomer.",
+ roots:[
+ {n:"Eorl the Young",s:"1st King of the Mark",c:[{gap:"… First Line, to Helm Hammerhand (9th) …",c:[
+  {n:"Fréaláf Hildeson",s:"10th King · nephew of Helm · begins Second Line",c:[{gap:"… Second Line …",c:[
+   {n:"Fengel",s:"15th King",c:[
+    {n:"Thengel",s:"16th King",sp:"Morwen of Lossarnach",c:[
+     {n:"Théoden",s:"17th King · fell at the Pelennor",k:1,sp:"Elfhild",c:[{n:"Théodred",s:"Second Marshal · slain at the Isen"}]},
+     {n:"Théodwyn",sp:"Éomund, Chief Marshal",c:[
+      {n:"Éomer",s:"18th King · begins Third Line",k:1,sp:"Lothíriel of Dol Amroth",c:[{n:"Elfwine the Fair",s:"19th King"}]},
+      {n:"Éowyn",s:"Lady of the Shield-arm · slew the Witch-king",k:1,sp:"Faramir of Gondor",j:"men"}]},
+     {n:"other daughters",s:"Théodwyn was the youngest of five"}]}]}]}]}]}]}
+ ]},
+hobbits:{label:"Hobbits",c:"var(--hob)",e:"hobbits",title:"Bagginses, Tooks, Brandybucks & Gamgees",
+ intro:"The Shire families are tangled together. Bilbo and Frodo were both grandchildren of the Old Took through their mothers' lines; Merry and Pippin were cousins through Adalgrim Took; Sam's daughter married Pippin's son.",
+ roots:[
+ {n:"Gerontius 'the Old Took'",s:"Thain · 1190–1320 S.R. · lived 130 years",c:[
+  {n:"Isengrim III",s:"Thain"},{n:"Isumbras IV",s:"Thain"},
+  {n:"Hildigrim",sp:"Rosa Baggins",c:[{n:"Adalgrim",c:[
+   {n:"Paladin II",s:"Thain",sp:"Eglantine Banks",c:[
+    {n:"Pearl"},{n:"Pimpernel"},{n:"Pervinca"},
+    {n:"Peregrin 'Pippin' Took",s:"of the Fellowship · Thain · b. 1390 S.R.",k:1,sp:"Diamond of Long Cleeve",c:[
+     {n:"Faramir Took",sp:"Goldilocks Gamgee"}]}]},
+   {n:"Esmeralda",sp:"Saradoc Brandybuck",nt:"Mother of Merry: this is why Merry and Pippin are first cousins."}]}]},
+  {n:"Belladonna",sp:"Bungo Baggins",c:[{n:"Bilbo Baggins",s:"Ring-bearer · b. 1290 S.R.",k:1}]},
+  {n:"Mirabella",sp:"Gorbadoc 'Broadbelt' Brandybuck",c:[
+   {n:"Rorimac 'Old Rory'",s:"Master of Buckland",sp:"Menegilda Goold",c:[
+    {n:"Saradoc 'Scattergold'",s:"Master of Buckland",sp:"Esmeralda Took",c:[
+     {n:"Meriadoc 'Merry' Brandybuck",s:"of the Fellowship · Master of Buckland · b. 1382 S.R.",k:1,sp:"Estella Bolger"}]},
+    {n:"Merimac",c:[{n:"Berilac"}]}]},
+   {n:"Primula",sp:"Drogo Baggins",c:[{n:"Frodo Baggins",s:"Ring-bearer · b. 1368 S.R.",k:1,nt:"Orphaned when his parents drowned; adopted by Bilbo, his cousin on both sides."}]},
+   {n:"Saradas",c:[{n:"Seredic"}]},{n:"Dodinas"},{n:"Dinodas"},{n:"Asphodel"}]},
+  {n:"Donnamira",sp:"Hugo Boffin"},{n:"Isembold"},{n:"Hildifons"},{n:"Isengar"}]},
+ {n:"Balbo Baggins",sp:"Berylla Boffin",c:[
+  {n:"Mungo",sp:"Laura Grubb",c:[
+   {n:"Bungo",sp:"Belladonna Took",c:[{n:"Bilbo Baggins",s:"Ring-bearer",k:1}]},
+   {n:"Belba",sp:"Rudigar Bolger"},
+   {n:"Longo",sp:"Camellia Sackville",c:[{n:"Otho Sackville-Baggins",sp:"Lobelia Bracegirdle",k:1,c:[{n:"Lotho 'Pimple'",s:"Chief of the Shire, 1418–19",k:1}]}]},
+   {n:"Linda",sp:"Bodo Proudfoot",c:[{n:"Odo Proudfoot",c:[{n:"Olo",c:[{n:"Sancho"}]}]}]},
+   {n:"Bingo",sp:"Chica Chubb",c:[{n:"Falco Chubb-Baggins"}]}]},
+  {n:"Pansy",sp:"Fastolph Bolger"},{n:"Ponto",c:[{n:"Posco",c:[{n:"Angelica"}]},{n:"Porto"},{n:"Peony"}]},
+  {n:"Largo",sp:"Tanta Hornblower",c:[{n:"Fosco",sp:"Ruby Bolger",c:[
+   {n:"Dora"},{n:"Drogo",sp:"Primula Brandybuck",c:[{n:"Frodo Baggins",s:"Ring-bearer",k:1}]},{n:"Dudo",c:[{n:"Daisy"}]}]}]},
+  {n:"Lily",sp:"Togo Goodbody"}]},
+ {n:"Hamfast 'the Gaffer' Gamgee",s:"gardener at Bag End",k:1,sp:"Bell Goodchild",c:[
+  {n:"Hamson"},{n:"Halfred"},{n:"Daisy"},{n:"May"},
+  {n:"Samwise Gamgee",s:"Ring-bearer · Mayor of the Shire · b. 1380 S.R.",k:1,sp:"Rose 'Rosie' Cotton",nt:"Thirteen children, in order of birth.",c:[
+   {n:"Elanor the Fair"},{n:"Frodo Gardner"},{n:"Rose"},{n:"Merry"},{n:"Pippin"},{n:"Goldilocks",sp:"Faramir Took"},
+   {n:"Hamfast"},{n:"Daisy"},{n:"Primrose"},{n:"Bilbo"},{n:"Ruby"},{n:"Robin"},{n:"Tolman (Tom)"}]},
+  {n:"Marigold",sp:"Tom Cotton"}]}
+ ]},
+dwarves:{label:"Dwarves",c:"var(--dwa)",e:"dwarves",title:"The House of Durin",
+ intro:"Durin the Deathless was the eldest of the Seven Fathers of the Dwarves. His heirs ruled Khazad-dûm until the Balrog, then Erebor. Thorin's Company in The Hobbit was largely made up of his kin, and Gimli descends from a cadet branch.",
+ roots:[
+ {n:"Durin I 'the Deathless'",s:"Eldest of the Seven Fathers",c:[{gap:"… Durin II to VI; the Balrog wakes in T.A. 1980 …",c:[
+  {n:"Thráin I",s:"founds the Kingdom under the Mountain, T.A. 1999",c:[{gap:"… to …",c:[
+  {n:"Náin II",c:[
+   {n:"Dáin I",s:"slain by a cold-drake, T.A. 2589",c:[
+    {n:"Thrór",s:"King under the Mountain · slain in Moria",c:[
+     {n:"Thráin II",s:"lost the last of the Seven Rings",c:[
+      {n:"Thorin II Oakenshield",s:"King under the Mountain · d. Battle of Five Armies",k:1},
+      {n:"Frerin",s:"slain at Azanulbizar"},
+      {n:"Dís",s:"the only dwarf-woman named in the legendarium",c:[{n:"Fíli",k:1},{n:"Kíli",k:1}]}]}]},
+    {n:"Frór",s:"slain by a cold-drake"},
+    {n:"Grór",s:"Lord of the Iron Hills",c:[{n:"Náin",s:"slain by Azog at Azanulbizar",c:[
+     {n:"Dáin II Ironfoot",s:"King under the Mountain after Thorin",k:1,c:[{n:"Thorin III Stonehelm",s:"King after him"}]}]}]}]},
+   {n:"Borin",s:"younger son of Náin II",c:[{n:"Farin",c:[
+    {n:"Fundin",c:[{n:"Balin",s:"Lord of Moria, died there",k:1},{n:"Dwalin",k:1}]},
+    {n:"Gróin",c:[{n:"Óin",s:"died in Moria",k:1},{n:"Glóin",k:1,c:[{n:"Gimli Elf-friend",s:"of the Fellowship · Lord of the Glittering Caves",k:1}]}]}]}]}]}]}]}]}]},
+ {n:"Other members of Thorin's Company",s:"not of Durin's direct line",nt:"Bifur, Bofur and Bombur were from Moria-dwarf families of other lineage; Dori, Nori and Ori were distantly related to Thorin, but Tolkien gives no tree for them.",c:[
+  {n:"Bifur"},{n:"Bofur",c:[]},{n:"Bombur",s:"brother of Bofur"},{n:"Dori"},{n:"Nori"},{n:"Ori",s:"kept the Book of Mazarbul"}]}
+ ]}
+};
+const ALIAS={"Valandil (series)":"Valandil (The Rings of Power)","Rowan of Tirharad":"Rowan (Southlands)","Thrain (series)":"Thrain (The Rings of Power)","Damrod (series)":"Damrod (The Rings of Power)","Nori Brandyfoot":"Elanor Brandyfoot","Tar-Míriel":"Tar-Míriel","Elwë Singollo · Thingol":"Thingol","Ereinion Gil-galad":"Gil-galad","Peregrin 'Pippin' Took":"Peregrin Took","Meriadoc 'Merry' Brandybuck":"Meriadoc Brandybuck","Gimli Elf-friend":"Gimli","Lúthien Tinúviel":"Lúthien","Beren Erchamion":"Beren","Dior Eluchíl":"Dior","Eärendil the Mariner":"Eärendil","Elros Tar-Minyatur":"Elros","Idril Celebrindal":"Idril","Finrod Felagund":"Finrod","Elendil the Tall":"Elendil","Arwen Undómiel":"Arwen","Legolas Greenleaf":"Legolas","Elwing the White":"Elwing","Ar-Pharazôn the Golden":"Ar-Pharazôn","Hamfast 'the Gaffer' Gamgee":"Hamfast Gamgee","Gerontius 'the Old Took'":"Gerontius Took","Lotho 'Pimple'":"Lotho Sackville-Baggins","Elfwine the Fair":"Elfwine","Durin I 'the Deathless'":"Durin the Deathless","Thorin II Oakenshield":"Thorin II"};
+const SKIP=new Set(["Merry","Pippin","Rose","Hamfast","Daisy","May","Bilbo","Ruby","Robin","Primrose","Goldilocks","Tolman (Tom)","daughters","other daughters","Other members of Thorin's Company","Pearl","Pimpernel","Pervinca","Finduilas","Frodo Gardner","Hamson","Halfred","Marigold","Dora","Dudo","Peony","Porto","Posco"]);
+const wt=n=>SKIP.has(n)?null:(ALIAS[n]||n.replace(/['‘][^'’]*['’]/g,"").split("·")[0].replace(/\s+/g," ").trim());
+/* portraits: film and series stills saved locally in images/ (see portraits.js) */
+function paint(){document.querySelectorAll(".med[data-t]:not(.has)").forEach(m=>{const u=PORTRAITS[m.dataset.t];if(!u)return;const im=new Image();im.alt="";im.onload=()=>{m.prepend(im);m.classList.add("has")};im.src=u})}
+const portraits=paint;
+const ORDER=["elves","half","men","rohan","hobbits","dwarves"];
+EM.rop='<circle cx="12" cy="13.5" r="6.5"/><circle cx="12" cy="13.5" r="2.4"/><path d="M9.5 7 12 3l2.5 4"/>';
+T.rop={label:"Rings of Power",c:"var(--accent)",e:"rop",title:"The Rings of Power: the Second Age",
+ intro:"The people of Amazon's series, set in the Second Age. Book characters appear with their series roles; those marked Series original were created for the show. Relationships follow the series and can differ from Tolkien's books.",
+ roots:[
+ {gap:"Elves of Lindon & Eregion",c:[
+  {n:"Gil-galad",s:"High King of the Elves in Lindon",k:1,j:"elves"},
+  {n:"Galadriel",s:"Commander of the Northern Armies",k:1,j:"elves"},
+  {n:"Elrond",s:"envoy of Gil-galad · friend of Durin IV",k:1,j:"half"},
+  {n:"Celebrimbor",s:"Lord Smith of Eregion · forger of the Rings",k:1,j:"elves"},
+  {n:"Círdan",s:"Shipwright of the Grey Havens",k:1}]},
+ {gap:"The Southlands",c:[
+  {n:"Arondir",s:"Silvan Elf · captain of the watch",x:1},
+  {n:"Médhor",s:"Silvan Elf · watched over the Men of the Southlands",x:1},
+  {n:"Bronwyn",s:"healer of Tirharad",x:1,c:[{n:"Theo",s:"her son",x:1}]},
+  {n:"Rowan of Tirharad",s:"Southlander of Tirharad",x:1}]},
+ {gap:"Númenor",c:[
+  {n:"Tar-Palantir",s:"24th King of Númenor",c:[{n:"Tar-Míriel",s:"his daughter · last rightful heir of Númenor"}]},
+  {n:"Ar-Pharazôn",s:"25th and last King of Númenor",c:[{n:"Kemen",s:"his son",x:1}]},
+  {n:"Elendil",s:"Lord of Andúnië · father of Isildur and Anárion",k:1,j:"men",c:[
+   {n:"Isildur",s:"his son · cut the Ring from Sauron's hand",k:1,j:"men"},
+   {n:"Anárion",s:"his younger son",j:"men"},
+   {n:"Eärien",s:"his daughter in the series",x:1}]},
+  {n:"Valandil (series)",s:"Man of Númenor · friend of Isildur",x:1},
+  {n:"Ontamo",s:"Man of Númenor · friend of Isildur and Valandil",sp:"Mairen (fiancée)",x:1}]},
+ {gap:"Harfoots & Stoors",c:[
+  {n:"Largo Brandyfoot",s:"Harfoot",sp:"Rose (1st, d.), Marigold (2nd)",x:1,c:[
+   {n:"Nori Brandyfoot",s:"Elanor Kellamark · Harfoot who befriends the Stranger",x:1},
+   {n:"Dilly Brandyfoot",s:"Nori's sister",x:1}]},
+  {n:"Rose Brandyfoot",s:"Largo's first wife · mother of Nori and Dilly",x:1},
+  {n:"Marigold Brandyfoot",s:"Largo's second wife",x:1},
+  {n:"Poppy Proudfellow",s:"Nori's friend",x:1},
+  {n:"Sadoc Burrows",s:"Trailfinder who led the Harfoot village",x:1},
+  {n:"Malva Meadowgrass",s:"Harfoot ancestor · lived in Rhovanion",x:1},
+  {n:"Miles Brightapple",s:"Harfoot lost in the mountain snows",x:1},
+  {n:"Gundabale Earthauler",s:"Stoor who led a village in western Rhûn",x:1}]},
+ {gap:"Dwarves of Khazad-dûm",c:[
+  {n:"Durin III",s:"King of Durin's Folk · bearer of the Dwarf-ring",c:[
+   {n:"Durin IV",s:"King of Khazad-dûm · friend of Elrond",sp:"Disa",c:[]},
+   {n:"Thrain (series)",s:"brother of Durin IV",x:1}]},
+  {n:"Disa",s:"Dwarven princess · wife of Durin IV",x:1},
+  {n:"Narvi",s:"Dwarf of Khazad-dûm · friend of Celebrimbor"}]},
+ {gap:"Sauron & his servants",c:[
+  {n:"Sauron",s:"the Dark Lord · the Lord of the Rings",k:1,nt:"Appears in the series under the name Halbrand.",c:[
+   {n:"Halbrand",s:"the guise Sauron wears in the series",x:1}]},
+  {n:"Adar",s:"Lord-father of the Orcs",x:1,c:[
+   {n:"Waldreg",s:"barkeep of Tirharad turned commander in Adar's forces",x:1},
+   {n:"Hagen",s:"Southlander who swore to serve Adar",x:1},
+   {n:"Damrod (series)",s:"hill-troll in Adar's host",x:1}]}]},
+ {gap:"The wider world",c:[
+  {n:"Tom Bombadil",s:"Master of wood, water and hill",k:1,sp:"Goldberry"},
+  {n:"Goldberry",s:"the River-daughter",k:1}]}
+ ]};
+ORDER.push("rop");
+
+let cur="elves",query="";
+
+const esc=s=>s.replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const matches=(o,q)=>q&&[o.n,o.sp,o.s].some(v=>v&&v.toLowerCase().includes(q));
+function countHits(list,q){let c=0;for(const o of list){if(matches(o,q))c++;if(o.c)c+=countHits(o.c,q)}return c}
+function subtreeHit(o,q){return matches(o,q)||(o.c||[]).some(x=>subtreeHit(x,q))}
+
+const ini=n=>{const w=n.replace(/['"‘’(].*?['"‘’)]/g,"").replace(/^(Tar-|Ar-)/,"").split(/[\s·,-]+/).filter(x=>x&&/^[A-ZÁÉÍÓÚÂÊÎÔÛÄËÏÖÜ]/.test(x));return ((w[0]||n)[0]+(w.length>1&&!/^(II|III|IV|VI|I)$/.test(w[1])?w[1][0]:"")).toUpperCase()};
+function li(o){
+  const kids=o.c&&o.c.length;
+  const open=!query||subtreeHit(o,query);
+  const sub=kids?`<ul>${o.c.map(li).join("")}</ul>`:"";
+  if(o.gap)return `<li${open?"":' class="closed"'}><span class="gap">${esc(o.gap)}</span>${sub}</li>`;
+  const t=T[cur],jt=o.j&&T[o.j];
+  return `<li${open?"":' class="closed"'}><div class="card${o.k?" key":""}" data-id="${o._id}"${matches(o,query)?" data-hit":""}>`+
+   `<div class="med" aria-hidden="true"${wt(o.n)?` data-t="${esc(wt(o.n))}"`:""}>${em(t.e,t.c)}<b>${esc(ini(o.n))}</b></div>`+
+   `<span class="nm">${esc(o.n)}</span>`+(o.s?`<span class="sub">${esc(o.s)}</span>`:"")+
+   (o.sp?`<span class="sp">⚭ <b>${esc(o.sp)}</b></span>`:"")+(o.nt?`<span class="note">${esc(o.nt)}</span>`:"")+
+   (jt?`<button type="button" class="jump" data-j="${o.j}" style="--c2:${jt.c}">→ ${jt.label}</button>`:"")+
+   (kids?`<button class="tog" type="button" aria-label="Show or hide children">${open?"−":"+"}</button>`:"")+
+   `</div>${sub}</li>`;
+}
+let zoom=1,px=0,py=0;
+const stage=()=>document.querySelector(".stage"),forest=()=>document.querySelector(".forest");
+/* FigJam-style canvas: drag to pan, scroll to move, Ctrl/Cmd+scroll or pinch to zoom toward the cursor */
+function apply(){const f=forest(),st=stage();if(f)f.style.transform=`translate(${px}px,${py}px) scale(${zoom})`;
+  document.querySelectorAll(".zl").forEach(z=>z.textContent=Math.round(zoom*100)+"%");
+  if(st){st.style.backgroundSize=`${24*zoom}px ${24*zoom}px`;st.style.backgroundPosition=`${px}px ${py}px`}}
+function zoomAt(z,cx,cy){z=Math.max(.15,Math.min(2.5,z));px=cx-(cx-px)*(z/zoom);py=cy-(cy-py)*(z/zoom);zoom=z;apply()}
+function setZoom(z){const st=stage();if(st)zoomAt(z,st.clientWidth/2,st.clientHeight/2)}
+function fit(minZ=.15,topLeft=false){const st=stage(),f=forest();if(!st||!f)return;const w=f.offsetWidth,h=f.offsetHeight,pad=32;
+  zoom=Math.max(minZ,Math.min(1,(st.clientWidth-pad*2)/w,(st.clientHeight-pad*2)/h));
+  px=w*zoom<st.clientWidth&&!topLeft?(st.clientWidth-w*zoom)/2:pad;py=h*zoom<st.clientHeight&&!topLeft?(st.clientHeight-h*zoom)/2:pad;apply()}
+const initView=()=>fit(.5,true);
+const ptrs=new Map();let drag=null,moved=false,capt=false,lastD=0;
+const pnl=document.getElementById("panel");
+const mid=()=>{const [a,b]=[...ptrs.values()];return{x:(a.x+b.x)/2,y:(a.y+b.y)/2,d:Math.hypot(a.x-b.x,a.y-b.y)}};
+pnl.addEventListener("pointerdown",e=>{const st=e.target.closest(".stage");if(!st||e.target.closest(".tog,.jump,.stool,#drawer")||e.button>1)return;
+  ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});moved=false;capt=false;
+  if(ptrs.size===1)drag={x:e.clientX,y:e.clientY,px,py};else if(ptrs.size===2){lastD=mid().d;drag=null}});
+pnl.addEventListener("pointermove",e=>{if(!ptrs.has(e.pointerId))return;const st=stage(),r=st.getBoundingClientRect(),prev=ptrs.size>=2?mid():null;
+  ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});
+  if(ptrs.size>=2){const m=mid();px+=m.x-prev.x;py+=m.y-prev.y;zoomAt(zoom*(m.d/lastD),m.x-r.left,m.y-r.top);lastD=m.d;moved=true;return}
+  if(!drag)return;const dx=e.clientX-drag.x,dy=e.clientY-drag.y;
+  if(!moved&&Math.hypot(dx,dy)<4)return;moved=true;
+  if(!capt){try{st.setPointerCapture(e.pointerId)}catch(_){}capt=true;st.classList.add("panning")}
+  px=drag.px+dx;py=drag.py+dy;apply()});
+const endPtr=e=>{ptrs.delete(e.pointerId);const st=stage();
+  if(ptrs.size===1){const p=[...ptrs.values()][0];drag={x:p.x,y:p.y,px,py}}
+  if(!ptrs.size){drag=null;if(st)st.classList.remove("panning")}};
+pnl.addEventListener("pointerup",endPtr);pnl.addEventListener("pointercancel",endPtr);
+pnl.addEventListener("click",e=>{if(moved){e.stopPropagation();e.preventDefault();moved=false}},true);
+pnl.addEventListener("wheel",e=>{const st=e.target.closest(".stage");if(!st||e.target.closest("#drawer"))return;e.preventDefault();const r=st.getBoundingClientRect();
+  if(e.ctrlKey||e.metaKey)zoomAt(zoom*Math.exp(-e.deltaY*.003),e.clientX-r.left,e.clientY-r.top);else{px-=e.deltaX;py-=e.deltaY;apply()}},{passive:false});
+/* full screen: native Fullscreen API on the canvas, with a fixed-position fallback; the profile drawer moves inside so it stays visible */
+function toggleFs(){const st=stage();if(!st)return;
+  if(document.fullscreenElement){document.exitFullscreen();return}
+  if(st.classList.contains("pfs")){st.classList.remove("pfs");fsChanged();return}
+  const pseudo=()=>{st.classList.add("pfs");fsChanged()};
+  if(st.requestFullscreen)st.requestFullscreen().catch(pseudo);else pseudo()}
+function fsChanged(){const st=stage();if(!st)return;const on=document.fullscreenElement===st||st.classList.contains("pfs");
+  (on?st:document.body).append(dr,scrim);closeP();
+  document.querySelectorAll('[data-act="fs"]').forEach(b=>b.textContent=on?"⤡":"⤢");
+  document.getElementById("fsb").textContent=on?"⤡ Exit full screen":"⤢ Full screen";
+  requestAnimationFrame(()=>fit(.5,true))}
+document.addEventListener("fullscreenchange",fsChanged);
+document.addEventListener("keydown",e=>{const st=stage();if(e.key==="Escape"&&st&&st.classList.contains("pfs")){st.classList.remove("pfs");fsChanged()}});
+pnl.addEventListener("click",e=>{const b=e.target.closest(".stool [data-act]");if(!b)return;const a=b.dataset.act;
+  if(a==="zi")setZoom(zoom*1.2);else if(a==="zo")setZoom(zoom/1.2);else if(a==="fit")fit();else toggleFs()});
+document.getElementById("fsb").onclick=toggleFs;
+function renderTabs(){
+  document.getElementById("tabs").innerHTML=ORDER.map(k=>{const t=T[k];const n=query?countHits(t.roots,query):0;
+   return `<button type="button" role="tab" data-k="${k}" aria-selected="${k===cur}" style="--c:${t.c}">${em(t.e,t.c)}${t.label}${n?`<span class="cnt">${n}</span>`:""}</button>`}).join("");
+}
+function renderTree(){
+  const t=T[cur];
+  document.getElementById("panel").style.setProperty("--c",t.c);
+  document.getElementById("panel").innerHTML=`<div class="ph">${em(t.e,t.c)}<div><h2>${t.title}</h2><p>${t.intro}</p></div></div>
+   <div class="stage"><div class="stool"><button type="button" data-act="zo" aria-label="Zoom out">−</button><span class="zl">100%</span><button type="button" data-act="zi" aria-label="Zoom in">+</button><button type="button" data-act="fit">Fit</button><button type="button" data-act="fs" aria-label="Full screen" title="Full screen">⤢</button></div><div class="forest">${t.roots.map(r=>`<ul class="tree">${li(r)}</ul>`).join("")}</div></div>`;
+  initView();
+  renderTabs();
+  portraits();
+}
+document.getElementById("tabs").addEventListener("click",e=>{const b=e.target.closest("button[data-k]");if(!b)return;cur=b.dataset.k;try{localStorage.setItem("me-tab",cur)}catch(_){}render()});
+document.getElementById("panel").addEventListener("click",e=>{
+  const tg=e.target.closest(".tog");if(tg){const l=tg.closest("li");l.classList.toggle("closed");tg.textContent=l.classList.contains("closed")?"+":"−";return}
+  const j=e.target.closest(".jump");if(j){cur=j.dataset.j;render();document.getElementById("tabs").scrollIntoView({behavior:"smooth",block:"start"})}
+});
+document.getElementById("q").addEventListener("input",e=>{query=e.target.value.trim().toLowerCase();
+  if(query&&!countHits(T[cur].roots,query)){const f=ORDER.find(k=>countHits(T[k].roots,query));if(f)cur=f}render()});
+document.getElementById("zi").onclick=()=>setZoom(zoom+.1);document.getElementById("zo").onclick=()=>setZoom(zoom-.1);document.getElementById("fit").onclick=()=>fit();
+document.getElementById("expand").onclick=()=>{document.querySelectorAll("#panel li.closed").forEach(l=>l.classList.remove("closed"));document.querySelectorAll("#panel .tog").forEach(b=>b.textContent="−")};
+document.getElementById("collapse").onclick=()=>{document.querySelectorAll("#panel .tree>li>ul>li, #panel .tree>li>ul>li>ul>li").forEach(l=>{if(l.querySelector("ul")){l.classList.add("closed");const b=l.querySelector(".tog");if(b)b.textContent="+"}})};
+
+/* ---- gallery view, people index, profile drawer ---- */
+let view="grid",keyOnly=false;
+try{view=localStorage.getItem("me-view")||"grid"}catch(_){}
+const PEOPLE={};
+for(const k of ORDER){let n=0;(function walk(list,parent){for(const o of list){if(o.gap){walk(o.c||[],parent);continue}
+  const id=k+"-"+(n++);o._id=id;PEOPLE[id]={id,o,tab:k,parent,kids:[]};if(parent)PEOPLE[parent].kids.push(id);walk(o.c||[],id)}})(T[k].roots,null)}
+const pic=o=>{const t=wt(o.n);return t&&typeof PORTRAITS!=="undefined"?PORTRAITS[t]:null};
+function gcard(x){const o=x.o,u=pic(o);
+  return `<button type="button" class="gc${matches(o,query)?" hit":""}" data-id="${x.id}" style="--c:${T[x.tab].c}"><div class="gimg">`+
+   (u?`<img loading="lazy" alt="" src="${u}">`:`<div class="gfb"><b>${esc(ini(o.n))}</b></div>`)+(o.k?'<span class="gbadge">★ Key character</span>':o.x?'<span class="gbadge">Series original</span>':"")+
+   `</div><div><div class="gnm">${esc(o.n)}</div>${o.s?`<div class="gsub">${esc(o.s)}</div>`:""}</div></button>`}
+function renderGrid(){
+  const t=T[cur],p=document.getElementById("panel"),seen=new Set();
+  p.style.setProperty("--c",t.c);
+  const ppl=Object.values(PEOPLE).filter(x=>x.tab===cur).filter(x=>{if(seen.has(x.o.n))return false;seen.add(x.o.n);return true})
+    .filter(x=>(!keyOnly||x.o.k)&&(!query||matches(x.o,query)));
+  p.innerHTML=`<div class="ph">${em(t.e,t.c)}<div><h2>${t.title}</h2><p>${t.intro}</p></div></div><div class="gmeta">${ppl.length} ${ppl.length===1?"person":"people"}</div>`+
+   (ppl.length?`<div class="grid">${ppl.map(gcard).join("")}</div>`:'<p class="empty">No one matches.</p>');
+  renderTabs();
+}
+function render(){if(dr.parentNode!==document.body)document.body.append(dr,scrim);document.body.dataset.view=view;if(view==="tree")renderTree();else renderGrid();
+  document.getElementById("vg").setAttribute("aria-pressed",view==="grid");document.getElementById("vt").setAttribute("aria-pressed",view==="tree")}
+const dr=document.getElementById("drawer"),scrim=document.getElementById("scrim");
+const row=(h,b)=>`<div class="drow"><h3>${h}</h3>${b}</div>`;
+const av=o=>{const u=pic(o);return u?`<img class="av" alt="" src="${u}">`:`<span class="av">${esc(ini(o.n))}</span>`};
+const chip=x=>`<button type="button" class="chip" data-open="${x.id}" style="--c:${T[x.tab].c}">${av(x.o)}<span class="t"><span class="nm">${esc(x.o.n)}</span>${x.o.s?`<small>${esc(x.o.s)}</small>`:""}</span></button>`;
+const det=o=>{const t=wt(o.n);return t&&typeof DETAILS!=="undefined"?DETAILS[t]:null};
+function openP(id){const x=PEOPLE[id];if(!x)return;const o=x.o,t=T[x.tab],par=x.parent&&PEOPLE[x.parent],u=pic(o),d=det(o);
+  dr.innerHTML=`<button class="dclose" type="button" aria-label="Close">×</button><div class="dimg" style="--c:${t.c}">`+
+   (u?`<img alt="${esc(o.n)}" src="${u}">`:`<div class="gfb"><b>${esc(ini(o.n))}</b></div>`)+
+   `</div><div class="dbody" style="--c:${t.c}"><div class="dtags"><span class="dtag">${t.label}</span>${o.k?'<span class="dtag key">★ Key character</span>':""}${o.x?'<span class="dtag">Series original</span>':""}</div>`+
+   `<h2>${esc(o.n)}</h2>${o.s?`<p class="dsub">${esc(o.s)}</p>`:""}`+
+   (d?(d.s?row("About",`<p class="dabout">${esc(d.s)}</p>`):"")+(d.f.length?row("Details",`<dl class="facts">${d.f.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}</dl>`):""):"")+
+   (o.sp?row("Spouse",`<div>⚭ ${esc(o.sp)}</div>`):"")+(par?row("Parent",`<div class="chips">${chip(par)}</div>`):"")+
+   (x.kids.length?row(`Children (${x.kids.length})`,`<div class="chips">${x.kids.map(k=>chip(PEOPLE[k])).join("")}</div>`):"")+
+   (o.nt?row("Note",`<p class="dnote">${esc(o.nt)}</p>`):"")+
+   (o.j?`<div><button type="button" class="jump" data-j="${o.j}" style="--c2:${T[o.j].c}">→ Continues in ${T[o.j].label}</button></div>`:"")+
+   (d?`<p class="dsrc">Text from the <a href="${d.u}" target="_blank" rel="noopener">Lord of the Rings Wiki</a> (CC BY-SA). Read the full article there.</p>`:"")+`</div>`;
+  dr.scrollTop=0;dr.classList.add("on");scrim.classList.add("on");dr.querySelector(".dclose").focus()}
+function closeP(){dr.classList.remove("on");scrim.classList.remove("on")}
+document.getElementById("panel").addEventListener("click",e=>{if(e.target.closest(".tog,.jump"))return;const c=e.target.closest("[data-id]");if(c)openP(c.dataset.id)});
+dr.addEventListener("click",e=>{
+  if(e.target.closest(".dclose"))return closeP();
+  const c=e.target.closest("[data-open]");if(c)return openP(c.dataset.open);
+  const j=e.target.closest(".jump");if(j){cur=j.dataset.j;closeP();render();window.scrollTo({top:0,behavior:"smooth"})}});
+scrim.addEventListener("click",closeP);
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeP()});
+const setView=v=>{view=v;try{localStorage.setItem("me-view",v)}catch(_){}render()};
+document.getElementById("vg").onclick=()=>setView("grid");document.getElementById("vt").onclick=()=>setView("tree");
+document.getElementById("keyonly").onchange=e=>{keyOnly=e.target.checked;render()};
+try{const s=localStorage.getItem("me-tab");if(s&&T[s])cur=s}catch(_){}
+render();
+</script>
+
+</body></html>
