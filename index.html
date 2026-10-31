@@ -742,11 +742,15 @@ const EO="cubic-bezier(.16,1,.3,1)";
 const qx=document.getElementById("qx"),barEl=document.querySelector(".bar");
 /* selection pill: one element per control that glides to the selected button */
 function pill(box){let p=box._pill;if(!p){p=box._pill=document.createElement("span");p.className="pill";p.setAttribute("aria-hidden","true");box.classList.add("haspill");box.prepend(p)}
-  const b=box.querySelector('button[aria-selected="true"],button[aria-pressed="true"]');
-  if(!b||!b.offsetWidth){p.style.opacity=0;return}
-  p.style.cssText=`opacity:1;width:${b.offsetWidth}px;height:${b.offsetHeight}px;transform:translate(${b.offsetLeft}px,${b.offsetTop}px)`;
+  box.querySelectorAll(":scope>button").forEach(x=>pillRO.observe(x));
+  const b=placePill(box);if(!b)return;
   if(!p.classList.contains("live"))requestAnimationFrame(()=>requestAnimationFrame(()=>p.classList.add("live")));
   if(box.scrollWidth>box.clientWidth)box.scrollTo({left:b.offsetLeft-(box.clientWidth-b.offsetWidth)/2,behavior:calm()?"auto":"smooth"});edges(box)}
+function placePill(box){const p=box._pill,b=box.querySelector('button[aria-selected="true"],button[aria-pressed="true"]');
+  if(!b||!b.offsetWidth){p.style.opacity=0;return null}
+  p.style.cssText=`opacity:1;width:${b.offsetWidth}px;height:${b.offsetHeight}px;transform:translate(${b.offsetLeft}px,${b.offsetTop}px)`;return b}
+/* counts roll after a filter change, so buttons keep resizing after the first measurement: follow them */
+const pillRO=new ResizeObserver(es=>new Set(es.map(e=>e.target.parentNode)).forEach(box=>{if(box&&box._pill){placePill(box);edges(box)}}));
 function edges(box){const m=box.scrollWidth-box.clientWidth;box.classList.toggle("fadeL",m>1&&box.scrollLeft>4);box.classList.toggle("fadeR",m>1&&box.scrollLeft<m-4)}
 /* number that counts to its new value */
 function roll(el,to){const from=+el.textContent||0;cancelAnimationFrame(el._r);if(from===to||calm()){el.textContent=to;return}const t0=performance.now();
