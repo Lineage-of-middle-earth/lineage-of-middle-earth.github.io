@@ -189,23 +189,48 @@ section.panel{background:transparent;border:0;padding:6px 0 0}
 .dsrc{margin:6px 0 0;font-size:12px;color:var(--muted)}
 .dsrc a{color:inherit}
 </style>
+<style>
+.dcap{padding:12px 22px 0;display:flex;gap:8px;align-items:flex-start;font-size:13px;color:var(--muted);line-height:1.4}
+.dtype{flex:none;font-size:11px;font-weight:600;border-radius:999px;padding:2px 9px;color:#fff;background:var(--muted)}
+.t-movie{background:#3d6f9e}.t-series{background:#8c5f1a}.t-art{background:#6b5a8c}.t-game{background:#4f7a32}
+.gfil{display:flex;gap:6px;flex-wrap:wrap;padding:12px 22px 0}
+.gfil button{border:1px solid var(--rule);background:none;color:var(--ink);border-radius:999px;font:inherit;font-size:12px;padding:3px 10px;cursor:pointer}
+.gfil button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.gstrip{display:flex;gap:8px;padding:10px 22px 0;overflow-x:auto;scrollbar-width:thin}
+.gth{all:unset;box-sizing:border-box;cursor:pointer;flex:none;width:64px;height:64px;border-radius:10px;overflow:hidden;border:2px solid transparent}
+.gth[aria-current="true"]{border-color:var(--accent)}
+.gth img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block}
+.gth.off{display:none}
+.gth:focus-visible,.gfil button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+header{position:relative}
+.themebtn{position:absolute;top:0;right:0;font-family:var(--f-body);font-weight:500;font-size:14px;background:var(--panel);color:var(--ink);border:1px solid var(--rule);border-radius:999px;padding:7px 14px;cursor:pointer}
+.themebtn:hover{background:var(--bg)}
+.themebtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.zoom{margin-left:0}
+.row{display:flex;align-items:center;gap:10px;min-width:0}
+.row nav.tabs{flex:1;min-width:0}
+.rl{flex:none;width:50px;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+body[data-view="tree"][data-src="series"] .row.kinds{display:none}
+.bar{gap:6px}
+</style>
 <div class="wrap">
 <header>
+  <button id="theme" type="button" class="themebtn" aria-label="Switch theme">☾ Dark</button>
   <div class="age">The Silmarillion · The Hobbit · The Lord of the Rings · Appendices</div>
   <h1>Lineages of Middle-earth</h1>
   <p>The great houses of Elves, Men, Hobbits and Dwarves, from the First Age to the Fourth. Pick a people, follow the branches down the generations, collapse any branch with its round button, zoom out to see a whole house at once, or search a name across every tree. Dashed links jump to where a line continues in another people's tree.</p>
 </header>
 
 <div class="bar">
-<nav class="tabs" id="tabs" role="tablist"></nav>
+<div class="row kinds"><span class="rl">Kind</span><nav class="tabs" id="tabs" role="tablist" aria-label="Kind"></nav></div>
+<div class="row"><span class="rl">Source</span><nav class="tabs" id="srcs" role="tablist" aria-label="Source"></nav></div>
 
 <div class="tools">
   <input id="q" type="search" placeholder="Search a name, e.g. Gimli, Elrond, Took" aria-label="Search names">
   <div class="seg" role="group" aria-label="View"><button id="vg" type="button">Gallery</button><button id="vt" type="button">Tree</button></div>
   <label class="chk gridonly"><input type="checkbox" id="keyonly"> Key characters</label>
   <span class="treeonly"><button id="expand" type="button">Expand all</button> <button id="collapse" type="button">Collapse all</button></span>
-  <span class="zoom treeonly"><button id="zo" type="button" aria-label="Zoom out">−</button><span id="zl" class="zl">100%</span><button id="zi" type="button" aria-label="Zoom in">+</button><button id="fit" type="button">Fit</button><button id="fsb" type="button">⤢ Full screen</button></span>
-</div>
+  <span class="zoom treeonly"><button id="zo" type="button" aria-label="Zoom out">−</button><span id="zl" class="zl">100%</span><button id="zi" type="button" aria-label="Zoom in">+</button><button id="fit" type="button">Fit</button><button id="fsb" type="button">⤢ Full screen</button></span></div>
 </div>
 <div class="legend">
   <span><i class="key-dot"></i> Gold ring: character in The Lord of the Rings or The Hobbit</span>
@@ -223,6 +248,7 @@ section.panel{background:transparent;border:0;padding:6px 0 0}
 <aside id="drawer" role="dialog" aria-modal="true" aria-label="Person details"></aside>
 <script src="portraits.js"></script>
 <script src="details.js"></script>
+<script src="gallery.js"></script>
 <script>
 const EM={
  elves:'<path d="M12 2.5v19M2.5 12h19M5.3 5.3l13.4 13.4M18.7 5.3 5.3 18.7"/><circle cx="12" cy="12" r="3.2"/>',
@@ -439,6 +465,8 @@ T.rop={label:"Rings of Power",c:"var(--accent)",e:"rop",title:"The Rings of Powe
   {n:"Goldberry",s:"the River-daughter",k:1}]}
  ]};
 ORDER.push("rop");
+const KD={"Gil-galad": "elves", "Galadriel": "elves", "Celebrimbor": "elves", "Círdan": "elves", "Arondir": "elves", "Médhor": "elves", "Elrond": "half", "Bronwyn": "men", "Theo": "men", "Rowan of Tirharad": "men", "Tar-Palantir": "men", "Tar-Míriel": "men", "Ar-Pharazôn": "men", "Kemen": "men", "Elendil": "men", "Isildur": "men", "Anárion": "men", "Eärien": "men", "Valandil (series)": "men", "Ontamo": "men", "Waldreg": "men", "Hagen": "men", "Largo Brandyfoot": "hobbits", "Nori Brandyfoot": "hobbits", "Dilly Brandyfoot": "hobbits", "Rose Brandyfoot": "hobbits", "Marigold Brandyfoot": "hobbits", "Poppy Proudfellow": "hobbits", "Sadoc Burrows": "hobbits", "Malva Meadowgrass": "hobbits", "Miles Brightapple": "hobbits", "Gundabale Earthauler": "hobbits", "Durin III": "dwarves", "Durin IV": "dwarves", "Thrain (series)": "dwarves", "Disa": "dwarves", "Narvi": "dwarves"};
+(function w(l){for(const o of l){if(o.n)o.kd=KD[o.n]||"other";w(o.c||[])}})(T.rop.roots);
 
 let cur="elves",query="";
 
@@ -510,9 +538,16 @@ document.addEventListener("keydown",e=>{const st=stage();if(e.key==="Escape"&&st
 pnl.addEventListener("click",e=>{const b=e.target.closest(".stool [data-act]");if(!b)return;const a=b.dataset.act;
   if(a==="zi")setZoom(zoom*1.2);else if(a==="zo")setZoom(zoom/1.2);else if(a==="fit")fit();else toggleFs()});
 document.getElementById("fsb").onclick=toggleFs;
+const KMETA={all:{label:"All",c:"var(--ink)",title:"Everyone in Middle-earth",e:"rop",intro:"Every character in the tree. Narrow it by kind, or by whether they appear in the films or the series."},
+ other:{label:"Other",c:"var(--muted)",e:"rop",title:"Others",intro:"Maiar, wizards and other beings who belong to no single people."}};
+const SRCS=[{k:"all",l:"All",t:"Every character"},{k:"movie",l:"Movies",t:"Characters from The Lord of the Rings and The Hobbit films"},{k:"series",l:"Series",t:"Characters from The Rings of Power"}];
+const BOOK=ORDER.filter(k=>k!=="rop");
+const kindShown=()=>view==="tree"&&(kind==="all"||kind==="other")?"elves":kind;
 function renderTabs(){
-  document.getElementById("tabs").innerHTML=ORDER.map(k=>{const t=T[k];const n=query?countHits(t.roots,query):0;
-   return `<button type="button" role="tab" data-k="${k}" aria-selected="${k===cur}" style="--c:${t.c}">${em(t.e,t.c)}${t.label}${n?`<span class="cnt">${n}</span>`:""}</button>`}).join("");
+  const tv=view==="tree",kinds=tv?BOOK:["all",...BOOK,"other"],sel=kindShown();
+  document.getElementById("tabs").innerHTML=kinds.map(k=>{const m=KMETA[k]||T[k];const n=query?(tv?countHits(T[k].roots,query):pool(k).length):0;
+   return `<button type="button" role="tab" data-k="${k}" aria-selected="${k===sel}" style="--c:${m.c}">${m.e?em(m.e,m.c):""}${m.label}${n?`<span class="cnt">${n}</span>`:""}</button>`}).join("");
+  document.getElementById("srcs").innerHTML=SRCS.map(x=>`<button type="button" role="tab" data-s="${x.k}" title="${x.t}" aria-selected="${x.k===src}" style="--c:var(--accent)">${x.l}</button>`).join("");
 }
 function renderTree(){
   const t=T[cur];
@@ -523,68 +558,95 @@ function renderTree(){
   renderTabs();
   portraits();
 }
-document.getElementById("tabs").addEventListener("click",e=>{const b=e.target.closest("button[data-k]");if(!b)return;cur=b.dataset.k;try{localStorage.setItem("me-tab",cur)}catch(_){}render()});
+const saveSel=()=>{try{localStorage.setItem("me-tab",kind);localStorage.setItem("me-src",src)}catch(_){}};
+const syncCur=()=>{cur=src==="series"?"rop":(kind==="all"||kind==="other"?"elves":kind)};
+document.getElementById("tabs").addEventListener("click",e=>{const b=e.target.closest("button[data-k]");if(!b)return;kind=b.dataset.k;saveSel();render()});
+document.getElementById("srcs").addEventListener("click",e=>{const b=e.target.closest("button[data-s]");if(!b)return;src=b.dataset.s;saveSel();render()});
 document.getElementById("panel").addEventListener("click",e=>{
   const tg=e.target.closest(".tog");if(tg){const l=tg.closest("li");l.classList.toggle("closed");tg.textContent=l.classList.contains("closed")?"+":"−";return}
-  const j=e.target.closest(".jump");if(j){cur=j.dataset.j;render();document.getElementById("tabs").scrollIntoView({behavior:"smooth",block:"start"})}
+  const j=e.target.closest(".jump");if(j){kind=j.dataset.j;src="all";saveSel();render();document.getElementById("tabs").scrollIntoView({behavior:"smooth",block:"start"})}
 });
 document.getElementById("q").addEventListener("input",e=>{query=e.target.value.trim().toLowerCase();
-  if(query&&!countHits(T[cur].roots,query)){const f=ORDER.find(k=>countHits(T[k].roots,query));if(f)cur=f}render()});
+  if(query){if(view==="tree"){syncCur();if(src!=="series"&&!countHits(T[cur].roots,query)){const f=BOOK.find(k=>countHits(T[k].roots,query));if(f)kind=f}}
+    else if(!pool(kind).length){const f=["all",...BOOK,"other"].find(k=>pool(k).length);if(f)kind=f}}
+  render()});
 document.getElementById("zi").onclick=()=>setZoom(zoom+.1);document.getElementById("zo").onclick=()=>setZoom(zoom-.1);document.getElementById("fit").onclick=()=>fit();
 document.getElementById("expand").onclick=()=>{document.querySelectorAll("#panel li.closed").forEach(l=>l.classList.remove("closed"));document.querySelectorAll("#panel .tog").forEach(b=>b.textContent="−")};
 document.getElementById("collapse").onclick=()=>{document.querySelectorAll("#panel .tree>li>ul>li, #panel .tree>li>ul>li>ul>li").forEach(l=>{if(l.querySelector("ul")){l.classList.add("closed");const b=l.querySelector(".tog");if(b)b.textContent="+"}})};
 
 /* ---- gallery view, people index, profile drawer ---- */
-let view="grid",keyOnly=false;
+let view="grid",keyOnly=false,kind="all",src="all";
 try{view=localStorage.getItem("me-view")||"grid"}catch(_){}
 const PEOPLE={};
 for(const k of ORDER){let n=0;(function walk(list,parent){for(const o of list){if(o.gap){walk(o.c||[],parent);continue}
-  const id=k+"-"+(n++);o._id=id;PEOPLE[id]={id,o,tab:k,parent,kids:[]};if(parent)PEOPLE[parent].kids.push(id);walk(o.c||[],id)}})(T[k].roots,null)}
+  const id=k+"-"+(n++);o._id=id;PEOPLE[id]={id,o,tab:k,kind:k==="rop"?o.kd:k,parent,kids:[]};if(parent)PEOPLE[parent].kids.push(id);walk(o.c||[],id)}})(T[k].roots,null)}
+const NOMOVIE=new Set(["Celebrimbor","Lotho 'Pimple'","Otho Sackville-Baggins"]);
+const isSeries=x=>x.tab==="rop",isMovie=x=>!isSeries(x)&&x.o.k&&!NOMOVIE.has(x.o.n);
+function pool(kd){const seen=new Set();return Object.values(PEOPLE).filter(x=>{
+  if(kd!=="all"&&x.kind!==kd)return false;
+  if(src==="movie"&&!isMovie(x))return false;if(src==="series"&&!isSeries(x))return false;
+  if(keyOnly&&!x.o.k)return false;if(query&&!matches(x.o,query))return false;
+  if(seen.has(x.o.n))return false;seen.add(x.o.n);return true})}
 const pic=o=>{const t=wt(o.n);return t&&typeof PORTRAITS!=="undefined"?PORTRAITS[t]:null};
 function gcard(x){const o=x.o,u=pic(o);
   return `<button type="button" class="gc${matches(o,query)?" hit":""}" data-id="${x.id}" style="--c:${T[x.tab].c}"><div class="gimg">`+
    (u?`<img loading="lazy" alt="" src="${u}">`:`<div class="gfb"><b>${esc(ini(o.n))}</b></div>`)+(o.k?'<span class="gbadge">★ Key character</span>':o.x?'<span class="gbadge">Series original</span>':"")+
    `</div><div><div class="gnm">${esc(o.n)}</div>${o.s?`<div class="gsub">${esc(o.s)}</div>`:""}</div></button>`}
 function renderGrid(){
-  const t=T[cur],p=document.getElementById("panel"),seen=new Set();
+  const p=document.getElementById("panel"),t=src==="series"?T.rop:(KMETA[kind]||T[kind]),ppl=pool(kind);
   p.style.setProperty("--c",t.c);
-  const ppl=Object.values(PEOPLE).filter(x=>x.tab===cur).filter(x=>{if(seen.has(x.o.n))return false;seen.add(x.o.n);return true})
-    .filter(x=>(!keyOnly||x.o.k)&&(!query||matches(x.o,query)));
-  p.innerHTML=`<div class="ph">${em(t.e,t.c)}<div><h2>${t.title}</h2><p>${t.intro}</p></div></div><div class="gmeta">${ppl.length} ${ppl.length===1?"person":"people"}</div>`+
+  p.innerHTML=`<div class="ph">${t.e?em(t.e,t.c):""}<div><h2>${t.title}</h2><p>${t.intro}</p></div></div><div class="gmeta">${ppl.length} ${ppl.length===1?"person":"people"}</div>`+
    (ppl.length?`<div class="grid">${ppl.map(gcard).join("")}</div>`:'<p class="empty">No one matches.</p>');
   renderTabs();
 }
-function render(){if(dr.parentNode!==document.body)document.body.append(dr,scrim);document.body.dataset.view=view;if(view==="tree")renderTree();else renderGrid();
+function render(){if(dr.parentNode!==document.body)document.body.append(dr,scrim);syncCur();document.body.dataset.view=view;document.body.dataset.src=src;if(view==="tree")renderTree();else renderGrid();
   document.getElementById("vg").setAttribute("aria-pressed",view==="grid");document.getElementById("vt").setAttribute("aria-pressed",view==="tree")}
 const dr=document.getElementById("drawer"),scrim=document.getElementById("scrim");
 const row=(h,b)=>`<div class="drow"><h3>${h}</h3>${b}</div>`;
 const av=o=>{const u=pic(o);return u?`<img class="av" alt="" src="${u}">`:`<span class="av">${esc(ini(o.n))}</span>`};
 const chip=x=>`<button type="button" class="chip" data-open="${x.id}" style="--c:${T[x.tab].c}">${av(x.o)}<span class="t"><span class="nm">${esc(x.o.n)}</span>${x.o.s?`<small>${esc(x.o.s)}</small>`:""}</span></button>`;
+const jumpTarget=o=>{if(!o.j)return null;const w=(o.sp||o.n).split(/[\s,]+/)[0];return Object.values(PEOPLE).find(x=>x.tab===o.j&&x.o.n.split(/[\s,]+/)[0]===w)||null};
 const det=o=>{const t=wt(o.n);return t&&typeof DETAILS!=="undefined"?DETAILS[t]:null};
-function openP(id){const x=PEOPLE[id];if(!x)return;const o=x.o,t=T[x.tab],par=x.parent&&PEOPLE[x.parent],u=pic(o),d=det(o);
+const TL={movie:"Movie",series:"Series",art:"Art & books",game:"Game"};
+const gallery=o=>{const t=wt(o.n),l=t&&typeof GALLERY!=="undefined"?GALLERY[t]:null;return l?l.map(i=>({...i,t:o.x&&i.t==="art"?"series":i.t})):[]};
+const capHtml=i=>`<span class="dtype t-${i.t}">${TL[i.t]||""}</span><span class="dcaps">${esc((i.c||"").replace(/\s+(in|and|from|as|by)(\s+(in|and|from|as|by))*\s*$/i,""))}</span>`;
+function galHtml(gl){if(!gl.length)return"";
+  const types=[...new Set(gl.map(i=>i.t))];
+  return `<div class="dcap" id="dcap">${capHtml(gl[0])}</div>`+(gl.length<2?"":(types.length>1?`<div class="gfil">`+["all",...types].map(k=>`<button type="button" data-gf="${k}" aria-pressed="${k==="all"}">${k==="all"?"All":TL[k]} ${k==="all"?gl.length:gl.filter(i=>i.t===k).length}</button>`).join("")+`</div>`:"")+
+   `<div class="gstrip">${gl.map((i,n)=>`<button type="button" class="gth" data-gi="${n}" data-gt="${i.t}" aria-current="${n===0}" aria-label="Image ${n+1}"><img loading="lazy" alt="" src="${i.f}"></button>`).join("")}</div>`)}
+function openP(id){const x=PEOPLE[id];if(!x)return;const o=x.o,t=T[x.tab],par=x.parent&&PEOPLE[x.parent],gl=gallery(o),u=gl.length?gl[0].f:pic(o),d=det(o);dr._gl=gl;
   dr.innerHTML=`<button class="dclose" type="button" aria-label="Close">×</button><div class="dimg" style="--c:${t.c}">`+
-   (u?`<img alt="${esc(o.n)}" src="${u}">`:`<div class="gfb"><b>${esc(ini(o.n))}</b></div>`)+
-   `</div><div class="dbody" style="--c:${t.c}"><div class="dtags"><span class="dtag">${t.label}</span>${o.k?'<span class="dtag key">★ Key character</span>':""}${o.x?'<span class="dtag">Series original</span>':""}</div>`+
+   (u?`<img id="dhero" alt="${esc(o.n)}" src="${u}">`:`<div class="gfb"><b>${esc(ini(o.n))}</b></div>`)+
+   `</div>${galHtml(gl)}<div class="dbody" style="--c:${t.c}"><div class="dtags"><span class="dtag">${t.label}</span>${o.k?'<span class="dtag key">★ Key character</span>':""}${o.x?'<span class="dtag">Series original</span>':""}</div>`+
    `<h2>${esc(o.n)}</h2>${o.s?`<p class="dsub">${esc(o.s)}</p>`:""}`+
    (d?(d.s?row("About",`<p class="dabout">${esc(d.s)}</p>`):"")+(d.f.length?row("Details",`<dl class="facts">${d.f.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}</dl>`):""):"")+
    (o.sp?row("Spouse",`<div>⚭ ${esc(o.sp)}</div>`):"")+(par?row("Parent",`<div class="chips">${chip(par)}</div>`):"")+
    (x.kids.length?row(`Children (${x.kids.length})`,`<div class="chips">${x.kids.map(k=>chip(PEOPLE[k])).join("")}</div>`):"")+
    (o.nt?row("Note",`<p class="dnote">${esc(o.nt)}</p>`):"")+
-   (o.j?`<div><button type="button" class="jump" data-j="${o.j}" style="--c2:${T[o.j].c}">→ Continues in ${T[o.j].label}</button></div>`:"")+
+   (o.j?(()=>{const tg=jumpTarget(o);return `<div><button type="button" class="jump" data-j="${o.j}"${tg?` data-p="${tg.id}"`:""} style="--c2:${T[o.j].c}">${o.sp?`⚭ Married to ${esc(o.sp.split(",")[0])}`:"Also appears in"} · ${tg?"open in":"see"} ${T[o.j].label} →</button></div>`})():"")+
    (d?`<p class="dsrc">Text from the <a href="${d.u}" target="_blank" rel="noopener">Lord of the Rings Wiki</a> (CC BY-SA). Read the full article there.</p>`:"")+`</div>`;
   dr.scrollTop=0;dr.classList.add("on");scrim.classList.add("on");dr.querySelector(".dclose").focus()}
 function closeP(){dr.classList.remove("on");scrim.classList.remove("on")}
 document.getElementById("panel").addEventListener("click",e=>{if(e.target.closest(".tog,.jump"))return;const c=e.target.closest("[data-id]");if(c)openP(c.dataset.id)});
 dr.addEventListener("click",e=>{
   if(e.target.closest(".dclose"))return closeP();
+  const th=e.target.closest(".gth");if(th){const i=dr._gl[+th.dataset.gi];dr.querySelector("#dhero").src=i.f;dr.querySelector("#dcap").innerHTML=capHtml(i);dr.querySelectorAll(".gth").forEach(b=>b.setAttribute("aria-current",b===th));return}
+  const gf=e.target.closest("[data-gf]");if(gf){dr.querySelectorAll("[data-gf]").forEach(b=>b.setAttribute("aria-pressed",b===gf));dr.querySelectorAll(".gth").forEach(b=>b.classList.toggle("off",gf.dataset.gf!=="all"&&b.dataset.gt!==gf.dataset.gf));return}
   const c=e.target.closest("[data-open]");if(c)return openP(c.dataset.open);
-  const j=e.target.closest(".jump");if(j){cur=j.dataset.j;closeP();render();window.scrollTo({top:0,behavior:"smooth"})}});
+  const j=e.target.closest(".jump");if(j){kind=j.dataset.j;src="all";saveSel();closeP();render();if(j.dataset.p)openP(j.dataset.p);else window.scrollTo({top:0,behavior:"smooth"})}});
 scrim.addEventListener("click",closeP);
 document.addEventListener("keydown",e=>{if(e.key==="Escape")closeP()});
 const setView=v=>{view=v;try{localStorage.setItem("me-view",v)}catch(_){}render()};
 document.getElementById("vg").onclick=()=>setView("grid");document.getElementById("vt").onclick=()=>setView("tree");
 document.getElementById("keyonly").onchange=e=>{keyOnly=e.target.checked;render()};
-try{const s=localStorage.getItem("me-tab");if(s&&T[s])cur=s}catch(_){}
+/* theme toggle: remembers the choice, otherwise follows the system setting */
+const thBtn=document.getElementById("theme");
+function applyTheme(t){document.documentElement.dataset.theme=t;thBtn.textContent=t==="dark"?"☀ Light":"☾ Dark";thBtn.setAttribute("aria-label",t==="dark"?"Switch to light theme":"Switch to dark theme")}
+let theme=null;try{theme=localStorage.getItem("me-theme")}catch(_){}
+if(theme!=="light"&&theme!=="dark")theme=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";
+applyTheme(theme);
+thBtn.onclick=()=>{theme=theme==="dark"?"light":"dark";applyTheme(theme);try{localStorage.setItem("me-theme",theme)}catch(_){}};
+try{const s=localStorage.getItem("me-tab");if(s&&(s==="all"||s==="other"||(T[s]&&s!=="rop")))kind=s;const r=localStorage.getItem("me-src");if(["all","movie","series"].includes(r))src=r}catch(_){}
 render();
 </script>
 
