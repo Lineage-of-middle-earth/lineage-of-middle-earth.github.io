@@ -7,6 +7,14 @@
 
   gtag('config', 'G-X5KXK4KFJW');
 </script>
+<script>
+/* every click on a button, link, card or control goes to GA as ui_click */
+document.addEventListener("click",e=>{const el=e.target.closest("a,button,input,select,summary,[role=button],[data-id]");if(!el)return;
+  const d=el.dataset,nm=el.querySelector(".gnm,.nm"),lb=el.labels&&el.labels[0],
+    txt=((nm&&nm.textContent)||el.getAttribute("aria-label")||el.title||(lb&&lb.innerText)||(el.innerText||"").trim().split(/\r?\n/)[0]||el.value||el.alt||"").trim().slice(0,100);
+  gtag("event","ui_click",{click_text:txt,click_element:el.tagName.toLowerCase()+(el.type&&el.tagName!=="A"?":"+el.type:""),click_class:typeof el.className=="string"?el.className.trim().split(/\s+/)[0]:"",
+    click_target:d.id||d.open||d.k||d.s||d.j||d.p||d.clear||(el.href?el.getAttribute("href"):"")||el.name||el.id||"",click_area:el.closest("#drawer")?"profile":el.closest("header")?"header":"page",outbound:!!(el.href&&el.host!==location.host)})},true);
+</script>
 <meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Lineages of Middle-earth</title>
 <meta name="claude:viewport-fit-sides" content="cover">
