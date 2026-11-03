@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /tools/
+
+Sitemap: https://lineage-of-middle-earth.github.io/sitemap.xml
