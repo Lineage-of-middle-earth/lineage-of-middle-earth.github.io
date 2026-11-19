@@ -1,0 +1,7 @@
+{
+ "key": "Celebrían",
+ "details": {"s": "Celebrían (IPA:) was an Elven noblewoman, the daughter of Celeborn and Galadriel, the wife of Elrond, and the mother of Elladan, Elrohir, and Arwen.", "f": [["Title", "Lady of Lothlórien, Lady of Rivendell"], ["Race", "Elves"], ["Culture", "Falmari (House of Olwë), Sindar (House of Celeborn), Ñoldor (House of Finarfin), Elves of Rivendell, Galadhrim, Elves of Eregion"], ["Born", "SA 300"], ["Died", "Departed to Aman in TA 2510"], ["Hair", "Possibly silver"]], "u": "https://lotr.fandom.com/wiki/Celebr%C3%ADan"},
+ "gallery": [{"f": "images/g/7a3b1026d3e0.webp", "c": "Celebrían's imprisonment, by Līga Kļaviņa", "t": "art"}, {"f": "images/g/a78e26e40f27.webp", "c": "Celebrían in The Lord of the Rings Online", "t": "art"}],
+ "portrait": "images/72a31093eb.webp",
+ "appear": {"w": ["hom", "lotr", "rop"], "a": ["SA", "TA"]}
+}

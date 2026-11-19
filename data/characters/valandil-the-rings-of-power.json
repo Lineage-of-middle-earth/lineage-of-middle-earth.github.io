@@ -1,0 +1,7 @@
+{
+ "key": "Valandil (The Rings of Power)",
+ "details": {"s": "Valandil was a Man of Númenor in the Second Age.", "f": [["Title", "Valandil"], ["Played by", "Alex Tarrant"]], "u": "https://lotr.fandom.com/wiki/Valandil_%28The_Rings_of_Power%29"},
+ "gallery": [{"f": "images/g/a6bc8dd92578.webp", "c": "", "t": "art"}, {"f": "images/g/08cf72ecdbef.webp", "c": "Valandil earns a promotion", "t": "art"}, {"f": "images/g/81762372e058.webp", "c": "Valandil hands in his uniform after being stripped of his rank", "t": "art"}, {"f": "images/g/f62dfca1320e.webp", "c": "Valandil threatening Kemen.", "t": "art"}],
+ "portrait": "images/12e0eec3f5.webp",
+ "appear": {"w": ["rop"], "a": []}
+}

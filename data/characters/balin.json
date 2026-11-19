@@ -1,0 +1,7 @@
+{
+ "key": "Balin",
+ "details": {"s": "Balin was a Dwarf leader, the son of Fundin, and elder brother of Dwalin. He was one of the thirteen Dwarves who accompanied Thorin II Oakenshield on the quest to regain the Lonely Mountain.", "f": [["Title", "Lord of Moria"], ["Race", "Dwarves"], ["Culture", "Durin's Folk"], ["Born", "TA 2763, Erebor"], ["Died", "November 10, TA 2994, Kheled-zâram"], ["Height", "About 4'0\" at least"], ["Hair", "White"], ["Weapon", "Sword"], ["Played by", "Ken Stott"]], "u": "https://lotr.fandom.com/wiki/Balin"},
+ "gallery": [{"f": "images/g/727f8a477ce3.webp", "c": "Balin, as seen by Tolman Cotton on DeviantArt", "t": "art"}, {"f": "images/g/e86520bfffbd.webp", "c": "Balin visits Bilbo in", "t": "movie"}, {"f": "images/g/eaaec9259be1.webp", "c": "Balin at his death bed", "t": "art"}, {"f": "images/g/8e2629bcf9cc.webp", "c": "Balin's tomb at the time of the Fellowship's arrival", "t": "art"}, {"f": "images/g/240711a0cf13.webp", "c": "Balin (1977)", "t": "movie"}, {"f": "images/g/52a6caa51de8.webp", "c": "Balin is portrayed by Ken Stott in .", "t": "movie"}, {"f": "images/g/ddd4ff45cf38.webp", "c": "Young Balin in", "t": "art"}, {"f": "images/g/0f6b5e9a0f46.webp", "c": "Balin's (Cinematic trilogy) Weapon", "t": "movie"}],
+ "portrait": "images/5a508be5e6.webp",
+ "appear": {"w": ["hob", "hobf", "hom", "lotr"], "a": ["TA"]}
+}

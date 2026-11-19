@@ -1,0 +1,7 @@
+{
+ "key": "Amrod",
+ "details": {"s": "Amrod was the second-youngest of the seven sons of Fëanor, son of Finwë.", "f": [["Also known as", "Ambarussa, Ambarto, Umbarto, Telufinwë"], ["Race", "Elves"], ["Culture", "Ñoldor (House of Fëanor)"], ["Born", "Years of the Trees"], ["Died", "FA 538"], ["Hair", "Dark red"], ["Weapon", "Sword, bow"]], "u": "https://lotr.fandom.com/wiki/Amrod"},
+ "gallery": [{"f": "images/g/2d42dc674735.webp", "c": "Amrod and Amras, by Mathia Arkoniel", "t": "art"}, {"f": "images/g/ff9838a9c8f4.webp", "c": "Amrod taking The Oath of Fëanor with his brothers, by Jenny Dolfen", "t": "art"}],
+ "portrait": "images/d87f0ad32c.webp",
+ "appear": {"w": ["hom", "sil"], "a": ["YT", "FA"]}
+}

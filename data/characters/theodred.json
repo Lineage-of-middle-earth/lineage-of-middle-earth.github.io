@@ -1,0 +1,7 @@
+{
+ "key": "Théodred",
+ "details": {"s": "Théodred was a Prince of Rohan, the only son and heir of King Théoden, who perished in battle during the time Théoden was under Saruman's spell in the late Third Age.", "f": [["Title", "Second Marshal of Rohan, Prince of Rohan"], ["Race", "Men"], ["Culture", "Rohirrim (House of Eorl)"], ["Born", "TA 2978"], ["Died", "February 25, 3019 (aged 41)"], ["Weapon", "Sword"], ["Played by", "Paris Howe Strewe"]], "u": "https://lotr.fandom.com/wiki/Th%C3%A9odred"},
+ "gallery": [{"f": "images/g/359a23febd1b.webp", "c": "", "t": "art"}, {"f": "images/g/2d6ac734248f.webp", "c": "Eomer finds wounded Théodred at the Fords of Isen", "t": "art"}],
+ "portrait": "images/fa701d9e7d.webp",
+ "appear": {"w": ["hom", "lotr"], "a": ["TA"]}
+}

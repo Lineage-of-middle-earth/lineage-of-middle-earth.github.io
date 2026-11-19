@@ -1,0 +1,7 @@
+{
+ "key": "Théodwyn",
+ "details": {"s": "Théodwyn of Rohan was the mother of Éomer and Éowyn.", "f": [["Title", "Princess of Rohan"], ["Race", "Men"], ["Culture", "Rohan"], ["Born", "TA 2963"], ["Died", "TA 3002"]], "u": "https://lotr.fandom.com/wiki/Th%C3%A9odwyn"},
+ "gallery": [{"f": "images/g/56e1ace6b851.webp", "c": "", "t": "art"}],
+ "portrait": "images/b30b8258f1.webp",
+ "appear": {"w": [], "a": ["TA"]}
+}

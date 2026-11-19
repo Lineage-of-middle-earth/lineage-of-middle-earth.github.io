@@ -1,0 +1,7 @@
+{
+ "key": "Thráin I",
+ "details": {"s": "Thráin I, also known as Thráin the Old, was the son of Náin I and King of Durin's Folk, as well as the first King under the Mountain.", "f": [["Title", "King of Durin's Folk, King under the Mountain"], ["Also known as", "Thráin the Old"], ["Race", "Dwarves"], ["Culture", "Durin's Folk, Dwarves of Lonely Mountain"], ["Born", "TA 1934"], ["Died", "TA 2190"], ["Height", "About 4'0\" at least"]], "u": "https://lotr.fandom.com/wiki/Thr%C3%A1in_I"},
+ "gallery": [{"f": "images/g/a5cc41b9c6f0.webp", "c": "", "t": "art"}],
+ "portrait": "images/9e3a9533b0.webp",
+ "appear": {"w": [], "a": ["TA"]}
+}

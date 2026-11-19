@@ -1,0 +1,7 @@
+{
+ "key": "Boromir",
+ "details": {"s": "Boromir was a valiant warrior of Gondor, renowned for his prowess in combat and skill on the battlefield. He was the eldest son of Denethor II, who was Steward of Gondor during the War of the Ring, and his wife Finduilas. Even the people of Rohan admired him, particularly Éomer.", "f": [["Title", "Captain of the White Tower, Captain-General, High Warden of the White Tower"], ["Race", "Dunedain"], ["Culture", "Men of Gondor (House of Húrin)"], ["Born", "TA 2978"], ["Died", "February 26, TA 3019 (aged 41), Amon Hen"], ["Height", "6'4\""], ["Hair", "Dark"], ["Eyes", "Grey"], ["Weapon", "Sword, shield"], ["Played by", "Sean Bean (LOTR films); Evgeny Solyakov (Khraniteli)"]], "u": "https://lotr.fandom.com/wiki/Boromir"},
+ "gallery": [{"f": "images/g/be329f9c09f3.webp", "c": "Boromir, by Venlian", "t": "art"}, {"f": "images/g/28d18a5f2393.webp", "c": "Boromir in Osgiliath after its recapture", "t": "art"}, {"f": "images/g/a71c01f09355.webp", "c": "Boromir departing Minas Tirith for Rivendell, by C.K. Göksoy", "t": "art"}, {"f": "images/g/bc09d0bb4856.webp", "c": "Boromir as depicted by Donato Giancola", "t": "art"}, {"f": "images/g/ce4f45baa497.webp", "c": "Boromir, played by Sean Bean in the, with the horn of Gondor", "t": "movie"}, {"f": "images/g/f6d406c8d4a2.webp", "c": "Boromir (1978 film)", "t": "movie"}],
+ "portrait": "images/1ba2f3ea37.webp",
+ "appear": {"w": ["lotr", "lotrf"], "a": ["TA"]}
+}

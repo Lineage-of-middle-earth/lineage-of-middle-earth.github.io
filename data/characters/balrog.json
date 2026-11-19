@@ -1,0 +1,6 @@
+{
+ "key": "Balrog",
+ "portrait": "images/b/de8e3af857.webp",
+ "details": {"s": "Balrogs were Maiar of fire corrupted by Morgoth, wreathed in flame and shadow and wielding whips of fire. Most perished in the War of Wrath, but one remained in Khazad-dûm.", "f": [], "u": "https://lotr.fandom.com/wiki/Balrog"},
+ "appear": {"w": ["lotr", "sil"], "a": []}
+}

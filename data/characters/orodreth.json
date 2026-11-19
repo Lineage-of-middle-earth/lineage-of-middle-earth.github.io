@@ -1,0 +1,7 @@
+{
+ "key": "Orodreth",
+ "details": {"s": "Orodreth was a Ñoldorin Elf of the First Age who was the second ruler of the underground city of Nargothrond in western Beleriand. He was later killed in the Battle of Tumhalad.", "f": [["Title", "Warden of Minas Tirith, King of Nargothrond"], ["Also known as", "Artaher, Arothir, Artaresto"], ["Race", "Elves"], ["Culture", "Ñoldor (House of Finarfin), Falmari (House of Olwë), Elves of Nargothrond"], ["Born", "YT?"], ["Died", "FA 495, Battle of Tumhalad"], ["Hair", "Golden"], ["Weapon", "Sword, bow"]], "u": "https://lotr.fandom.com/wiki/Orodreth"},
+ "gallery": [{"f": "images/g/0e47aebd7e0c.webp", "c": "Orodreth, by Marya Filatova", "t": "art"}],
+ "portrait": "images/a4e8a772f1.webp",
+ "appear": {"w": ["hom"], "a": ["YT", "FA"]}
+}

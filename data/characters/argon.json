@@ -1,0 +1,7 @@
+{
+ "key": "Argon",
+ "details": {"s": "Argon was the fourth child and the youngest son of Fingolfin, the High King of the Ñoldor in Beleriand. He was one of the mighty Prince of the Ñoldor in Tirion, Valinor. Furthermore, Argon grew up in Valinor, until later, the Ñoldor went into exile for Middle-earth where he journeyed with his father Fingolfin and his siblings.", "f": [["Title", "Prince of the Ñoldor"], ["Also known as", "Arakáno"], ["Race", "Elves"], ["Culture", "Ñoldor (House of Fingolfin)"], ["Born", "After YT 1362"], ["Died", "YT 1500, Battle of the Lammoth"], ["Height", "Tallest of his siblings"], ["Hair", "Possibly dark"], ["Weapon", "Sword"]], "u": "https://lotr.fandom.com/wiki/Argon"},
+ "gallery": [{"f": "images/g/f54a26021f8e.webp", "c": "", "t": "art"}, {"f": "images/g/56e3ec57c53c.webp", "c": "From left to right: Fingon, Turgon, Aredhel, and Argon", "t": "art"}],
+ "portrait": "images/7fa430a7fc.webp",
+ "appear": {"w": [], "a": ["YT"]}
+}

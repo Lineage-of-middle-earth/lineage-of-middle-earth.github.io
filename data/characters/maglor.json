@@ -1,0 +1,7 @@
+{
+ "key": "Maglor",
+ "details": {"s": "Maglor was the second son of Fëanor and Nerdanel. He was the greatest poet and minstrel of the Ñoldor and was said to have inherited his mother's gentler temperament.", "f": [["Title", "Lord of Maglor's Gap"], ["Also known as", "Macalaurë, Canafinwë, Káno"], ["Race", "Elves"], ["Culture", "Ñoldor (House of Fëanor)"], ["Born", "During the Noontide of Valinor"], ["Died", "Fate unknown; last mentioned in FA 587"], ["Height", "Shorter than Maedhros"], ["Hair", "Dark brown or black"], ["Eyes", "Grey"]], "u": "https://lotr.fandom.com/wiki/Maglor"},
+ "gallery": [{"f": "images/g/478da5e1242d.webp", "c": "Maglor, by Jenny Dolfen, slaying Uldor the Accursed in the Fifth Battle of Beleriand", "t": "art"}, {"f": "images/g/7de112ff912c.webp", "c": "Maglor with his brothers and father swear the Oath of Fëanor, by Ted Nasmith", "t": "art"}, {"f": "images/g/494b829d5634.webp", "c": "Maglor at the harp, with Maedhros, by Maureval", "t": "art"}, {"f": "images/g/6d658453f198.webp", "c": "Maglor by the sea, by Marya Filatova", "t": "art"}],
+ "portrait": "images/0e058944f8.webp",
+ "appear": {"w": ["hom", "sil"], "a": ["FA"]}
+}

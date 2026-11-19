@@ -1,0 +1,7 @@
+{
+ "key": "Celebrimbor",
+ "details": {"s": "Celebrimbor was a Ñoldorin prince and the last in the line of the House of Fëanor, who lived in Middle-earth. He was a ruler of Eregion in the Second Age, and a master smith. He is remembered primarily for his creation of the Three Rings of Power: Nenya, Vilya, and Narya, but also he made the second Elfstone (in one version of history) for Galadriel, who would later give it to Aragorn.", "f": [["Title", "Prince of the Ñoldor, Lord of Eregion, Lord of the Gwaith-i-Mírdain"], ["Also known as", "Telperinquar (Quenya)"], ["Race", "Elves"], ["Culture", "Ñoldor (House of Fëanor), Elves of Eregion (Gwaith-i-Mírdain)"], ["Born", "During the Years of the Trees in Aman"], ["Died", "SA 1697, Ost-in-Edhil (killed by Sauron)"], ["Hair", "Dark"], ["Eyes", "Grey"], ["Played by", "Charles Edwards"]], "u": "https://lotr.fandom.com/wiki/Celebrimbor"},
+ "gallery": [{"f": "images/g/cd3e85d70851.webp", "c": "Celebrimbor, by Marya Filatova", "t": "art"}, {"f": "images/g/0d34bc29f493.webp", "c": "Celebrimbor as a child with his parents in Valinor, by Marya Filatova", "t": "art"}, {"f": "images/g/6b54d5bc1149.webp", "c": "Celebrimbor, by David Greset", "t": "art"}, {"f": "images/g/21842a5483e0.webp", "c": "Celebrimbor at work, with Sauron, by Soni Alcorn-Hender", "t": "art"}],
+ "portrait": "images/fc7e950500.webp",
+ "appear": {"w": ["hom", "lotr", "rop", "sil", "ut"], "a": ["YT", "FA", "SA"]}
+}

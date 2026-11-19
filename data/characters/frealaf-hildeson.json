@@ -1,0 +1,7 @@
+{
+ "key": "Fréaláf Hildeson",
+ "details": {"s": "Fréaláf Hildeson was the tenth King of Rohan, and the first king of the second line (via sister of previous king).", "f": [["Title", "King of Rohan"], ["Race", "Men"], ["Culture", "Rohirrim (House of Eorl)"], ["Born", "TA 2726"], ["Died", "TA 2798"], ["Weapon", "King's sword"]], "u": "https://lotr.fandom.com/wiki/Fr%C3%A9al%C3%A1f_Hildeson"},
+ "gallery": [{"f": "images/g/69c46aabff5a.webp", "c": "Fréaláf as seen in", "t": "art"}, {"f": "images/g/51c459b98cb9.webp", "c": "Fréaláf as seen in", "t": "art"}, {"f": "images/g/a8bb251bbb91.webp", "c": "Wider version", "t": "art"}, {"f": "images/g/9c982643f74c.webp", "c": "Fréaláf as seen in a tapestry", "t": "art"}],
+ "portrait": "images/3d095c9e6e.webp",
+ "appear": {"w": [], "a": ["TA"]}
+}

@@ -1,0 +1,7 @@
+{
+ "key": "Meneldil",
+ "details": {"s": "Meneldil was the third King of Gondor (his father Anárion and uncle Isildur co-ruled Gondor as the second kings, but his father died before Isildur who was sole ruler for a short time).", "f": [["Title", "King of Gondor"], ["Race", "Men"], ["Culture", "Dúnedain, Men of Gondor (House of Anárion)"], ["Born", "SA 3318"], ["Died", "TA 158"], ["Weapon", "King's sword"]], "u": "https://lotr.fandom.com/wiki/Meneldil"},
+ "gallery": [{"f": "images/g/6854fc88867f.webp", "c": "", "t": "art"}],
+ "portrait": "images/b1747613fc.webp",
+ "appear": {"w": ["hom"], "a": ["SA", "TA"]}
+}

@@ -1,0 +1,5 @@
+{
+ "key": "Elmo",
+ "details": {"s": "Elmo was an Elf of the royal house of the Teleri. He was the younger brother of the two Kings of the Teleri, Elwë and Olwë.", "f": [["Title", "Unknown"], ["Race", "Elves"], ["Culture", "Teleri, Sindar (House of Elmo)"], ["Born", "Between YT 1105 and YT 1150"], ["Died", "Unknown"]], "u": "https://lotr.fandom.com/wiki/Elmo"},
+ "appear": {"w": ["hom", "ut"], "a": ["YT"]}
+}

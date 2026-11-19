@@ -1,0 +1,7 @@
+{
+ "key": "Fingon",
+ "details": {"s": "Fingon the \"Valiant\" was a Ñoldorin Elf, the eldest son of Fingolfin, and older brother of Turgon, Aredhel, and Argon.", "f": [["Title", "High King of the Ñoldor"], ["Also known as", "Findekáno, the Valiant"], ["Race", "Elves"], ["Culture", "Ñoldor (House of Fingolfin)"], ["Born", "YT 1260, Eldamar"], ["Died", "FA 472, Nírnaeth Arnoediad"], ["Height", "Tall"], ["Hair", "Dark"], ["Weapon", "Sword"]], "u": "https://lotr.fandom.com/wiki/Fingon"},
+ "gallery": [{"f": "images/g/ac3e2f880889.webp", "c": "Fingon, as King, by Venlian", "t": "art"}, {"f": "images/g/56e3ec57c53c.webp", "c": "The Children of Fingolfin", "t": "art"}, {"f": "images/g/eebf014af83d.webp", "c": "Fingon as imagined by Marya Filatova", "t": "art"}],
+ "portrait": "images/5314f9ed69.webp",
+ "appear": {"w": ["hom"], "a": ["YT", "FA"]}
+}

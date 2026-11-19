@@ -1,0 +1,7 @@
+{
+ "key": "Denethor II",
+ "details": {"s": "Denethor II was the twenty-sixth and last Ruling Steward, also last overall Steward, of Gondor. He was father to War of the Ring heroes Boromir, a member of the Fellowship of the Ring, and Faramir, Captain of the Rangers of Ithilien.", "f": [["Title", "Ruling Steward of Gondor, Lord of Gondor, Lord of Minas Tirith"], ["Race", "Men"], ["Culture", "Men of Gondor (House of Húrin)"], ["Born", "TA 2930"], ["Died", "March 15, 3019 (aged 89) Hallows of Minas Tirith"], ["Hair", "Dark, grey (in old age)"], ["Weapon", "Sword and knife"], ["Played by", "John Noble"]], "u": "https://lotr.fandom.com/wiki/Denethor_II"},
+ "gallery": [{"f": "images/g/d8c75a666061.webp", "c": "John Noble portrays Denethor in the", "t": "movie"}, {"f": "images/g/1c2a6e290629.webp", "c": "Denethor with his palantír in secret, by Anna Kulisz", "t": "art"}, {"f": "images/g/2f5d51cd4d8a.webp", "c": "Denethor II (1980)", "t": "movie"}, {"f": "images/g/80247a143dfe.webp", "c": "Denethor as depicted in", "t": "movie"}, {"f": "images/g/2eceef81b985.webp", "c": "Denethor in", "t": "art"}],
+ "portrait": "images/34611e73c8.webp",
+ "appear": {"w": ["hom", "lotr", "lotrf"], "a": ["TA"]}
+}

@@ -1,0 +1,7 @@
+{
+ "key": "Dís",
+ "details": {"s": "Dís was a Dwarf woman of Durin's Folk.", "f": [["Title", "Princess of Durin’s Folk"], ["Race", "Dwarves"], ["Culture", "Durin's Folk, Dwarves of the Lonely Mountain"], ["Born", "TA 2760"], ["Died", "TA 2942"], ["Height", "About 4'0\" at least"]], "u": "https://lotr.fandom.com/wiki/D%C3%ADs"},
+ "gallery": [{"f": "images/g/421f24f4f961.webp", "c": "Dís fanart by Ancalinar", "t": "art"}, {"f": "images/g/e3d63e17ecff.webp", "c": "Dís in", "t": "art"}],
+ "portrait": "images/53c657eed2.webp",
+ "appear": {"w": [], "a": ["TA"]}
+}

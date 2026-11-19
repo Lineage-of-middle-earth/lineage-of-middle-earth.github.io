@@ -1,0 +1,7 @@
+{
+ "key": "Náin II",
+ "details": {"s": "Náin II was a Dwarf of the Ered Mithrin, and the King of Durin's Folk.", "f": [["Title", "King of Durin's Folk"], ["Race", "Dwarves"], ["Culture", "Durin's Folk, Dwarves of the Grey Mountains"], ["Born", "TA 2338"], ["Died", "TA 2585"], ["Height", "About 4'0\" at least"]], "u": "https://lotr.fandom.com/wiki/N%C3%A1in_II"},
+ "gallery": [{"f": "images/g/0354d88942b8.webp", "c": "", "t": "art"}],
+ "portrait": "images/db399854ce.webp",
+ "appear": {"w": ["lotr"], "a": ["TA"]}
+}

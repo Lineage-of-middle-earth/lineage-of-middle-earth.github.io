@@ -1,0 +1,6 @@
+{
+ "key": "Dragons",
+ "portrait": "images/b/113a6cefb3.webp",
+ "details": {"s": "Dragons were fire-breathing worms bred by Morgoth, among the mightiest of his creatures. They hoarded treasure and brought down kingdoms.", "f": [], "u": "https://lotr.fandom.com/wiki/Dragons"},
+ "appear": {"w": ["hob", "lotr", "sil"], "a": []}
+}

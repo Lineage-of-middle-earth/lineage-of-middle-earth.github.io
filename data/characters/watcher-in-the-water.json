@@ -1,0 +1,6 @@
+{
+ "key": "Watcher in the Water",
+ "portrait": "images/b/0ad0484818.webp",
+ "details": {"s": "The Watcher in the Water was a tentacled creature that lived in the lake before the West-gate of Moria. It seized Frodo, and the Fellowship fled inside.", "f": [], "u": "https://lotr.fandom.com/wiki/Watcher_in_the_Water"},
+ "appear": {"w": ["lotr"], "a": []}
+}

@@ -1,0 +1,7 @@
+{
+ "key": "Elros",
+ "details": {"s": "Elros, also known as Elros Tar-Minyatur, the Half-elven, was the son of Eärendil and Elwing, brother of Elrond, uncle of Elladan and Elrohir and Arwen, and the first King of Númenor; ancestor to a line of kings that led to his distant descendant Aragorn II. He had a strong friendship with the Elves, who were half his kin.", "f": [["Title", "King of Númenor"], ["Also known as", "Elerossë (Q.), Indilzar (A.)"], ["Race", "Half-elf (chose to be mortal)"], ["Culture", "Ñoldor (House of Fingolfin), Sindar (House of Thingol), Dúnedain of Númenor (House of Elros)"], ["Born", "FA 532"], ["Died", "SA 442 (500 Aged)"], ["Height", "Tall"], ["Hair", "Dark"], ["Eyes", "Grey"], ["Weapon", "Aranrúth, Axe of Tuor"], ["Played by", "Robert Aramayo"]], "u": "https://lotr.fandom.com/wiki/Elros"},
+ "gallery": [{"f": "images/g/dd994171d88d.webp", "c": "© Illustration by MellorianJ", "t": "art"}, {"f": "images/g/9e22db907a3a.webp", "c": "A painting of Elros and Elrond in Númenor in .", "t": "series"}, {"f": "images/g/ab7da6829ca4.webp", "c": "A teaser image of Elros and Elrond for .", "t": "series"}, {"f": "images/g/f54cdb739e42.webp", "c": "And Maglor took pity upon them..", "t": "art"}, {"f": "images/g/0b4ca0e75598.webp", "c": "Elros Half-elven", "t": "art"}],
+ "portrait": "images/55cf3097f0.webp",
+ "appear": {"w": ["hom", "lotrf", "sil", "ut"], "a": ["FA", "SA"]}
+}

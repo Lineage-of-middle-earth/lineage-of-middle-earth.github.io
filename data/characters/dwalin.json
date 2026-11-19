@@ -1,0 +1,7 @@
+{
+ "key": "Dwalin",
+ "details": {"s": "Dwalin was one of the Dwarves who traveled with Bilbo and Gandalf as a member of Thorin and Company on the quest to regain the Lonely Mountain from the Dragon Smaug. He was the brother of Balin and the youngest son of Fundin.", "f": [["Race", "Dwarves"], ["Culture", "Durin's Folk"], ["Born", "TA 2772, Dunland"], ["Died", "FO 91, Erebor"], ["Hair", "Blue beard"], ["Eyes", "Bright eyes|height=About 4'0\" at least}}"], ["Weapon", "Axe(s)"], ["Played by", "Graham McTavish"]], "u": "https://lotr.fandom.com/wiki/Dwalin"},
+ "gallery": [{"f": "images/g/1c5a885f088f.webp", "c": "Dwalin portrayed by Graham McTavish in", "t": "movie"}, {"f": "images/g/d8395e497ecc.webp", "c": "Angelo Montanini's depiction", "t": "art"}, {"f": "images/g/2e3e70981ee5.webp", "c": "Dwalin (1977)", "t": "movie"}, {"f": "images/g/e7ab1fcc678f.webp", "c": "Dwalin in the pantry at Bag End", "t": "art"}],
+ "portrait": "images/975ba3ff4b.webp",
+ "appear": {"w": ["hob", "hobf"], "a": ["TA", "FO"]}
+}

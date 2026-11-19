@@ -1,0 +1,7 @@
+{
+ "key": "Eldarion",
+ "details": {"s": "Eldarion (Quenya: \"Scion of the Eldar\") was the only son and heir of Aragorn II, King of the Reunited Kingdom, and his wife, Queen Arwen Undómiel.", "f": [["Title", "High King of the Reunited Kingdom"], ["Race", "Half-elves (mortal fate)"], ["Culture", "Dúnedain of Gondor (House of Telcontar)"], ["Born", "FO 1"], ["Died", "Possibly FO 220"], ["Height", "Tall"], ["Hair", "Dark"], ["Eyes", "Grey"], ["Played by", "Sadwyn Brophy (film)"]], "u": "https://lotr.fandom.com/wiki/Eldarion"},
+ "gallery": [{"f": "images/g/6999cd157701.webp", "c": "Eldarion, by Sara Maria Morello", "t": "art"}, {"f": "images/g/02c2eeb11576.webp", "c": "Eldarion as a child, played by Sadwyn Brophy", "t": "movie"}],
+ "portrait": "images/ed9644b067.webp",
+ "appear": {"w": ["lotrf"], "a": ["FO"]}
+}

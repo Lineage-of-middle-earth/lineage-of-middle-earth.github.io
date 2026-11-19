@@ -1,0 +1,6 @@
+{
+ "key": "Azog",
+ "portrait": "images/b/db6625d74a.webp",
+ "details": {"s": "Azog was an Orc chieftain who killed Thrór at the gate of Moria in T.A. 2799 and sparked the War of the Dwarves and Orcs. In the books Dáin Ironfoot slew him at Azanulbizar; in the Hobbit films he survives to hunt Thorin.", "f": [], "u": "https://lotr.fandom.com/wiki/Azog"},
+ "appear": {"w": ["hob", "hobf", "lotr"], "a": []}
+}

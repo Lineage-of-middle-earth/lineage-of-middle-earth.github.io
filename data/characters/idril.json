@@ -1,0 +1,7 @@
+{
+ "key": "Idril",
+ "details": {"s": "Idril, also called Celebrindal, was a Ñoldorin Elf of Gondolin. She was the daughter of Turgon and Elenwë, wife of the Man Tuor, and mother of Eärendil the Mariner, a Half-elven.", "f": [["Title", "Princess of Gondolin, Lady of Arvernien"], ["Also known as", "Celebrindal, Itaril, Itarillë, Itarildë"], ["Race", "Elves"], ["Culture", "Ñoldor (House of Fingolfin), Gondolindrim"], ["Born", "YT 1479"], ["Died", "FA 525 (sailed West)"], ["Height", "Tall"], ["Hair", "Golden"], ["Weapon", "A sword"]], "u": "https://lotr.fandom.com/wiki/Idril"},
+ "gallery": [{"f": "images/g/cac30af0f762.webp", "c": "Idril, by Venlian", "t": "art"}, {"f": "images/g/38a60e236bc9.webp", "c": "Idril and her son Eärendil, by Egorit", "t": "art"}],
+ "portrait": "images/0ca559e834.webp",
+ "appear": {"w": ["hom"], "a": ["YT", "FA"]}
+}

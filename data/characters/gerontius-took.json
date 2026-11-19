@@ -1,0 +1,7 @@
+{
+ "key": "Gerontius Took",
+ "details": {"s": "Gerontius Took, more commonly known as the Old Took, was a Hobbit of the Shire, and the twenty-sixth Shire-thain. He was best known for being the third oldest hobbit in Middle-earth's history, living to the advanced age of 130 years. Only his grandson Bilbo Baggins and the Stoor Sméagol, whose lifetimes were prolonged by the powers of the One Ring, lived longer.", "f": [["Title", "Shire-thain"], ["Also known as", "The Old Took"], ["Race", "Hobbits"], ["Culture", "Shire-folk (Took-clan)"], ["Born", "TA 2790 (SR 1190)"], ["Died", "TA 2920 (SR 1320)"], ["Played by", "Dan Hennah"]], "u": "https://lotr.fandom.com/wiki/Gerontius_Took"},
+ "gallery": [{"f": "images/g/b72bf22aab31.webp", "c": "Gerontius \"The Old\" Took in the extended edition of The Hobbit: An Unexpected Journey", "t": "art"}, {"f": "images/g/3696752f0a1e.webp", "c": "The Old Took in his younger years", "t": "art"}],
+ "portrait": "images/4e986578d9.webp",
+ "appear": {"w": ["lotr"], "a": ["TA"]}
+}

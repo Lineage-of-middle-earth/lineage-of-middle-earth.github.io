@@ -1,0 +1,7 @@
+{
+ "key": "Durin the Deathless",
+ "details": {"s": "Durin I of Khazad-dûm, known also as Durin the Deathless, was the oldest of the Seven Fathers of the Dwarves, first created by Aulë the Vala; and as such, the first living being that was not of the Ainur.", "f": [["Title", "King of Durin's Folk, King of Khazad-dûm"], ["Also known as", "Durin the Deathless"], ["Race", "Dwarves"], ["Culture", "Durin's Folk"], ["Born", "Between Years of the Trees, 1132 & 1150"], ["Died", "Late First Age"], ["Height", "About 4'0\" at least"], ["Weapon", "Durin's Axe"]], "u": "https://lotr.fandom.com/wiki/Durin_I"},
+ "gallery": [{"f": "images/g/ccb0fd83c642.webp", "c": "Durin the Deathless", "t": "art"}, {"f": "images/g/d6f8f0ac7018.webp", "c": "Durin I in The Lord of the Rings Online", "t": "art"}],
+ "portrait": "images/0a48690130.webp",
+ "appear": {"w": ["lotr"], "a": ["YT", "FA"]}
+}

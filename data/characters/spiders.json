@@ -1,0 +1,6 @@
+{
+ "key": "Spiders",
+ "portrait": "images/b/225ef30939.webp",
+ "details": {"s": "The spiders of Mirkwood were huge spiders of the Forest, kin to Shelob. They caught Thorin's Company, and Bilbo rescued the Dwarves with the help of Sting.", "f": [], "u": "https://lotr.fandom.com/wiki/Spiders"},
+ "appear": {"w": ["hob", "lotr", "sil"], "a": []}
+}

@@ -1,0 +1,7 @@
+{
+ "key": "Waldreg",
+ "details": {"s": "Waldreg was a Southlander of Tirharad in the Second Age, working at the town pub and later as a commander in Adar's forces.", "f": [], "u": "https://lotr.fandom.com/wiki/Waldreg"},
+ "gallery": [{"f": "images/g/197dc33998aa.webp", "c": "Waldreg chooses to murder Rowan to save his own skin", "t": "art"}, {"f": "images/g/5bf8fda5f85e.webp", "c": "Waldreg uses the dark hilt to release the lake's water", "t": "art"}],
+ "portrait": "images/8b1a1d8273.webp",
+ "appear": {"w": ["rop"], "a": []}
+}

@@ -1,0 +1,7 @@
+{
+ "key": "Adar",
+ "details": {"s": "Adar was a mysterious individual of the Second Age referred to as Lord-father by Orcs, presumably for his status as one of the Moriondor, the first Elves to be captured and tortured by Morgoth.", "f": [], "u": "https://lotr.fandom.com/wiki/Adar"},
+ "gallery": [{"f": "images/g/d3ffa2b07fb6.webp", "c": "Adar during the ceremony in Dúrnost.", "t": "art"}, {"f": "images/g/7e791bee8c9d.webp", "c": "Adar speaks to Arondir", "t": "art"}, {"f": "images/g/fe99f474ea3b.webp", "c": "Adar questioned by Galadriel", "t": "art"}, {"f": "images/g/289d4e7082c1.webp", "c": "Adar renames the Southlands to \"Mordor\"", "t": "art"}, {"f": "images/g/4798541d3a2a.webp", "c": "Adar in", "t": "series"}, {"f": "images/g/32b0bf1fae5b.webp", "c": "Adar's Sword in", "t": "series"}],
+ "portrait": "images/c676f750ac.webp",
+ "appear": {"w": ["hom", "rop"], "a": []}
+}

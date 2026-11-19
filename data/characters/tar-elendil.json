@@ -1,0 +1,7 @@
+{
+ "key": "Tar-Elendil",
+ "details": {"s": "Tar-Elendil was the fourth King of Númenor, succeeding his father Tar-Amandil. He was considered to be a master of lore and a notable scholar.", "f": [["Title", "King of Númenor"], ["Also known as", "Parmaitë"], ["Race", "Men"], ["Culture", "Númenóreans (House of Elros)"], ["Born", "SA 350"], ["Died", "SA 751"], ["Weapon", "Aranrúth"]], "u": "https://lotr.fandom.com/wiki/Tar-Elendil"},
+ "gallery": [{"f": "images/g/8ebbe093e418.webp", "c": "Tar Elendil Relinquishes the Scepter by - Ralph Damiani", "t": "art"}],
+ "portrait": "images/b521baefe8.webp",
+ "appear": {"w": ["hom"], "a": ["SA"]}
+}

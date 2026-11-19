@@ -1,0 +1,7 @@
+{
+ "key": "Arador",
+ "details": {"s": "Arador was the fourteenth Chieftain of the Dúnedain and the father of Arathorn II and grandfather of Aragorn II.", "f": [["Title", "Chieftain of the Dúnedain"], ["Race", "Men"], ["Culture", "Dúnedain of the North, (House of Isildur), Rangers of the North"], ["Born", "TA 2820"], ["Died", "TA 2930"], ["Weapon", "Chieftain's sword, shards of Narsil"], ["Played by", "Iain Marshall"]], "u": "https://lotr.fandom.com/wiki/Arador"},
+ "gallery": [{"f": "images/g/b479d7b9c340.webp", "c": "Iain Marshall as Arador in Born of Hope", "t": "game"}, {"f": "images/g/4cde878180fd.webp", "c": "Arador's body in", "t": "art"}],
+ "portrait": "images/1def5586ee.webp",
+ "appear": {"w": ["hom", "lotr"], "a": ["TA"]}
+}

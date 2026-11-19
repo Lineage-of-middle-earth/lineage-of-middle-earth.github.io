@@ -1,0 +1,7 @@
+{
+ "key": "Aredhel",
+ "details": {"s": "Aredhel, also known as Aredhel Ar-Feiniel, the \"White Lady of the Ñoldor\", was the only daughter and third child of Ñoldorin High-prince Fingolfin and his wife, Anairë. Aredhel was the sister of Fingon, Turgon, and Argon, and the mother of Maeglin.", "f": [["Title", "Princess of Gondolin"], ["Also known as", "Aredhel Ar-Feiniel, Irissë, Isfin"], ["Race", "Elves"], ["Culture", "Ñoldor (House of Fingolfin), Gondolindrim"], ["Born", "YT 1362"], ["Died", "FA 400"], ["Height", "Tall"], ["Hair", "Dark"]], "u": "https://lotr.fandom.com/wiki/Aredhel"},
+ "gallery": [{"f": "images/g/eaea856db75d.webp", "c": "Aredhel, near Gondolin, by Sara Maria Morello", "t": "art"}, {"f": "images/g/d9a2d0b0532c.webp", "c": "Aredhel Ar-Feiniel dressed in white and silver in the forest of Nan Elmoth, by Marya Filatova", "t": "art"}, {"f": "images/g/00c014d0f321.webp", "c": "Eöl welcomes Aredhel, by Ted Nasmith", "t": "art"}, {"f": "images/g/c74795952db5.webp", "c": "Aredhel, by Līga Klavina", "t": "art"}],
+ "portrait": "images/eab9ed5976.webp",
+ "appear": {"w": ["hom"], "a": ["YT", "FA"]}
+}

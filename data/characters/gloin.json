@@ -1,0 +1,7 @@
+{
+ "key": "Glóin",
+ "details": {"s": "Glóin, son of Gróin, was one of the Dwarves of Thorin II Oakenshield's company who set out to reclaim the Lonely Mountain in the Quest of Erebor. He was also the father of Gimli, who became a member of the Fellowship of the Ring.", "f": [["Race", "Dwarves"], ["Culture", "Durin's Folk, Dwarves of the Lonely Mountain"], ["Born", "TA 2783"], ["Died", "FO 15"], ["Height", "About 4'0\" at least"], ["Hair", "White"], ["Weapon", "Axe"], ["Played by", "Peter Hambleton, John Rhys-Davies"]], "u": "https://lotr.fandom.com/wiki/Gl%C3%B3in"},
+ "gallery": [{"f": "images/g/8ecd27bf8f4a.webp", "c": "Glóin, as portrayed by Peter Hambleton", "t": "movie"}, {"f": "images/g/6ba54c7b7d32.webp", "c": "Lego Glóin (old version in Rivendell)", "t": "art"}, {"f": "images/g/9101c1b68586.webp", "c": "Glóin (1977)", "t": "movie"}],
+ "portrait": "images/4fb75d0e5e.webp",
+ "appear": {"w": ["hob", "hobf", "lotr", "lotrf"], "a": ["TA", "FO"]}
+}

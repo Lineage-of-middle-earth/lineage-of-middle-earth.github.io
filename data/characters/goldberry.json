@@ -1,0 +1,7 @@
+{
+ "key": "Goldberry",
+ "details": {"s": "Goldberry, called the River-daughter, was the wife of Tom Bombadil in the Old Forest at the edge of Buckland.", "f": [["Also known as", "River-daughter"], ["Race", "Unknown"], ["Culture", "Forest-folk"], ["Born", "Unknown"], ["Hair", "Golden"], ["Played by", "Regina Lialeikite (Khraniteli)"]], "u": "https://lotr.fandom.com/wiki/Goldberry"},
+ "gallery": [{"f": "images/g/c445b0dc97a7.webp", "c": "As portrayed in", "t": "movie"}, {"f": "images/g/c65f96fa4614.webp", "c": "The River-daughter", "t": "art"}, {"f": "images/g/f862fb736441.webp", "c": "Goldberry in the Old Forest surrounded by a pool of water-lilies, by Sara Morello", "t": "art"}, {"f": "images/g/57db7d947838.webp", "c": "Goldberry in Khraniteli, played by Regina Lialeikite", "t": "art"}],
+ "portrait": "images/3b82bbb779.webp",
+ "appear": {"w": ["hom", "lotr", "rop"], "a": []}
+}

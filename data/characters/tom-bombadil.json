@@ -1,0 +1,7 @@
+{
+ "key": "Tom Bombadil",
+ "details": {"s": "Tom Bombadil was a mysterious entity that lived for much of the world's history, known in the Third Age to dwell in a valley of the Withywindle in the depths of the Old Forest, east of Buckland, and close to the dangerous Barrow-downs.", "f": [["Title", "Eldest, Master"], ["Also known as", "Iarwain Ben-adar, Orald, Forn"], ["Race", "Unknown"], ["Culture", "Forest-folk"], ["Born", "Unknown (before the, coming of Melkor)"], ["Hair", "Brown"], ["Eyes", "Blue"], ["Played by", "Sergei Parshin (Khraniteli), Rory Kinnear"]], "u": "https://lotr.fandom.com/wiki/Tom_Bombadil"},
+ "gallery": [{"f": "images/g/1f1d76a1834d.webp", "c": "Tom played by Harry Wellerchew in", "t": "art"}, {"f": "images/g/121d0305763c.webp", "c": "Tom Bombadil in the Third Age, by Anke Eißmann", "t": "art"}, {"f": "images/g/7bba5ab449a4.webp", "c": "Goldberry meeting Tom, by Matěj Čadil", "t": "art"}, {"f": "images/g/a37cc74cf4cc.webp", "c": "Sam and Frodo with Tom, by Roger Garland", "t": "art"}, {"f": "images/g/ad28cc3ad407.webp", "c": "Tom Bombadil in Rings of Power", "t": "series"}],
+ "portrait": "images/2ca4ff3dbc.webp",
+ "appear": {"w": ["hom", "lotr", "rop"], "a": []}
+}

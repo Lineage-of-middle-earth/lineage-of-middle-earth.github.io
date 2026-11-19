@@ -1,0 +1,7 @@
+{
+ "key": "Thengel",
+ "details": {"s": "Thengel was the sixteenth King of Rohan.", "f": [["Title", "King of Rohan"], ["Also known as", "The Thrice-renowned"], ["Race", "Men"], ["Culture", "Rohirrim (House of Eorl)"], ["Born", "TA 2905"], ["Died", "TA 2980"], ["Weapon", "King's sword"]], "u": "https://lotr.fandom.com/wiki/Thengel"},
+ "gallery": [{"f": "images/g/cda0faf02576.webp", "c": "", "t": "art"}],
+ "portrait": "images/d702905d98.webp",
+ "appear": {"w": ["hom", "lotr"], "a": ["TA"]}
+}

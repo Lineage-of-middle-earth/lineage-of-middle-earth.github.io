@@ -1,0 +1,7 @@
+{
+ "key": "Ar-Pharazôn",
+ "details": {"s": "Ar-Pharazôn, or Tar-Calion, later titled \"the Golden\", was the twenty-fifth and last King of Númenor. Of all the rulers of Númenor, he wielded the most power, but used it most unwisely; his desire for eternal life which Sauron intentionally and deceptively exploited, caused the Downfall of Númenor and the Change of the World.", "f": [["Title", "King of Númenor, \"King of Men\", \"King of the Sea\""], ["Also known as", "Tar-Calion (Q), \"The Golden\""], ["Race", "Men"], ["Culture", "Númenóreans (King's Men), House of Elros"], ["Born", "SA 3118"], ["Died", "Imprisoned in the Caves of the Forgotten in SA 3319"], ["Weapon", "Aranrúth"]], "u": "https://lotr.fandom.com/wiki/Ar-Pharaz%C3%B4n"},
+ "gallery": [{"f": "images/g/9585ff491fb3.webp", "c": "Ar-Pharazôn before his reign, by Alan Lee", "t": "art"}, {"f": "images/g/3b882978be83.webp", "c": "Sauron influencing Pharazôn, by Soni Alcorn-Hender", "t": "art"}, {"f": "images/g/59cb8ee868cf.webp", "c": "Ar-Pharazôn at sea", "t": "art"}, {"f": "images/g/a91922e910e5.webp", "c": "Pharazôn makes a populist-tinged speech", "t": "art"}],
+ "portrait": "images/5748fc8af1.webp",
+ "appear": {"w": ["hom", "rop"], "a": ["SA"]}
+}

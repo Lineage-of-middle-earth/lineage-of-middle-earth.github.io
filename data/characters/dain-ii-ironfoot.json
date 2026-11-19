@@ -1,0 +1,7 @@
+{
+ "key": "Dáin II Ironfoot",
+ "details": {"s": "Dáin II Ironfoot (or King Dáin), the son of Náin and great-grandson of Dáin I of Durin's Folk. He was a Dwarf King of Durin's Folk, the Lord of the Iron Hills, and the fifth King under the Mountain during the War of the Ring in Middle-earth.", "f": [["Title", "Lord of the Iron Hills, King of Durin's Folk, King under the Mountain"], ["Also known as", "Ironfoot"], ["Race", "Dwarves"], ["Culture", "Durin's Folk (Dwarves of the Iron Hills)"], ["Born", "TA 2767"], ["Died", "March 17, 3019 (aged 252), Battle of Dale"], ["Height", "About 4'0\" at least"], ["Weapon", "Red Axe"], ["Played by", "Billy Connolly"]], "u": "https://lotr.fandom.com/wiki/D%C3%A1in_II"},
+ "gallery": [{"f": "images/g/64c851c85200.webp", "c": "Dáin II Ironfoot in the Battle of Azanulbizar, by Justin Gerard", "t": "art"}, {"f": "images/g/a78dd47de78b.webp", "c": "Dáin Ironfoot at the time of the Battle of Five Armies, by C.K. Göksoy", "t": "art"}, {"f": "images/g/a1b57efb372c.webp", "c": "Dáin becoming King under the Mountain", "t": "art"}, {"f": "images/g/08e29ee3002c.webp", "c": "Dáin and Brand preparing for battle", "t": "art"}, {"f": "images/g/4acf5bacc12f.webp", "c": "Dáin as seen in, acted by Billy Connolly", "t": "movie"}],
+ "portrait": "images/12e8df1f26.webp",
+ "appear": {"w": ["hob", "hobf", "lotr"], "a": ["TA"]}
+}

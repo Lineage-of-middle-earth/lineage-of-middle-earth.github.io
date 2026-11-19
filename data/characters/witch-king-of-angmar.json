@@ -1,0 +1,6 @@
+{
+ "key": "Witch-king of Angmar",
+ "portrait": "images/b/7de23b9042.webp",
+ "details": {"s": "The Witch-king of Angmar was the chief of the Nazgûl, a Man corrupted by one of the Nine Rings. He ruled Angmar in the north, destroyed the kingdom of Arthedain, and led Sauron's armies against Minas Tirith until Éowyn and Merry brought him down.", "f": [], "u": "https://lotr.fandom.com/wiki/Witch-king_of_Angmar"},
+ "appear": {"w": ["hobf", "lotr", "lotrf"], "a": []}
+}

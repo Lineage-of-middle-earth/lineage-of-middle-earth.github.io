@@ -1,0 +1,7 @@
+{
+ "key": "Bronwyn",
+ "details": {"s": "Bronwyn was a Southlander from the village of Tirharad, in the Second Age.", "f": [["Played by", "Nazanin Boniadi"]], "u": "https://lotr.fandom.com/wiki/Bronwyn"},
+ "gallery": [{"f": "images/g/9a07df5b7b67.webp", "c": "", "t": "art"}, {"f": "images/g/5ed9d6ac049b.webp", "c": "Bronwyn gives alfirin seeds to Arondir", "t": "art"}, {"f": "images/g/a5d4c39211ba.webp", "c": "Bronwyn meets Queen Regent Míriel", "t": "series"}, {"f": "images/g/2156d9305ada.webp", "c": "Bronwyn's tomb in Pelargir", "t": "art"}],
+ "portrait": "images/24fcc8f1e3.webp",
+ "appear": {"w": ["rop"], "a": []}
+}

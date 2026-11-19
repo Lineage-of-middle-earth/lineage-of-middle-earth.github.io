@@ -1,0 +1,6 @@
+{
+ "key": "Barrow-wights",
+ "portrait": "images/b/2d9c7960b4.webp",
+ "details": {"s": "Barrow-wights were evil spirits sent by the Witch-king of Angmar to haunt the Barrow-downs. One caught the hobbits, and Tom Bombadil rescued them.", "f": [], "u": "https://lotr.fandom.com/wiki/Barrow-wights"},
+ "appear": {"w": ["lotr"], "a": []}
+}

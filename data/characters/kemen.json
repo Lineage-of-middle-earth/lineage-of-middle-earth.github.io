@@ -1,0 +1,7 @@
+{
+ "key": "Kemen",
+ "details": {"s": "Kemen was a Númenórean nobleman of the Second Age, and the son of Ar-Pharazôn the Golden .", "f": [["Title", "Kemen"], ["Race", "Men"], ["Hair", "Brown"], ["Eyes", "Blue |first seen=\"\"}}"], ["Played by", "Leon Wadham"]], "u": "https://lotr.fandom.com/wiki/Kemen"},
+ "gallery": [{"f": "images/g/6ffe78f98b4c.webp", "c": "", "t": "art"}, {"f": "images/g/445ef8998d90.webp", "c": "Kemen is confronted by Isildur", "t": "art"}, {"f": "images/g/d02de57d71b3.webp", "c": "Kemen with Ar-Pharazôn.", "t": "art"}],
+ "portrait": "images/7b4e0cbf71.webp",
+ "appear": {"w": ["rop"], "a": []}
+}

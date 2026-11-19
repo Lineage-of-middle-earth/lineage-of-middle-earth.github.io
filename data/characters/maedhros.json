@@ -1,0 +1,7 @@
+{
+ "key": "Maedhros",
+ "details": {"s": "Maedhros, also called Maedhros the Tall, was a prince of the Ñoldor, eldest of the seven Sons of Fëanor, and head of the House of Fëanor following the death of his father in Middle-earth. He was highly renowned for his skills as warrior and diplomat. For centuries, he led his House against the forces of Morgoth, but the Oath that he and his six brothers had sworn to recover the Silmarils constrained him and ultimately brought his demise.", "f": [["Title", "Prince of the Ñoldor, High King of the Ñoldor, (abdicated), Lord of the House of Fëanor, Lord of Himring or the March of Maedhros"], ["Also known as", "Maedhros the Tall, Maedhros the Dispossessed, Nelyafinwë, Nelyo, Maitimo, Russandol, Maidros"], ["Race", "Elves"], ["Culture", "Ñoldor (House of Fëanor)"], ["Born", "During the, Noontide of Valinor"], ["Died", "FA 587"], ["Height", "Over 6' 5\""], ["Hair", "Dark red"], ["Weapon", "Elven sword"]], "u": "https://lotr.fandom.com/wiki/Maedhros"},
+ "gallery": [{"f": "images/g/79e8d9b5efdb.webp", "c": "Maedhros, by Venlian", "t": "art"}, {"f": "images/g/7a005b5c68c0.webp", "c": "Young Maedhros, by Maureval", "t": "art"}, {"f": "images/g/93be337cdc7c.webp", "c": "Maedhros captured by Melkor's orcs, by Jenny Dolfen", "t": "art"}, {"f": "images/g/7f41f69c302d.webp", "c": "Maedhros, by Anna Lee", "t": "art"}],
+ "portrait": "images/904ba948df.webp",
+ "appear": {"w": ["hom"], "a": ["FA"]}
+}

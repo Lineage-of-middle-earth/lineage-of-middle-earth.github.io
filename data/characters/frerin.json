@@ -1,0 +1,7 @@
+{
+ "key": "Frerin",
+ "details": {"s": "Frerin was a Dwarf of Durin's Folk.", "f": [["Race", "Dwarves"], ["Culture", "Durin's Folk, Dwarves of the Lonely Mountain"], ["Born", "TA 2751"], ["Died", "TA 2799"], ["Height", "About 4'0\" at least"], ["Weapon", "Battle axe"]], "u": "https://lotr.fandom.com/wiki/Frerin"},
+ "gallery": [{"f": "images/g/ebffd05a2df6.webp", "c": "Frerin in", "t": "art"}],
+ "portrait": "images/b93f5d066d.webp",
+ "appear": {"w": [], "a": ["TA"]}
+}

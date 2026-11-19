@@ -1,0 +1,7 @@
+{
+ "key": "Finwë",
+ "details": {"s": "Finwë was the first King of the Ñoldor who led his people on the journey from Middle-earth to Valinor in the blessed realm of Aman. He was a great friend of Elu Thingol, the King of Doriath. He was the father of Fëanor, Fingolfin, Finarfin, Írimë, and Findis.", "f": [["Title", "King of the Ñoldor"], ["Also known as", "Ñoldóran"], ["Race", "Elves"], ["Culture", "Ñoldor, (House of Finwë)"], ["Born", "Between YT 1050 and 1102, Cuiviénen"], ["Died", "YT 1495, Formenos"], ["Height", "Tall"], ["Hair", "Black"], ["Eyes", "Grey"]], "u": "https://lotr.fandom.com/wiki/Finw%C3%AB"},
+ "gallery": [{"f": "images/g/4e0bc1515448.webp", "c": "Finwë, King of the Noldor by kimberly80", "t": "art"}],
+ "portrait": "images/f06b5526e6.webp",
+ "appear": {"w": ["hom", "sil"], "a": ["YT"]}
+}

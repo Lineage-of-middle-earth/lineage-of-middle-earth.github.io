@@ -1,0 +1,6 @@
+{
+ "key": "Radagast",
+ "portrait": "images/b/e834e30c55.webp",
+ "details": {"s": "Radagast the Brown was an Istar who lived at Rhosgobel on the edge of Mirkwood. He cared more for beasts and birds than for the affairs of Elves and Men, and Gandalf asked him to send the creatures of the Wild to bring word of Saruman's doings.", "f": [], "u": "https://lotr.fandom.com/wiki/Radagast"},
+ "appear": {"w": ["hob", "hobf", "lotr"], "a": []}
+}

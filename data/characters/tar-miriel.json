@@ -1,0 +1,7 @@
+{
+ "key": "Tar-Míriel",
+ "details": {"s": "Tar-Míriel or Ar-Zimraphel was the daughter of King Tar-Palantir, and last rightful heir of Númenor. She would rule briefly as Queen Regnant while Ar-Pharazôn's armada defied the Ban of the Valar and incurred Númenor's destruction.", "f": [["Title", "Queen of Númenor"], ["Also known as", "Ar-Zimraphel"], ["Race", "Men"], ["Culture", "Númenóreans (House of Elros, The Faithful)"], ["Born", "SA 3117"], ["Died", "SA 3319, Downfall of Númenor"], ["Eyes", "Bright"], ["Played by", "Cynthia Addai-Robinson"]], "u": "https://lotr.fandom.com/wiki/Tar-M%C3%ADriel"},
+ "gallery": [{"f": "images/g/24a565680840.webp", "c": "Tar-Míriel", "t": "art"}, {"f": "images/g/534dd29358ed.webp", "c": "Depiction of Tar-Míriel by Shyangell", "t": "art"}, {"f": "images/g/287ddaa92492.webp", "c": "Tar-Míriel, by Karolina Węgrzyn", "t": "art"}, {"f": "images/g/53f22ea47ead.webp", "c": "Tar-Míriel, by Un Cheon", "t": "art"}, {"f": "images/g/fd911fa8b95b.webp", "c": "Míriel as portrayed in", "t": "series"}],
+ "portrait": "images/0b18e35f2a.webp",
+ "appear": {"w": ["hom", "rop"], "a": ["SA"]}
+}

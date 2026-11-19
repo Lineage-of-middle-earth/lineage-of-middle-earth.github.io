@@ -1,0 +1,7 @@
+{
+ "key": "Fíli",
+ "details": {"s": "Fíli and Kíli were Dwarven brothers and were also the youngest of the thirteen Dwarves who set out with Thorin Oakenshield's company, along with Gandalf and Bilbo Baggins, to reclaim the Lonely Mountain from the dragon Smaug.", "f": [["Race", "Dwarves"], ["Culture", "Durin's Folk"], ["Born", "TA 2859 (Fíli), TA 2864 (Kíli)"], ["Died", "November 23, TA 2941 (Fíli aged 82 and Kíli aged 77), Battle of Five Armies"], ["Hair", "Yellow"], ["Played by", "Dean O'Gorman (Fíli), Aidan Turner (Kíli)"]], "u": "https://lotr.fandom.com/wiki/F%C3%ADli_and_K%C3%ADli"},
+ "gallery": [{"f": "images/g/8eafa44df1d7.webp", "c": "Fíli and Kíli depicted by Angelo Montanini", "t": "art"}, {"f": "images/g/17707b3e83e4.webp", "c": "Fíli and Kíli at Bag End", "t": "art"}, {"f": "images/g/bce7652ea3db.webp", "c": "Kíli's burial", "t": "art"}, {"f": "images/g/2810a1f049a5.webp", "c": "Fili and Kíli (1977)", "t": "movie"}, {"f": "images/g/a6d8d72ae58c.webp", "c": "Fíli and Kíli portrayed in film", "t": "movie"}, {"f": "images/g/41d310bd080a.webp", "c": "Fíli's burial", "t": "art"}],
+ "portrait": "images/65808042c4.webp",
+ "appear": {"w": [], "a": ["TA"]}
+}

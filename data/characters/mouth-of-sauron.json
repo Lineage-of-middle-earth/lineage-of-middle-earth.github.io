@@ -1,0 +1,6 @@
+{
+ "key": "Mouth of Sauron",
+ "portrait": "images/b/c23934bfbc.webp",
+ "details": {"s": "The Mouth of Sauron was the Lieutenant of Barad-dûr, a Black Númenórean who had forgotten his own name. He met the Captains of the West at the Black Gate and showed them Frodo's mithril coat.", "f": [], "u": "https://lotr.fandom.com/wiki/Mouth_of_Sauron"},
+ "appear": {"w": ["lotr", "lotrf"], "a": []}
+}

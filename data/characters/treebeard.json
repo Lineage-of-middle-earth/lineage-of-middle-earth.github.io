@@ -1,0 +1,6 @@
+{
+ "key": "Treebeard",
+ "portrait": "images/b/b6296f0da6.webp",
+ "details": {"s": "Treebeard, called Fangorn in the Elvish tongue, was the eldest of the Ents. He took Merry and Pippin under his care and led the Ents against Isengard.", "f": [], "u": "https://lotr.fandom.com/wiki/Treebeard"},
+ "appear": {"w": ["lotr", "lotrf"], "a": []}
+}

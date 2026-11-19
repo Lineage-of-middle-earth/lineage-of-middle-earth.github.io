@@ -1,0 +1,7 @@
+{
+ "key": "Disa",
+ "details": {"s": "Disa was a Dwarven princess of Khazad-dûm and spouse to Durin IV in the Second Age.", "f": [], "u": "https://lotr.fandom.com/wiki/Disa"},
+ "gallery": [{"f": "images/g/31681ee0a0ff.webp", "c": "Disa asks the mountain to release the stranded dwarves through song", "t": "art"}],
+ "portrait": "images/2a0cb0c3e5.webp",
+ "appear": {"w": ["lotrf", "rop"], "a": []}
+}

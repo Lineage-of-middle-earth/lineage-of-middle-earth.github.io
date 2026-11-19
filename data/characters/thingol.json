@@ -1,0 +1,7 @@
+{
+ "key": "Thingol",
+ "details": {"s": "Elu Thingol, originally Elwë, was an Elf of the Teleri during the First Age. His brother was Olwë, who became the Lord of Alqualondë, Lord of Tol Eressëa, and King of the Teleri of Aman; they may have also had a second brother called Elmo, whom was a good friend of Finwë, the first King of the Ñoldor during the times before the Elves reached Aman.", "f": [["Title", "King of the Teleri, King of Doriath, Lord of Beleriand"], ["Also known as", "Elwë, Tinwelint, Singollo, Sindacollo, Sindicollo (\"Greymantle\")"], ["Race", "Elves"], ["Culture", "Teleri, Sindar of Doriath (House of Thingol)"], ["Born", "Between YT 1050 and 1102, Cuiviénen"], ["Died", "FA 503 (aged ±4566), Menegroth, killed by the Dwarves"], ["Height", "Tallest of all the Eruhíni"], ["Hair", "Silver"], ["Eyes", "Possibly grey"], ["Weapon", "Aranrúth"]], "u": "https://lotr.fandom.com/wiki/Thingol"},
+ "gallery": [{"f": "images/g/41b5bb6a2b84.webp", "c": "Elu Thingol the King of Doriath with the Silmaril, by Marya Filatova", "t": "art"}, {"f": "images/g/eaf7c91102aa.webp", "c": "Thingol, by Maureval", "t": "art"}, {"f": "images/g/c4433f6fbde0.webp", "c": "Elwë is enchanted by Melian in the woods of Nan Elmoth, by IreneLangholm", "t": "art"}, {"f": "images/g/8fc6a9dd95e3.webp", "c": "Thingol as king, by Antonio Vinci", "t": "art"}],
+ "portrait": "images/2f33b817af.webp",
+ "appear": {"w": ["hom", "sil", "ut"], "a": ["YT", "FA"]}
+}

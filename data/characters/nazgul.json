@@ -1,0 +1,6 @@
+{
+ "key": "Nazgûl",
+ "portrait": "images/b/ea58556e9e.webp",
+ "details": {"s": "The Nazgûl, or Ringwraiths, were nine Men corrupted by the Nine Rings and bound to Sauron's will. They hunted the Ring-bearer, led by the Witch-king.", "f": [], "u": "https://lotr.fandom.com/wiki/Nazg%C3%BBl"},
+ "appear": {"w": ["lotr"], "a": []}
+}

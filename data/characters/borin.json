@@ -1,0 +1,7 @@
+{
+ "key": "Borin",
+ "details": {"s": "Borin was a Dwarf of Durin's Folk, the second son of King Náin II and brother of Dáin I.", "f": [["Race", "Dwarven"], ["Culture", "Durin's Folk"], ["Born", "TA 2450"], ["Died", "TA 2711"], ["Height", "About 4'0\" at least"]], "u": "https://lotr.fandom.com/wiki/Borin"},
+ "gallery": [{"f": "images/g/afc49fabd05a.webp", "c": "", "t": "art"}],
+ "portrait": "images/4b52c2c1d8.webp",
+ "appear": {"w": [], "a": ["TA"]}
+}

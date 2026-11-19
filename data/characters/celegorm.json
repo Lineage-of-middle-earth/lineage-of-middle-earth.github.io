@@ -1,0 +1,7 @@
+{
+ "key": "Celegorm",
+ "details": {"s": "Celegorm, called Celegorm the Fair, was the third son of Fëanor and Nerdanel, most closely associated with another brother, Curufin. He is somewhat anomalously described as having fair hair, rather than the black or red hair of his parents and his six siblings.", "f": [["Title", "Lord of Himlad"], ["Also known as", "Celegorm the Fair, Turcafinwë, Tyelkormo"], ["Race", "Elves"], ["Culture", "Ñoldor (House of Fëanor)"], ["Born", "During in the Noontide of Valinor"], ["Died", "FA 506, Menelrond"], ["Weapon", "Sword and bow"]], "u": "https://lotr.fandom.com/wiki/Celegorm"},
+ "gallery": [{"f": "images/g/d5852dcf527b.webp", "c": "Celegorm, by Marya Filatova", "t": "art"}],
+ "portrait": "images/a62fd5c686.webp",
+ "appear": {"w": ["hom", "sil"], "a": ["FA"]}
+}

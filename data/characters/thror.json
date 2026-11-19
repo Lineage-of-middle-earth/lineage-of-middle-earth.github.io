@@ -1,0 +1,7 @@
+{
+ "key": "Thrór",
+ "details": {"s": "Thrór I was the King of Durin's Folk, the son of Dáin I and brother of Frór and Grór, known for ruling Erebor, the Lonely Mountain. He was the father of Thráin II, whose son was Thorin II.", "f": [["Title", "King of Durin's Folk, King under the Mountain"], ["Race", "Dwarves"], ["Culture", "Durin's Folk"], ["Born", "TA 2542"], ["Died", "TA 2790 (aged 248)"], ["Height", "About 4'0\" at least"], ["Played by", "Jeffrey Thomas"]], "u": "https://lotr.fandom.com/wiki/Thr%C3%B3r"},
+ "gallery": [{"f": "images/g/04ef779b0b4b.webp", "c": "Thrór with Carc the raven, by Donato Giancola", "t": "art"}, {"f": "images/g/9b5a61806290.webp", "c": "Thrór sitting on his throne with the Arkenstone", "t": "art"}, {"f": "images/g/d54f985c1653.webp", "c": "Depiction of Thrór's Key in Peter Jackson's", "t": "movie"}, {"f": "images/g/9a0829ff42d6.webp", "c": "King Thrór concept art", "t": "art"}],
+ "portrait": "images/41cd1e3ed3.webp",
+ "appear": {"w": ["hobf"], "a": ["TA"]}
+}

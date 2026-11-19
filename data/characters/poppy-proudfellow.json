@@ -1,0 +1,7 @@
+{
+ "key": "Poppy Proudfellow",
+ "details": {"s": "Poppy Proudfellow was a Harfoot hobbit living in the Second Age. She was a friend of Elanor Brandyfoot.", "f": [["Race", "Harfoots"], ["Hair", "Brown"], ["Eyes", "Brown |first seen=\"\""], ["Played by", "Megan Richards"]], "u": "https://lotr.fandom.com/wiki/Poppy_Proudfellow"},
+ "gallery": [{"f": "images/g/1e65ee2f7d2b.webp", "c": "Poppy and Elanor keep track of the Stranger", "t": "art"}],
+ "portrait": "images/3f801b9574.webp",
+ "appear": {"w": ["rop"], "a": []}
+}

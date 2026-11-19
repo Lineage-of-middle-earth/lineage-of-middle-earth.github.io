@@ -1,0 +1,7 @@
+{
+ "key": "Angrod",
+ "details": {"s": "Angrod was a Ñoldorin Elf, the second son of Finarfin and lord of the Ñoldor of Dorthonion. He was the father of Orodreth and subsequently grandfather of the famed Gil-galad.", "f": [["Title", "Lord of Dorthonion with Aegnor"], ["Also known as", "Angaráto"], ["Race", "Elves"], ["Culture", "Ñoldor (House of Finarfin), Falmari (House of Olwë)"], ["Born", "YT ?"], ["Died", "FA 455"], ["Hair", "Golden"]], "u": "https://lotr.fandom.com/wiki/Angrod"},
+ "gallery": [{"f": "images/g/169789b5c70b.webp", "c": "Angrod, son of Finarfin, by Elena Kukanova", "t": "art"}, {"f": "images/g/b01a88454bb3.webp", "c": "Angrod, by Marya Filatova", "t": "art"}, {"f": "images/g/e42f5d665cb4.webp", "c": "Angrod in Dorthonion, by Marya Filatova", "t": "art"}],
+ "portrait": "images/5d94bd93d9.webp",
+ "appear": {"w": ["sil"], "a": ["YT", "FA"]}
+}

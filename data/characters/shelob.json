@@ -1,0 +1,6 @@
+{
+ "key": "Shelob",
+ "portrait": "images/b/318b45d10a.webp",
+ "details": {"s": "Shelob was a giant spider who lived at Cirith Ungol, the last child of Ungoliant. She stung Frodo, and Sam drove her off with Sting.", "f": [], "u": "https://lotr.fandom.com/wiki/Shelob"},
+ "appear": {"w": ["lotr", "lotrf"], "a": []}
+}

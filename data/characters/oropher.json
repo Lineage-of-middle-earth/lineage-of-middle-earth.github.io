@@ -1,0 +1,7 @@
+{
+ "key": "Oropher",
+ "details": {"s": "Oropher was the Sindar King of the Silvan Elves of Greenwood the Great during the Second Age. He was the father of Thranduil, who would succeed him, and grandfather of Legolas.", "f": [["Title", "Lord of Northern Mirkwood, King of the Silvan Elves, King of the Woodland Realm"], ["Race", "Elves"], ["Culture", "Sindar (Elves of Doriath)"], ["Born", "First Age"], ["Died", "SA 3434"]], "u": "https://lotr.fandom.com/wiki/Oropher"},
+ "gallery": [{"f": "images/g/e3da0c8c39c8.webp", "c": "Oropher, by Bente Schlick", "t": "art"}],
+ "portrait": "images/bcbabc7b6b.webp",
+ "appear": {"w": [], "a": ["FA", "SA"]}
+}

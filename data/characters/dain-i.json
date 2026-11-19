@@ -1,0 +1,7 @@
+{
+ "key": "Dáin I",
+ "details": {"s": "Dáin I was a Dwarf and a King of Durin's Folk in the Third Age. He was the son of Náin II and had a younger brother, Borin. He had three sons: Thrór, Frór, and Grór.", "f": [["Title", "King of Durin's Folk"], ["Race", "Dwarves"], ["Born", "TA 2440"], ["Died", "TA 2589"], ["Height", "About 4'0\" at least"]], "u": "https://lotr.fandom.com/wiki/D%C3%A1in_I"},
+ "gallery": [{"f": "images/g/ff9a8433a5db.webp", "c": "", "t": "art"}, {"f": "images/g/50ca5d6b9259.webp", "c": "Dáin's Halls", "t": "art"}],
+ "portrait": "images/05d3c6e3da.webp",
+ "appear": {"w": [], "a": ["TA"]}
+}

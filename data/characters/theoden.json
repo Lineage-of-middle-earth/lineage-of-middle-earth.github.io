@@ -1,0 +1,7 @@
+{
+ "key": "Théoden",
+ "details": {"s": "Théoden, son of Thengel and Morwen Steelsheen, was the seventeenth King of Rohan, last of the Second Line of the royal House of Eorl.", "f": [["Title", "King of Rohan, Lord of the Mark, Horsemaster, Father of Horse-men"], ["Also known as", "Théoden Ednew"], ["Race", "Men"], ["Culture", "Rohirrim (House of Eorl)"], ["Born", "TA 2948, Gondor"], ["Died", "March 15, 3019 (aged 71), Battle of the Pelennor Fields"], ["Hair", "White with braids"], ["Eyes", "Blue"], ["Weapon", "Herugrim"], ["Played by", "Bernard Hill"]], "u": "https://lotr.fandom.com/wiki/Th%C3%A9oden"},
+ "gallery": [{"f": "images/g/e0f55975b76c.webp", "c": "Théoden, portrayed by Bernard Hill, in The Lord of the Rings films", "t": "movie"}, {"f": "images/g/36798c7f0249.webp", "c": "King Théoden rides out of Helm's Deep", "t": "art"}, {"f": "images/g/7c32b15ffcc7.webp", "c": "Herugrim's depiction in the films", "t": "movie"}, {"f": "images/g/9c126e54146c.webp", "c": "Grima with Théoden, under a spell, in the Golden Hall of Meduseld", "t": "art"}, {"f": "images/g/8366b0be96e5.webp", "c": "Théoden upon reclaiming his sword, Herugrim", "t": "art"}, {"f": "images/g/349ed386a5ad.webp", "c": "King Théoden dies", "t": "art"}, {"f": "images/g/0f33a224ebe7.webp", "c": "Théoden (1978)", "t": "movie"}, {"f": "images/g/fb35557b778f.webp", "c": "Théoden (1980)", "t": "movie"}],
+ "portrait": "images/3242d3ff6d.webp",
+ "appear": {"w": ["hom", "lotr", "lotrf"], "a": ["TA"]}
+}

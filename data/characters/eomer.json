@@ -1,0 +1,7 @@
+{
+ "key": "Éomer",
+ "details": {"s": "Éomer Éadig was a man of Rohan and the eventual eighteenth King of Rohan, and first of the Third Line of their Kings. In the last decade of the Third Age, Éomer was the Third Marshal of the Mark.", "f": [["Title", "Third Marshal of the Riddermark, Lord of the Mark, King of Rohan"], ["Also known as", "Éomer Éadig"], ["Race", "Men"], ["Culture", "Rohirrim (House of Eorl)"], ["Born", "TA 2991"], ["Died", "FO 63"], ["Height", "6'6\""], ["Weapon", "Gúthwinë"], ["Played by", "Karl Urban"]], "u": "https://lotr.fandom.com/wiki/%C3%89omer"},
+ "gallery": [{"f": "images/g/2fea34087110.webp", "c": "Karl Urban as Éomer in Peter Jackson's", "t": "movie"}, {"f": "images/g/0039baabaf66.webp", "c": "Éomer's helmet and sword as depicted for The Lord of the Rings films", "t": "movie"}, {"f": "images/g/a4bb47caac9c.webp", "c": "LEGO Éomer", "t": "art"}, {"f": "images/g/ddcd2e79c372.webp", "c": "", "t": "art"}, {"f": "images/g/57297879b5fc.webp", "c": "Young Éomer and Éowyn, by Anna Lee", "t": "art"}, {"f": "images/g/fb3fc1159765.webp", "c": "Depiction of Êomer at Helm's Deep by Angelo Montanini", "t": "art"}, {"f": "images/g/f58adbc049e9.webp", "c": "King Éomer at Aragorn's coronation in the films", "t": "movie"}, {"f": "images/g/f4152fec3f33.webp", "c": "Éomer in Bakshi's 1978 The Lord of the Rings", "t": "movie"}],
+ "portrait": "images/2311df7395.webp",
+ "appear": {"w": ["lotrf"], "a": ["TA", "FO"]}
+}

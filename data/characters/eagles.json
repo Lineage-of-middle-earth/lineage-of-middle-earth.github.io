@@ -1,0 +1,6 @@
+{
+ "key": "Eagles",
+ "portrait": "images/b/445f625f9d.webp",
+ "details": {"s": "The Great Eagles were intelligent birds of great size who served Manwë and watched over Middle-earth. They rescued Thorin's Company from the Wargs and Frodo and Sam from Mount Doom.", "f": [], "u": "https://lotr.fandom.com/wiki/Eagles"},
+ "appear": {"w": ["lotr", "sil"], "a": []}
+}

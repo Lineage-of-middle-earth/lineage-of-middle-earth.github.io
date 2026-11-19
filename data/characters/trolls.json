@@ -1,0 +1,6 @@
+{
+ "key": "Trolls",
+ "portrait": "images/b/910db9d3cc.webp",
+ "details": {"s": "Trolls were huge, strong creatures made by Morgoth in mockery of Ents. Most turned to stone in sunlight until Sauron bred the Olog-hai.", "f": [], "u": "https://lotr.fandom.com/wiki/Trolls"},
+ "appear": {"w": ["hob", "lotr"], "a": []}
+}

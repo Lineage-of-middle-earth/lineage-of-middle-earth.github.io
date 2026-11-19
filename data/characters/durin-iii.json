@@ -1,0 +1,7 @@
+{
+ "key": "Durin III",
+ "details": {"s": "Durin III was a King of Durin's Folk, and the first bearer of the mightiest of the seven Dwarf Rings, though this was not known to outsiders until the end of the Third Age.", "f": [["Title", "King of Durin's Folk"], ["Race", "Dwarves"], ["Culture", "Durin's Folk"], ["Height", "About 4'0\" at least"], ["Played by", "Peter Mullan|birth=Before SA 1500|weapon=Durin's Axe|hair=Grey}}"]], "u": "https://lotr.fandom.com/wiki/Durin_III"},
+ "gallery": [{"f": "images/g/f7b0925b9f88.webp", "c": "Peter Mullan portrays Durin III in", "t": "series"}, {"f": "images/g/c5d11b4c2fa3.webp", "c": "As portrayed in The Fellowship of the Ring", "t": "art"}, {"f": "images/g/f6f124940865.webp", "c": "Durin III in", "t": "art"}, {"f": "images/g/664fe9bfea1a.webp", "c": "Durin hears Elrond's request", "t": "art"}, {"f": "images/g/2de063b8b5d9.webp", "c": "Durin III against the Balrog.", "t": "art"}],
+ "portrait": "images/eb6e8db69e.webp",
+ "appear": {"w": ["rop"], "a": []}
+}

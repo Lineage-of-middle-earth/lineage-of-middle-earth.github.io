@@ -1,0 +1,7 @@
+{
+ "key": "Nori",
+ "details": {"s": "Nori was a Dwarf of Durin's Folk. He had a brother named Dori and a cousin named Ori, and was a remote kinsman of Thorin Oakenshield.", "f": [["Race", "Dwarves"], ["Culture", "Durin's Folk"], ["Weapon", "Axe|height=About 4'0\"}}"], ["Played by", "Jed Brophy"]], "u": "https://lotr.fandom.com/wiki/Nori"},
+ "gallery": [{"f": "images/g/45bf1177ba3f.webp", "c": "Nori by Angelo Montanini", "t": "art"}, {"f": "images/g/1f544d089b3a.webp", "c": "Nori (1977)", "t": "movie"}, {"f": "images/g/5073fc295848.webp", "c": "Nori as portrayed by Jed Brophy in", "t": "movie"}],
+ "portrait": "images/a2c38d17ec.webp",
+ "appear": {"w": ["hobf"], "a": []}
+}

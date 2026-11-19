@@ -1,0 +1,6 @@
+{
+ "key": "Uruk-hai",
+ "portrait": "images/b/681c6f09a7.webp",
+ "details": {"s": "The Uruk-hai were a stronger breed of Orc that appeared in the Third Age. Those bred by Saruman could march in sunlight, and a band of them took Merry and Pippin at Amon Hen.", "f": [], "u": "https://lotr.fandom.com/wiki/Uruk-hai"},
+ "appear": {"w": ["lotr"], "a": []}
+}

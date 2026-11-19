@@ -1,0 +1,6 @@
+{
+ "key": "Orcs",
+ "portrait": "images/b/b153089b44.webp",
+ "details": {"s": "Orcs were foul creatures bred by Morgoth, of uncertain origin. They served Morgoth, then Sauron and Saruman, and made war on every free people.", "f": [], "u": "https://lotr.fandom.com/wiki/Orcs"},
+ "appear": {"w": ["hob", "lotr", "rop", "sil"], "a": []}
+}

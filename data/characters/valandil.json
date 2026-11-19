@@ -1,0 +1,7 @@
+{
+ "key": "Valandil",
+ "details": {"s": "Valandil was the third High King of Arnor.", "f": [["Title", "High King of Arnor"], ["Race", "Men"], ["Culture", "Dúnedain of the North (House of Isildur)"], ["Born", "SA 3430"], ["Died", "TA 249"], ["Weapon", "King's sword"]], "u": "https://lotr.fandom.com/wiki/Valandil"},
+ "gallery": [{"f": "images/g/a810167e7d16.webp", "c": "", "t": "art"}],
+ "portrait": "images/c5b354f53c.webp",
+ "appear": {"w": ["hom"], "a": ["SA", "TA"]}
+}

@@ -1,0 +1,7 @@
+{
+ "key": "Durin IV",
+ "details": {"s": "Durin IV was the King of Durin's Folk and of Khazad-dûm in the late Second Age.", "f": [["Title", "King of Durin's Folk"], ["Race", "Dwarves"], ["Culture", "Durin's Folk"], ["Born", "Late Second Age"], ["Height", "About 4'0\" at least"], ["Hair", "Brown"], ["Played by", "Owain Arthur}}"]], "u": "https://lotr.fandom.com/wiki/Durin_IV"},
+ "gallery": [{"f": "images/g/0abb00f49a84.webp", "c": "Owain Arthur portrays Durin IV in", "t": "series"}, {"f": "images/g/0ab7cff8e89f.webp", "c": "Durin and Disa host Elrond for dinner", "t": "art"}, {"f": "images/g/06b413133338.webp", "c": "Durin and Elrond share a companionable moment together while looking for mithril", "t": "art"}, {"f": "images/g/14fae963f2bc.webp", "c": "Durin IV in Lindon", "t": "art"}, {"f": "images/g/4ecd8d3beab1.webp", "c": "Durin IV meets Annatar in the throne room of Khazad-dûm", "t": "art"}],
+ "portrait": "images/ae136e64b1.webp",
+ "appear": {"w": ["rop"], "a": ["SA"]}
+}

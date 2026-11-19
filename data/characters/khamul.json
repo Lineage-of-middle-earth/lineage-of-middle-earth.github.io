@@ -1,0 +1,7 @@
+{
+ "key": "Khamûl",
+ "details": {"s": "Khamûl was one of the nine Ringwraiths second to the Witch-king, in Middle-earth. During the Third Age, he held Dol Guldur as Sauron's lieutenant. After the Witch-king was slain, he became the Lord of Nazgûl for a short period.", "f": [["Title", "Lord of the Nazgûl, Lord of Rhûn, Lieutenant of Dol-Guldur"], ["Also known as", "Shadow of the East, The Black Easterling, Khamûl the Easterling"], ["Race", "Men (originally)"], ["Culture", "Nazgûl (Ringwraiths), formerly Easterlings"], ["Born", "Second Age"], ["Died", "March 25, TA 3019, Battle of the Morannon"], ["Weapon", "Sword, Morgul-blade"], ["Played by", "Zubin Varla}}"]], "u": "https://lotr.fandom.com/wiki/Kham%C3%BBl"},
+ "gallery": [{"f": "images/g/b27663f7d277.webp", "c": "", "t": "art"}, {"f": "images/g/85d8a18eaee6.webp", "c": "Khamûl in", "t": "series"}, {"f": "images/g/ea6cacf55a6d.webp", "c": "A Nazgnagôl in", "t": "series"}, {"f": "images/g/950c7645ce43.webp", "c": "Khamûl the Easterling, by John Howe", "t": "art"}, {"f": "images/g/b377040d702f.webp", "c": "The model for Khamûl's true appearance", "t": "art"}, {"f": "images/g/5e1d9eb4638d.webp", "c": "Behind the scenes photo of the actor who purportedly portrayed one of the nine.", "t": "art"}],
+ "portrait": "images/27ed4acd5d.webp",
+ "appear": {"w": ["hobf", "lotr", "lotrf", "rop", "ut"], "a": ["SA", "TA"]}
+}

@@ -1,0 +1,7 @@
+{
+ "key": "Dori",
+ "details": {"s": "Dori was a Dwarf of Durin's Folk, who, along with his brother Nori and cousin Ori, travelled with Bilbo Baggins and Thorin II as a member of Thorin's Company on the Quest for Erebor, to reclaim the Lonely Mountain from the dragon Smaug.", "f": [["Race", "Dwarves"], ["Culture", "Durin's Folk"], ["Played by", "Mark Hadlow (The Hobbit trilogy)"]], "u": "https://lotr.fandom.com/wiki/Dori"},
+ "gallery": [{"f": "images/g/551b94bc3dcc.webp", "c": "Dori as played by Mark Hadlow in Peter Jackson's The Hobbit trilogy", "t": "movie"}, {"f": "images/g/a98706f45220.webp", "c": "Dori (1977)", "t": "movie"}],
+ "portrait": "images/22ce44d632.webp",
+ "appear": {"w": ["hobf"], "a": []}
+}

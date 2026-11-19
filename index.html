@@ -32,7 +32,7 @@ document.addEventListener("click",e=>{const el=e.target.closest("a,button,input,
 /* Layout: a single scroll — header, people tabs, then a sideways-branching tree drawn with ruled connectors, like a herald's roll. */
 :root{
   --bg:#eceee8; --panel:#f7f8f4; --ink:#1c2320; --muted:#5b655f; --rule:#b9bfb5; --accent:#8c5f1a;
-  --elf:#3d6f9e; --half:#6f4f9a; --men:#9a3b33; --hob:#4f7a32; --dwa:#b0601c;
+  --elf:#3d6f9e; --half:#6f4f9a; --men:#9a3b33; --hob:#4f7a32; --dwa:#b0601c; --wiz:#5a6a8c; --spc:#2f7d73; --drk:#8a2a58;
   --hl:#f2d98a; --branch:#8a7a5a;
   --f-display:"Marcellus SC","Trajan Pro",Georgia,serif;
   --f-body:"Alegreya",Georgia,"Times New Roman",serif;
@@ -40,10 +40,10 @@ document.addEventListener("click",e=>{const el=e.target.closest("a,button,input,
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#111518; --panel:#181d21; --ink:#e3e6df; --muted:#9aa49d; --rule:#3a4440; --accent:#d9a650;
-  --elf:#86b4e0; --half:#b79be0; --men:#e08a80; --hob:#9cc77a; --dwa:#e7a062; --hl:#5c4a17; --branch:#7d6c4c; color-scheme:dark}}
+  --elf:#86b4e0; --half:#b79be0; --men:#e08a80; --hob:#9cc77a; --dwa:#e7a062; --wiz:#aab8d8; --spc:#6fc4b6; --drk:#e07aa6; --hl:#5c4a17; --branch:#7d6c4c; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#111518; --panel:#181d21; --ink:#e3e6df; --muted:#9aa49d; --rule:#3a4440; --accent:#d9a650;
-  --elf:#86b4e0; --half:#b79be0; --men:#e08a80; --hob:#9cc77a; --dwa:#e7a062; --hl:#5c4a17; --branch:#7d6c4c; color-scheme:dark}
+  --elf:#86b4e0; --half:#b79be0; --men:#e08a80; --hob:#9cc77a; --dwa:#e7a062; --wiz:#aab8d8; --spc:#6fc4b6; --drk:#e07aa6; --hl:#5c4a17; --branch:#7d6c4c; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.5;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 56px}
@@ -212,6 +212,13 @@ section.panel{background:transparent;border:0;padding:6px 0 0}
 .facts{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0;font-size:13.5px}
 .facts dt{color:var(--muted)}
 .facts dd{margin:0;font-weight:500}
+.dapp{display:grid;gap:12px}
+.dapp h4{margin:0 0 5px;font-size:12px;font-weight:600;color:var(--muted)}
+.dapp ul{list-style:none;margin:0;padding:0;display:grid;gap:5px}
+.dapp li{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:13.5px;font-weight:500}
+.dapp li small{font-weight:400;color:var(--muted);font-size:12px;text-align:right}
+.dapp .dwhen{font-size:13.5px;font-weight:500}
+.dapp .dwhen small{display:block;font-weight:400;color:var(--muted);font-size:12px;margin-top:2px}
 .dsrc{margin:6px 0 0;font-size:12px;color:var(--muted)}
 .dsrc a{color:inherit}
 </style>
@@ -539,6 +546,8 @@ body.panned .stage::after{opacity:0}
 <aside id="drawer" role="dialog" aria-modal="true" aria-label="Person details"></aside>
 <script src="portraits.js"></script>
 <script src="details.js"></script>
+<script src="appearances.js"></script>
+<script src="beings.js"></script>
 <script src="gallery.js"></script>
 <script>
 const EM={
@@ -755,6 +764,10 @@ T.rop={label:"Rings of Power",c:"var(--accent)",e:"rop",title:"The Rings of Powe
   {n:"Tom Bombadil",s:"Master of wood, water and hill",k:1,sp:"Goldberry"},
   {n:"Goldberry",s:"the River-daughter",k:1}]}
  ]};
+Object.assign(ALIAS,BEINGS_ALIAS);Object.assign(T,BEINGS);ORDER.push("wizards","species","villain");
+EM.wizards='<path d="M12 2.5 6.5 16h11z"/><path d="M3.5 18.5h17"/><path d="M9 21.5h6"/>';
+EM.species='<path d="M4 18c1-5 3-9 6-10 2-.6 3-2 3.5-4l2.5 3-1 2c2 1 3.500 4 3.500 9"/><path d="M8 18l1.500-3 1.500 3 1.500-3L14 18"/>';
+EM.villain='<path d="M2.500 12s3.500-6.500 9.500-6.500S21.500 12 21.500 12 18 18.500 12 18.500 2.500 12 2.500 12z"/><ellipse cx="12" cy="12" rx="1.600" ry="4"/>';
 ORDER.push("rop");
 const KD={"Gil-galad": "elves", "Galadriel": "elves", "Celebrimbor": "elves", "Círdan": "elves", "Arondir": "elves", "Médhor": "elves", "Elrond": "half", "Bronwyn": "men", "Theo": "men", "Rowan of Tirharad": "men", "Tar-Palantir": "men", "Tar-Míriel": "men", "Ar-Pharazôn": "men", "Kemen": "men", "Elendil": "men", "Isildur": "men", "Anárion": "men", "Eärien": "men", "Valandil (series)": "men", "Ontamo": "men", "Waldreg": "men", "Hagen": "men", "Largo Brandyfoot": "hobbits", "Nori Brandyfoot": "hobbits", "Dilly Brandyfoot": "hobbits", "Rose Brandyfoot": "hobbits", "Marigold Brandyfoot": "hobbits", "Poppy Proudfellow": "hobbits", "Sadoc Burrows": "hobbits", "Malva Meadowgrass": "hobbits", "Miles Brightapple": "hobbits", "Gundabale Earthauler": "hobbits", "Durin III": "dwarves", "Durin IV": "dwarves", "Thrain (series)": "dwarves", "Disa": "dwarves", "Narvi": "dwarves"};
 (function w(l){for(const o of l){if(o.n)o.kd=KD[o.n]||"other";w(o.c||[])}})(T.rop.roots);
@@ -1008,6 +1021,23 @@ function galHtml(gl){if(!gl.length)return"";
   const types=[...new Set(gl.map(i=>i.t))];
   return `<div class="dcap" id="dcap">${capHtml(gl[0])}</div>`+(gl.length<2?"":(types.length>1?`<div class="gfil">`+["all",...types].map(k=>`<button type="button" data-gf="${k}" aria-pressed="${k==="all"}">${k==="all"?"All":TL[k]} ${k==="all"?gl.length:gl.filter(i=>i.t===k).length}</button>`).join("")+`</div>`:"")+
    `<div class="gstrip">${gl.map((i,n)=>`<button type="button" class="gth" data-gi="${n}" data-gt="${i.t}" aria-current="${n===0}" aria-label="Image ${n+1}"><img loading="lazy" alt="" src="${i.f}"></button>`).join("")}</div>`)}
+const WORKS={sil:["Books","The Silmarillion","First Age"],ut:["Books","Unfinished Tales","Ages of Middle-earth"],hom:["Books","The History of Middle-earth","Ages of Middle-earth"],hob:["Books","The Hobbit","TA 2941–2942"],lotr:["Books","The Lord of the Rings","TA 3018–3021"],
+ hobf:["Films","The Hobbit trilogy","2012–2014 · TA 2941"],lotrf:["Films","The Lord of the Rings trilogy","2001–2003 · TA 3018"],rop:["Series","The Rings of Power","2022– · Second Age"]};
+const AGEN={YT:"Years of the Trees",FA:"First Age",SA:"Second Age",TA:"Third Age",FO:"Fourth Age"};
+function appearHtml(x){const o=x.o,t=wt(o.n),a=t&&typeof APPEAR!=="undefined"?APPEAR[t]:null;let w=a?a.w.slice():[];
+  if(!a){if(isSeries(x))w=["rop"];else if(isMovie(x))w=["lotrf"]}
+  const ag=a?a.a:[];if(!w.length&&!ag.length)return"";
+  const ord=["sil","ut","hom","hob","lotr","hobf","lotrf","rop"],grp={};for(const k of ord)if(w.includes(k)){const[g,n,y]=WORKS[k];(grp[g]=grp[g]||[]).push(`<li><span>${n}</span><small>${y}</small></li>`)}
+  return row("Appears in",`<div class="dapp">`+
+   (ag.length?`<div class="dwhen">${ag.map(k=>AGEN[k]).join(" → ")}<small>Ages of Middle-earth they were part of</small></div>`:"")+
+   Object.entries(grp).map(([g,l])=>`<div><h4>${g}</h4><ul>${l.join("")}</ul></div>`).join("")+`</div>`)}
+/* spouses that are in the tree become clickable chips; the rest stay as text */
+const byName=new Map();for(const x of Object.values(PEOPLE))if(!byName.has(x.o.n))byName.set(x.o.n,x);
+function spouseHtml(sp){const names=[...byName.keys()];
+  return sp.split(/;|,\s*(?=[A-ZÀ-Þ])/).map(raw=>{const p=raw.replace(/\s*\((1st|2nd)[^)]*\)/,"").split(",")[0].trim(),w=p.split(/\s+/);
+    let hit=names.filter(n=>p===n||p.startsWith(n+" ")).sort((a,b)=>b.length-a.length)[0];
+    if(!hit&&w.length===1){const c=names.filter(n=>n.startsWith(p+" "));if(c.length===1)hit=c[0]}
+    return hit?`<div class="chips">${chip(byName.get(hit))}</div>`:`<div>⚭ ${esc(raw.trim())}</div>`}).join("")}
 let curP=null,drOrigin=null;
 const navList=()=>[...pnl.querySelectorAll("[data-id]")].filter(el=>el.offsetParent&&!el.classList.contains("leaving"));
 /* a portrait that flies between its card and the drawer hero */
@@ -1026,8 +1056,8 @@ function openP(id,from,dir=0){const x=PEOPLE[id];if(!x)return;const was=dr.class
    (u?`<img id="dhero" alt="${esc(o.n)}" src="${u}">`:`<div class="gfb"><b>${esc(ini(o.n))}</b></div>`)+
    `</div>${galHtml(gl)}<div class="dbody" style="--c:${t.c}"><div class="dtags"><span class="dtag">${t.label}</span>${o.k?'<span class="dtag key">★ Key character</span>':""}${o.x?'<span class="dtag">Series original</span>':""}</div>`+
    `<h2>${esc(o.n)}</h2>${o.s?`<p class="dsub">${esc(o.s)}</p>`:""}`+
-   (d?(d.s?row("About",`<p class="dabout">${esc(d.s)}</p>`):"")+(d.f.length?row("Details",`<dl class="facts">${d.f.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}</dl>`):""):"")+
-   (o.sp?row("Spouse",`<div>⚭ ${esc(o.sp)}</div>`):"")+(par?row("Parent",`<div class="chips">${chip(par)}</div>`):"")+
+   (d?(d.s?row("About",`<p class="dabout">${esc(d.s)}</p>`):"")+(d.f.length?row("Details",`<dl class="facts">${d.f.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}</dl>`):""):"")+appearHtml(x)+
+   (o.sp?row("Spouse",spouseHtml(o.sp)):"")+(par?row("Parent",`<div class="chips">${chip(par)}</div>`):"")+
    (x.kids.length?row(`Children (${x.kids.length})`,`<div class="chips">${x.kids.map(k=>chip(PEOPLE[k])).join("")}</div>`):"")+
    (o.nt?row("Note",`<p class="dnote">${esc(o.nt)}</p>`):"")+
    (o.j?(()=>{const tg=jumpTarget(o);return `<div><button type="button" class="jump" data-j="${o.j}"${tg?` data-p="${tg.id}"`:""} style="--c2:${T[o.j].c}">${o.sp?`⚭ Married to ${esc(o.sp.split(",")[0])}`:"Also appears in"} · ${tg?"open in":"see"} ${T[o.j].label} →</button></div>`})():"")+

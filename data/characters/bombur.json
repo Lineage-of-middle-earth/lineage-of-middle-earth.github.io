@@ -1,0 +1,7 @@
+{
+ "key": "Bombur",
+ "details": {"s": "Bombur was a Dwarf who accompanied Thorin Oakenshield and Bilbo Baggins on their quest to the Lonely Mountain as part of the company, alongside his brother Bofur and cousin Bifur. Bombur was noted as the fattest Dwarf in the company.", "f": [["Race", "Dwarves"], ["Culture", "Unknown; possibly Firebeards or Broadbeams"], ["Born", "Late Third Age"], ["Died", "Before FO 91|siblings = Bofur|height=About 4'0\" at least|realms=Erebor}}"], ["Hair", "Red"], ["Weapon", "Iron Ladle"], ["Played by", "Stephen Hunter"]], "u": "https://lotr.fandom.com/wiki/Bombur"},
+ "gallery": [{"f": "images/g/a64446424453.webp", "c": "Bombur, as he appears in The Hobbit: An Unexpected Journey", "t": "art"}, {"f": "images/g/f749a3ef0789.webp", "c": "Bombur, by TolmanCotton on DeviantArt", "t": "art"}, {"f": "images/g/16ce5a067e41.webp", "c": "Bombur (1977)", "t": "movie"}, {"f": "images/g/d51b1b5c3b4f.webp", "c": "Bombur captured by a Troll", "t": "art"}, {"f": "images/g/109b763ed4b3.webp", "c": "Bombur in Rivendell", "t": "art"}],
+ "portrait": "images/961cc304fb.webp",
+ "appear": {"w": [], "a": ["TA", "FO"]}
+}

@@ -1,0 +1,7 @@
+{
+ "key": "Isildur",
+ "details": {"s": "Isildur was the oldest son of Elendil and the brother of Anárion. He and Anárion founded and jointly ruled Gondor in the south, while their father dwelt in Arnor in the north.", "f": [["Title", "King of Gondor, High King of Arnor and, Gondor, High King of the Dúnedain"], ["Race", "Men"], ["Born", "SA 3209"], ["Died", "TA 2, Disaster of the Gladden Fields"], ["Height", "7'0\""], ["Played by", "Harry Sinclair, Maxim Baldry"]], "u": "https://lotr.fandom.com/wiki/Isildur"},
+ "gallery": [{"f": "images/g/31657461068a.webp", "c": "Harry Sinclair as Isildur in Peter Jackson's", "t": "movie"}, {"f": "images/g/7b5c3568a459.webp", "c": "Anárion and Isildur (right) in their youth, by Billy Mosig", "t": "art"}, {"f": "images/g/bc3995961b95.webp", "c": "Isildur taking the One Ring, after his father and Gil-galad are slain - by Ralph Damiani", "t": "art"}, {"f": "images/g/07309ec033d4.webp", "c": "Isildur putting on the Ring to escape", "t": "art"}, {"f": "images/g/6efcb79e9bae.webp", "c": "Isildur in", "t": "art"}, {"f": "images/g/fbcdc8efc446.webp", "c": "Isildur on board the Sail-master's ship", "t": "series"}],
+ "portrait": "images/cc37aaa29a.webp",
+ "appear": {"w": ["hom", "lotr", "lotrf", "rop", "sil"], "a": ["SA", "TA"]}
+}

@@ -1,0 +1,7 @@
+{
+ "key": "Arathorn II",
+ "details": {"s": "Arathorn II was the fifteenth Chieftain of the Dúnedain and father of the future Aragorn II, who reunited the lost kingdom of Arnor with Gondor.", "f": [["Title", "Chieftain of the Dúnedain, Isildurioni"], ["Race", "Men"], ["Culture", "Dúnedain of the North (Rangers of the North)"], ["Born", "TA 2873"], ["Died", "TA 2933"], ["Weapon", "Shards of Narsil, Chieftain's sword"]], "u": "https://lotr.fandom.com/wiki/Arathorn_II"},
+ "gallery": [{"f": "images/g/72f0d625d30a.webp", "c": "Christopher Dane as Arathorn II in Born of Hope (a fan film)", "t": "movie"}, {"f": "images/g/cb8c47572001.webp", "c": "Arathorn prepared to fight in the fan film Born of Hope (2009).", "t": "movie"}, {"f": "images/g/c2c2ca4ec5ec.webp", "c": "Christopher Dane portraying Arathorn in the fan film Born of Hope (2009).", "t": "movie"}, {"f": "images/g/0ad31bfaf6ac.webp", "c": "Arathorn and his wife Gilraen talking in Born of Hope (2009)", "t": "art"}],
+ "portrait": "images/27902822c4.webp",
+ "appear": {"w": ["hom"], "a": ["TA"]}
+}

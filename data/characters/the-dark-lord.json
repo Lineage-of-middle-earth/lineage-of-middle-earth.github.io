@@ -1,0 +1,5 @@
+{
+ "key": "The Dark Lord",
+ "portrait": "images/g/4e128ae0e46a.webp",
+ "appear": {"w": ["sil", "lotr", "lotrf"], "a": ["SA"]}
+}

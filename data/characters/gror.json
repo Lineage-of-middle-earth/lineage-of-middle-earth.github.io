@@ -1,0 +1,7 @@
+{
+ "key": "Grór",
+ "details": {"s": "Grór was the founder of the Dwarven settlements in the Iron Hills and their first lord.", "f": [["Title", "Lord of the Iron Hills"], ["Race", "Dwarves"], ["Culture", "Durin's Folk, Dwarves of the Iron Hills"], ["Born", "TA 2563"], ["Died", "TA 2805 (aged 242)"], ["Height", "About 4'0\" at least"]], "u": "https://lotr.fandom.com/wiki/Gr%C3%B3r"},
+ "gallery": [{"f": "images/g/0a7072fcd26a.webp", "c": "Grór in", "t": "art"}],
+ "portrait": "images/a409e87123.webp",
+ "appear": {"w": ["lotr"], "a": ["TA"]}
+}

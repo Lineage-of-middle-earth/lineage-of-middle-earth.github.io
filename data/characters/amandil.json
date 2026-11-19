@@ -1,0 +1,7 @@
+{
+ "key": "Amandil",
+ "details": {"s": "Amandil was the leader of the Faithful in Númenor and became the eighteenth and last Lord of Andúnië. His role as Lord of Andúnië and his dedication as one of the Faithful paved the way for the High Kings of Gondor and Arnor, ensuring their traditions were upheld by the Dúnedain of Middle-earth, culminating in Aragorn II Elessar. Elendil the Tall was his son, and Isildur his grandson.", "f": [["Title", "Lord of Andúnië"], ["Race", "Men"], ["Culture", "Númenóreans, (House of Elros), Faithful}}"], ["Born", "Late Second Age ?"], ["Died", "Sailed west either SA 3310 or SA 3316; fate untold"]], "u": "https://lotr.fandom.com/wiki/Amandil"},
+ "gallery": [{"f": "images/g/307aa1538801.webp", "c": "", "t": "art"}],
+ "portrait": "images/cb3656088c.webp",
+ "appear": {"w": ["hom", "rop"], "a": ["SA"]}
+}

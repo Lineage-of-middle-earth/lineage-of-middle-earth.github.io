@@ -1,0 +1,7 @@
+{
+ "key": "Gróin",
+ "details": {"s": "Gróin was the son of Farin, was a Dwarf of Durin's Folk, brother of Fundin, and father of Óin and Glóin.", "f": [["Race", "Dwarves"], ["Culture", "Durin's Folk"], ["Born", "TA 2671"], ["Died", "TA 2923"], ["Height", "About 4'0\" at least"]], "u": "https://lotr.fandom.com/wiki/Gr%C3%B3in"},
+ "gallery": [{"f": "images/g/bcaffa565acf.webp", "c": "Gróin in", "t": "art"}],
+ "portrait": "images/a34b1784f8.webp",
+ "appear": {"w": [], "a": ["TA"]}
+}

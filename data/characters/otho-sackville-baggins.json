@@ -1,0 +1,7 @@
+{
+ "key": "Otho Sackville-Baggins",
+ "details": {"s": "Otho Sackville-Baggins was a Hobbit of the Shire.", "f": [["Race", "Hobbits"], ["Culture", "Shire-hobbits (Sackville-Baggins)"], ["Born", "TA 2910 (SR 1309)"], ["Died", "TA 3012 (SR 1411)"], ["Height", "1.22m (4'0\")"], ["Played by", "Peter Corrigan, (The Lord of the Rings), Brian Hotter, (The Hobbit trilogy)"]], "u": "https://lotr.fandom.com/wiki/Otho_Sackville-Baggins"},
+ "gallery": [{"f": "images/g/da34d6b60da0.webp", "c": "Otho Sackville-Baggins (in Peter Jackson's films)", "t": "movie"}],
+ "portrait": "images/5bfd6a904c.webp",
+ "appear": {"w": ["hobf", "lotrf"], "a": ["TA"]}
+}

@@ -1,0 +1,7 @@
+{
+ "key": "Ori",
+ "details": {"s": "Ori was a member of Thorin's Company of Dwarves who participated in the Quest of Erebor and the Battle of Five Armies, which he survived. He and his brothers, Dori and Nori, were remote kinsmen of Thorin II Oakenshield.", "f": [["Race", "Dwarves"], ["Culture", "Durin's Folk, Dwarves of the Northern Blue Mountains, Dwarves of the Lonely Mountain"], ["Died", "TA 2994, Chamber of Mazarbul"], ["Height", "About 4'0\" at least"], ["Played by", "Adam Brown}}"]], "u": "https://lotr.fandom.com/wiki/Ori"},
+ "gallery": [{"f": "images/g/afd1b8d72e4e.webp", "c": "", "t": "movie"}, {"f": "images/g/def78bebb1c7.webp", "c": "Ori with Dori and Nori", "t": "art"}, {"f": "images/g/1b3928101bad.webp", "c": "Ori holding the Book of Mazarbul", "t": "art"}, {"f": "images/g/16dcfad1ef14.webp", "c": "Last page of the Book of Mazarbul", "t": "art"}, {"f": "images/g/9b6322b7b28c.webp", "c": "Ori as portrayed in 1977", "t": "movie"}, {"f": "images/g/f5670a5b82ca.webp", "c": "Ori's final resting place in Moria, holding the Book of Mazarbul", "t": "art"}, {"f": "images/g/e87c05ee1b05.webp", "c": "Ori in .", "t": "movie"}],
+ "portrait": "images/7d8b670795.webp",
+ "appear": {"w": ["hobf", "lotr", "lotrf"], "a": ["TA"]}
+}

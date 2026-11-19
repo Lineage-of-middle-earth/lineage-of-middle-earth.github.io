@@ -1,0 +1,7 @@
+{
+ "key": "Curufin",
+ "details": {"s": "Curufin, also called Curufin the Crafty, was a Ñoldorin prince and the fifth of the seven Sons of Fëanor and Nerdanel. Curufin was the father of Celebrimbor, master Jewel-smith of Eregion who would later forge the three Elvish Rings of Power.", "f": [["Title", "Prince of the Ñoldor, Lord of Himlad (with his brother Celegorm)"], ["Also known as", "Curufin the Crafty, Curufinwë, Atarinkë"], ["Race", "Elves"], ["Culture", "Ñoldor (House of Fëanor)"], ["Born", "During the Noontide of Valinor"], ["Died", "FA 506"], ["Hair", "Dark"], ["Weapon", "Sword, bow, Angrist"]], "u": "https://lotr.fandom.com/wiki/Curufin"},
+ "gallery": [{"f": "images/g/b3f06f6c51d5.webp", "c": "Curufin when he made his oath, by Venlian", "t": "art"}, {"f": "images/g/0d34bc29f493.webp", "c": "Curufin with his wife and his son, Celebrimbor in Valinor, by Marya Filatova", "t": "art"}, {"f": "images/g/521a84ab329c.webp", "c": "Curufin and Celegorm, by Mathia Arkoniel", "t": "art"}, {"f": "images/g/b9a979139c39.webp", "c": "Curufin with his brother Celegorm in Nargothrond, by Jenny Dolfen", "t": "art"}],
+ "portrait": "images/a0747bb580.webp",
+ "appear": {"w": ["hom", "sil"], "a": ["FA"]}
+}

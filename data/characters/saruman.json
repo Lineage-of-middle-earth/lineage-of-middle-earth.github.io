@@ -1,0 +1,6 @@
+{
+ "key": "Saruman",
+ "portrait": "images/b/2cfff6e1b9.webp",
+ "details": {"s": "Saruman the White was the first and greatest of the Istari and head of the White Council. Seeking the Ring for himself, he turned to Sauron's cause, ruled Isengard and bred the Uruk-hai, and was overthrown by the Ents and the Rohirrim.", "f": [], "u": "https://lotr.fandom.com/wiki/Saruman"},
+ "appear": {"w": ["hobf", "lotr", "lotrf", "sil"], "a": []}
+}

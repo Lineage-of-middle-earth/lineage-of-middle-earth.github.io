@@ -1,0 +1,7 @@
+{
+ "key": "Thranduil",
+ "details": {"s": "Thranduil, son of Oropher, was an Elven king who ruled over the Woodland Realm in the Third Age. Though inherently cautious, his army was key to victory in the Battle of Five Armies and he defended his realm against the forces of Sauron in the War of the Ring. He was the father of the Elven prince of Mirkwood, Legolas, who was a member of the Fellowship of the Ring.", "f": [["Title", "King of the Woodland Realm"], ["Also known as", "Elvenking"], ["Race", "Elves"], ["Culture", "Sindar (Elves of Mirkwood)"], ["Born", "Before FA 506"], ["Died", "Unknown"], ["Hair", "Golden"], ["Weapon", "Sword"], ["Played by", "Lee Pace"]], "u": "https://lotr.fandom.com/wiki/Thranduil"},
+ "gallery": [{"f": "images/g/86347c352be4.webp", "c": "Thranduil, portrayed by Lee Pace", "t": "movie"}, {"f": "images/g/9571491e71f6.webp", "c": "Bilbo shows the Arkenstone to the Elvenking and Bard, by Ted Nasmith", "t": "art"}, {"f": "images/g/b053453e3551.webp", "c": "The Elvenking arrives at the Lonely Mountain", "t": "art"}, {"f": "images/g/337d7298ef3d.webp", "c": "Thranduil confronts Narzug, a captured Orc", "t": "art"}, {"f": "images/g/2367bf1cbb3f.webp", "c": "Thranduil as shown during the Siege of Dale", "t": "art"}],
+ "portrait": "images/8af40e882e.webp",
+ "appear": {"w": ["hob", "hobf", "hom", "lotr"], "a": ["FA", "SA", "TA"]}
+}

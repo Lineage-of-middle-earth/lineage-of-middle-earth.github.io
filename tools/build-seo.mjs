@@ -16,9 +16,13 @@ const html = read("index.html");
 const dataSrc = html.slice(html.indexOf("const EM={"), html.indexOf("let cur="));
 const ctx = vm.createContext({});
 const D = vm.runInContext(
-  [read("portraits.js"), read("details.js"), read("gallery.js"), dataSrc,
-   ";({T,ORDER,wt,SKIP,DETAILS,PORTRAITS,GALLERY})"].join("\n"), ctx);
-const { T, ORDER, wt, SKIP, DETAILS, PORTRAITS, GALLERY } = D;
+  [read("portraits.js"), read("details.js"), read("appearances.js"), read("beings.js"), read("gallery.js"), dataSrc,
+   ";({T,ORDER,wt,SKIP,DETAILS,APPEAR,PORTRAITS,GALLERY})"].join("\n"), ctx);
+const { T, ORDER, wt, SKIP, DETAILS, APPEAR, PORTRAITS, GALLERY } = D;
+/* same works and story periods as WORKS in index.html */
+const WORKS = {sil:["Books","The Silmarillion","First Age"],ut:["Books","Unfinished Tales","Ages of Middle-earth"],hom:["Books","The History of Middle-earth","Ages of Middle-earth"],hob:["Books","The Hobbit","TA 2941–2942"],lotr:["Books","The Lord of the Rings","TA 3018–3021"],
+  hobf:["Films","The Hobbit trilogy","2012–2014, TA 2941"],lotrf:["Films","The Lord of the Rings trilogy","2001–2003, TA 3018"],rop:["Series","The Rings of Power","2022–, Second Age"]};
+const AGEN = {YT:"Years of the Trees",FA:"First Age",SA:"Second Age",TA:"Third Age",FO:"Fourth Age"};
 
 /* the GA tag and click tracking from index.html, so every page is measured the same way */
 const gaStart = html.indexOf("<!-- Google tag (gtag.js) -->");
@@ -64,7 +68,7 @@ const urlOf = n => `/characters/${slug(n)}/`;
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 const clip = (s, n) => s.length <= n ? s : s.slice(0, s.lastIndexOf(" ", n - 1)).replace(/[,;:·\s]+$/, "") + "…";
 const tabLabel = k => T[k].label;
-const colour = k => ({ elves: "var(--elf)", half: "var(--half)", men: "var(--men)", rohan: "var(--men)", hobbits: "var(--hob)", dwarves: "var(--dwa)", rop: "var(--gold)" })[k];
+const colour = k => ({ elves: "var(--elf)", half: "var(--half)", men: "var(--men)", rohan: "var(--men)", hobbits: "var(--hob)", dwarves: "var(--dwa)", wizards: "var(--wiz)", species: "var(--spc)", villain: "var(--drk)", rop: "var(--gold)" })[k];
 const link = n => isPerson(n) && byName.has(n) ? `<a href="${urlOf(n)}">${esc(n)}</a>` : esc(n);
 const uniq = a => [...new Set(a)];
 
@@ -134,6 +138,12 @@ for (const [name, apps] of byName) {
   const desc = clip(descBits.filter(Boolean).join(" "), 158);
 
   const facts = (det && det.f || []).filter(([k]) => !/^(Spouse|Children|Parentage|Siblings)$/i.test(k));
+  const ap = key && APPEAR[key], aw = ap ? ap.w : tabs.includes("rop") ? ["rop"] : o.k ? ["lotrf"] : [], aa = ap ? ap.a : [];
+  const appears = [
+    aa.length && `<dt>When</dt><dd>${aa.map(k => AGEN[k]).join(" → ")}</dd>`,
+    ...["Books", "Films", "Series"].map(g => { const l = Object.keys(WORKS).filter(k => aw.includes(k) && WORKS[k][0] === g);
+      return l.length && `<dt>${g}</dt><dd>${l.map(k => `${esc(WORKS[k][1])} (${esc(WORKS[k][2])})`).join("; ")}</dd>` }),
+  ].filter(Boolean).join("");
   const fam = [
     parents.length && `<dt>Parent${parents.length > 1 ? "s" : ""}</dt><dd>${parents.map(link).join(", ")}</dd>`,
     spouse.length && `<dt>Spouse</dt><dd>${spouse.map(s => s.split(/,\s*/).map(p => link(p.replace(/\s*\((1st|2nd)\)$/, ""))).join(", ")).join("; ")}</dd>`,
@@ -153,6 +163,7 @@ ${det ? `<p class="src">From the <a href="${esc(det.u)}" rel="noopener">Lord of 
 ${fam ? `<h2>Family of ${esc(name)}</h2><dl>${fam}</dl>` : ""}
 ${notes.map(n => `<p class="note">${esc(n)}</p>`).join("")}
 ${facts.length ? `<h2>Facts</h2><dl>${facts.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}</dl>` : ""}
+${appears ? `<h2>Where and when ${esc(name)} appears</h2><dl>${appears}</dl>` : ""}
 ${gal.length ? `<h2>Images of ${esc(name)}</h2><ul class="gal">${gal.map(g => `<li><figure><img src="/${g.f}" alt="${esc(g.c || name)}" loading="lazy"><figcaption>${esc(g.c || "")}</figcaption></figure></li>`).join("")}</ul>` : ""}
 ${kids.length || sibs.length ? `<h2>Related characters</h2><ul class="people">${uniq([...parents, ...kids, ...sibs]).filter(n => byName.has(n)).map(n => `<li><a href="${urlOf(n)}">${esc(n)}</a></li>`).join("")}</ul>` : ""}
 <a class="cta" href="/#${first.id}">See ${esc(name)} in the interactive family tree →</a>

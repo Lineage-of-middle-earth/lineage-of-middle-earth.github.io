@@ -1,0 +1,7 @@
+{
+ "key": "Hamfast Gamgee",
+ "details": {"s": "Hamfast \"The Gaffer\" Gamgee was a Hobbit of the Shire, a gardener by trade and father of Samwise Gamgee.", "f": [["Also known as", "The Gaffer, Ranugad Galbasi"], ["Race", "Hobbit"], ["Culture", "Shire-hobbits"], ["Born", "TA 2926 (SR 1326)"], ["Died", "FO 7 (SR 1428)"], ["Height", "3'0\"-4'0\""], ["Hair", "Brown, later gray"], ["Played by", "Norman Forsey"]], "u": "https://lotr.fandom.com/wiki/Hamfast_Gamgee"},
+ "gallery": [{"f": "images/g/506f33524868.webp", "c": "Hamfast \"The Gaffer\" Gamgee in Peter Jackson's The Lord of the Rings", "t": "movie"}, {"f": "images/g/acf4bdc0bb02.webp", "c": "Hamfast Gamgee in", "t": "art"}],
+ "portrait": "images/48921411b2.webp",
+ "appear": {"w": ["lotr"], "a": ["TA", "FO"]}
+}

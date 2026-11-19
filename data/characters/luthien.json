@@ -1,0 +1,7 @@
+{
+ "key": "Lúthien",
+ "details": {"s": "Lúthien, also known as Tinúviel, was the immortal princess of Doriath, wife of Beren Erchamion, and the most beautiful of all the Children of Ilúvatar to ever live. Her love of the mortal man Beren, for whom she was prepared to risk everything, including her life, was legendary and lamented forever in song and story. She and Beren braved Morgoth's horrors, eventually winning a Silmaril from his crown and the approval of their marriage by King Thingol.", "f": [["Title", "Princess of Doriath, Lady of Tol Galen"], ["Also known as", "Tinúviel"], ["Race", "Half Elf, half Maia"], ["Culture", "Sindar of Doriath (House of Thingol)"], ["Born", "YT 1200"], ["Died", "FA 467/FA 503 (aged 3,342/3,378)"], ["Height", "Tall"], ["Hair", "Dark brown"], ["Eyes", "Grey"], ["Weapon", "Elf-magic, voice"]], "u": "https://lotr.fandom.com/wiki/L%C3%BAthien"},
+ "gallery": [{"f": "images/g/fc38f4b311f3.webp", "c": "Lúthien Tinúviel, by Sara Maria Morello", "t": "art"}, {"f": "images/g/73f1e853d14c.webp", "c": "Lúthien dancing in the woods, by Ted Nasmith", "t": "art"}, {"f": "images/g/5994f5cdbf1d.webp", "c": "Lúthien singing for Morgoth in his throne-room, by Ralph Damiani", "t": "art"}, {"f": "images/g/bf236366d1c4.webp", "c": "Beren and Lúthien plighting their troth within Doriath, by Kip Rasmussen", "t": "art"}],
+ "portrait": "images/0a07f08740.webp",
+ "appear": {"w": ["hom", "lotr", "sil"], "a": ["YT", "FA"]}
+}

@@ -1,0 +1,7 @@
+{
+ "key": "Fengel",
+ "details": {"s": "Fengel was the fifteenth King of Rohan.", "f": [["Race", "Men"], ["Culture", "Rohirrim (House of Eorl)"], ["Born", "TA 2870"], ["Died", "TA 2953"]], "u": "https://lotr.fandom.com/wiki/Fengel"},
+ "gallery": [{"f": "images/g/efba45cc0a00.webp", "c": "Fengel, as seen in", "t": "art"}],
+ "portrait": "images/814f79cffb.webp",
+ "appear": {"w": ["hom"], "a": ["TA"]}
+}

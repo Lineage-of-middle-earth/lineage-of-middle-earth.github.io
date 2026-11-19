@@ -1,0 +1,7 @@
+{
+ "key": "Elrohir",
+ "details": {"s": "Elladan and Elrohir were the twin Half-elven Sons of Elrond and Celebrían of Rivendell, and were noted for their close friendship and cooperation with the Dúnedain of Arnor, Rangers of the North, and Men in general, and for their deeds during the War of the Ring.", "f": [["Title", "Sons of Elrond"], ["Race", "Half-elves"], ["Culture", "Elves of Rivendell"], ["Born", "TA 130"], ["Died", "Unknown"], ["Height", "Tall"], ["Hair", "Dark"], ["Eyes", "Grey"], ["Played by", "Sam and Matt Kennard (Born of Hope)"]], "u": "https://lotr.fandom.com/wiki/Elladan_and_Elrohir"},
+ "gallery": [{"f": "images/g/de3e4a4e04a1.webp", "c": "Elladan and Elrohir as they appear in the fan film Born of Hope", "t": "movie"}, {"f": "images/g/8fdbf40433ce.webp", "c": "Depiction of the twins made for", "t": "art"}, {"f": "images/g/0e35479c9310.webp", "c": "A depiction of Elladan", "t": "art"}, {"f": "images/g/979a3cd442d0.webp", "c": "Elrohir, by Magali Villeneuve", "t": "art"}, {"f": "images/g/faf73cb42583.webp", "c": "Elladan, by Magali Villeneuve", "t": "art"}],
+ "portrait": "images/256739303e.webp",
+ "appear": {"w": ["hom", "lotr"], "a": ["TA"]}
+}

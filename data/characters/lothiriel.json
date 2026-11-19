@@ -1,0 +1,7 @@
+{
+ "key": "Lothíriel",
+ "details": {"s": "Lothíriel was a princess of Dol Amroth in Middle-earth, daughter of Prince Imrahil, and later Queen of Rohan.", "f": [["Title", "Princess of Dol, Amroth, Queen of Rohan"], ["Race", "Men"], ["Culture", "Dúnedain, Men of Gondor (House of Dol Amroth), Rohirrim"], ["Born", "TA 2999"], ["Died", "Unknown"]], "u": "https://lotr.fandom.com/wiki/Loth%C3%ADriel"},
+ "gallery": [{"f": "images/g/620c1c829a2d.webp", "c": "Lothíriel of Dol Amroth, by Andi Scribbles", "t": "art"}, {"f": "images/g/4e50916c1839.webp", "c": "Lothíriel in", "t": "art"}],
+ "portrait": "images/394a26756f.webp",
+ "appear": {"w": ["hom", "lotr"], "a": ["TA"]}
+}

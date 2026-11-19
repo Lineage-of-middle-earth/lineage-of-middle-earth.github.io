@@ -1,0 +1,7 @@
+{
+ "key": "Lotho Sackville-Baggins",
+ "details": {"s": "Lotho Sackville-Baggins was a Hobbit of the Shire, hailing from the Sackville-Baggins family.", "f": [["Title", "Chief Shirriff"], ["Also known as", "Little Pimple, Pimple, The Boss, The Chief"], ["Race", "Hobbits"], ["Culture", "Shire-folk (Sackville-Baggins)"], ["Born", "TA 2964 (SR 1364)"], ["Died", "Between September 22-November 2 TA 3019 (SR 1419)"], ["Hair", "Sandy"]], "u": "https://lotr.fandom.com/wiki/Lotho_Sackville-Baggins"},
+ "gallery": [{"f": "images/g/abb6daa431c0.webp", "c": "Lotho by Matt Stewart", "t": "art"}, {"f": "images/g/4e8bcf7926ce.webp", "c": "Lotho Sackville-Baggins in The Lord of the Rings Online", "t": "art"}],
+ "portrait": "images/1eb92418d5.webp",
+ "appear": {"w": ["hom", "lotr"], "a": ["TA"]}
+}

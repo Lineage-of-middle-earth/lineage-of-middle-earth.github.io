@@ -1,0 +1,7 @@
+{
+ "key": "Turgon",
+ "details": {"s": "Turgon was a Ñoldor Elf of Gondolin, second son of Fingolfin, brother of Fingon, Aredhel, Argon, and father of Idril. In Middle-earth, Turgon was the King of Gondolin and became the High King of the Ñoldor after the death of his older brother Fingon. For centuries of the late First Age, Turgon remained successfully hidden from Morgoth until a betrayal by Maeglin, one of his subjects, caused its downfall.", "f": [["Title", "Lord of Nevrast, King of Gondolin, High King of the Ñoldor"], ["Also known as", "Turukáno, the Wise"], ["Race", "Elves"], ["Culture", "Ñoldor (House of Fingolfin), Gondolindrim"], ["Born", "YT 1300"], ["Died", "FA 510, Battle of Gondolin"], ["Hair", "Dark"], ["Weapon", "Glamdring"]], "u": "https://lotr.fandom.com/wiki/Turgon"},
+ "gallery": [{"f": "images/g/df42e10d6da4.webp", "c": "Turgon the Wise watching sunrise from the walls of Gondolin, by Marya Filatova", "t": "art"}, {"f": "images/g/12fc3a686eb3.webp", "c": "Turgon with his wife Elenwë before her death, by Marya Filatova", "t": "art"}, {"f": "images/g/a3424d2f6bc2.webp", "c": "Turgon's citadel in Gondolin, by Nicolas Chacin", "t": "art"}, {"f": "images/g/79f89b92f04d.webp", "c": "Turgon with glamdring", "t": "art"}],
+ "portrait": "images/c950af08fd.webp",
+ "appear": {"w": ["hom"], "a": ["YT", "FA"]}
+}

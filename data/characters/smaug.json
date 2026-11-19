@@ -1,0 +1,6 @@
+{
+ "key": "Smaug",
+ "portrait": "images/b/adb96a3be5.webp",
+ "details": {"s": "Smaug was the last great dragon of Middle-earth. He took the Lonely Mountain from the Dwarves of Erebor in T.A. 2770 and was slain by Bard of Lake-town in T.A. 2941.", "f": [], "u": "https://lotr.fandom.com/wiki/Smaug"},
+ "appear": {"w": ["hob", "hobf"], "a": []}
+}

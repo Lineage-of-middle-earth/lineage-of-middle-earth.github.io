@@ -1,0 +1,7 @@
+{
+ "key": "Narvi",
+ "details": {"s": "Narvi (originally Ngarvi or Ñarvi) was a Dwarf of Khazad-dûm (Moria) in the mid-Second Age.", "f": [["Born", "Between SA 750 and SA 1500|race=Dwarves|gender=Male|height=About 4'0\" at least|culture=Dwarves of Khazad-dûm|actor=Kevin Eldon, in }}"]], "u": "https://lotr.fandom.com/wiki/Narvi"},
+ "gallery": [{"f": "images/g/bfd702f53f73.webp", "c": "", "t": "art"}, {"f": "images/g/0a02e202c450.webp", "c": "Narvi unveils his creation.", "t": "art"}],
+ "portrait": "images/d566b92d57.webp",
+ "appear": {"w": ["lotr", "rop"], "a": ["SA", "TA"]}
+}

@@ -1,0 +1,7 @@
+{
+ "key": "Eärendil",
+ "details": {"s": "Eärendil (Quenya; IPA:) was a great Half-elf mariner who voyaged to Valinor, entreated before the Valar on behalf of the Children of Ilúvatar, and carried a star across the sky at the end of the First Age. His acts had been prophesied of among the Elves centuries beforehand.", "f": [["Title", "Prince of Gondolin, Lord of Arvernien"], ["Also known as", "The Mariner, Half-elf, Bright, Blessed, Eärendel, Ardamírë, Mír n'Ardhon, Azrubêl"], ["Race", "Half-elves (chose to be immortal)"], ["Culture", "Ñoldor (Gondolindrim), Edain (House of Hador)"], ["Born", "FA 503, Gondolin"], ["Height", "Tall"], ["Hair", "Golden"], ["Eyes", "Blue"], ["Weapon", "Sword"]], "u": "https://lotr.fandom.com/wiki/E%C3%A4rendil"},
+ "gallery": [{"f": "images/g/c5a09a5bce42.webp", "c": "Eärendil the Mariner, by Jenny Dolfen", "t": "art"}, {"f": "images/g/0ef4a8c90a5a.webp", "c": "Eärendil searches Tirion, by Ted Nasmith", "t": "art"}, {"f": "images/g/8db4ed86cf51.webp", "c": "Eärendil slays Ancalagon, by Ted Nasmith", "t": "art"}, {"f": "images/g/c099cc3d9731.webp", "c": "Eärendil the Blessed", "t": "art"}],
+ "portrait": "images/d9d7a856d2.webp",
+ "appear": {"w": ["hom", "lotr", "rop", "sil"], "a": ["FA", "SA", "TA"]}
+}

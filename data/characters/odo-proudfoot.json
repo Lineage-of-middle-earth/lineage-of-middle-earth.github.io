@@ -1,0 +1,7 @@
+{
+ "key": "Odo Proudfoot",
+ "details": {"s": "Odo Proudfoot was a Hobbit of the Shire, and a cousin of Bilbo Baggins. He characteristically had exceptionally large and hairy feet.", "f": [["Race", "Hobbits"], ["Culture", "Shire-hobbit (Proudfoot family)"], ["Born", "TA 2904 (SR 1304)"], ["Died", "TA 3005 (SR 1405)"], ["Played by", "Noel Appleby"]], "u": "https://lotr.fandom.com/wiki/Odo_Proudfoot"},
+ "gallery": [{"f": "images/g/6f4447339439.webp", "c": "", "t": "art"}, {"f": "images/g/c8374a00ca7a.webp", "c": "Odo Proudfoot at Bilbo's Farewell Birthday Party", "t": "art"}],
+ "portrait": "images/c75944ac71.webp",
+ "appear": {"w": [], "a": ["TA"]}
+}

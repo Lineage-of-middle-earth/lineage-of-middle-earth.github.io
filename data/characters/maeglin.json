@@ -1,0 +1,7 @@
+{
+ "key": "Maeglin",
+ "details": {"s": "Maeglin was an Elf, the son of Eöl the \"Dark Elf\" and Aredhel, daughter of Fingolfin. He lived during the First Age of the Sun in Middle-earth, and was a lord of the hidden Elven kingdom of Gondolin. He became infamous for his betrayal of the location of Gondolin to the Dark Lord Morgoth.", "f": [["Title", "Lord of the Mole"], ["Also known as", "Lómion"], ["Race", "Elves"], ["Culture", "Avari (Moriquendi), Ñoldor (House of Fingolfin), Gondolindrim (House of the Mole)"], ["Born", "FA 320"], ["Died", "FA 510, Battle of Gondolin"], ["Height", "Tall"], ["Hair", "Black"], ["Eyes", "Dark"], ["Weapon", "Anguirel"]], "u": "https://lotr.fandom.com/wiki/Maeglin"},
+ "gallery": [{"f": "images/g/c013531edc73.webp", "c": "Maeglin, by Sara Maria Morello", "t": "art"}],
+ "portrait": "images/8df87dea19.webp",
+ "appear": {"w": ["hom", "sil"], "a": ["FA"]}
+}

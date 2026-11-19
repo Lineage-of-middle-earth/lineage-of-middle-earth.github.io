@@ -1,0 +1,7 @@
+{
+ "key": "Faramir",
+ "details": {"s": "Faramir was the second son of Denethor II and younger brother of Boromir. He was Captain of the Rangers of Ithilien and Captain of the White Tower upon his brother's death.", "f": [["Race", "Men"], ["Culture", "Men of Gondor (House of Húrin)"], ["Born", "TA 2983"], ["Died", "February 26, FO 82 (aged 120)"], ["Hair", "\"Raven\""], ["Eyes", "Grey"], ["Weapon", "Sword, nail-knife"], ["Played by", "David Wenham"]], "u": "https://lotr.fandom.com/wiki/Faramir"},
+ "gallery": [{"f": "images/g/11102ddaa94e.webp", "c": "Faramir as a ranger in Ithilien, by Donato Giancola", "t": "art"}, {"f": "images/g/de093388b562.webp", "c": "Faramir hiding to ambush Orcs invading Osgiliath, in", "t": "movie"}, {"f": "images/g/3dacbe01093c.webp", "c": "Faramir in the House of Healing", "t": "art"}, {"f": "images/g/e20a87b9b014.webp", "c": "Faramir at Aragorn's coronation", "t": "art"}, {"f": "images/g/0e3d177da332.webp", "c": "Possibly Faramir with Éowyn in Rankin-Bass's Return of the King (1980)", "t": "movie"}, {"f": "images/g/dd2ae993bf2d.webp", "c": "Faramir in", "t": "art"}, {"f": "images/g/17240969c76d.webp", "c": "Faramir in Osgiliath, prepared for the invading Orcs", "t": "movie"}, {"f": "images/g/df45c2d181ca.webp", "c": "Faramir as he appears in", "t": "movie"}],
+ "portrait": "images/0b8f4d837e.webp",
+ "appear": {"w": ["hom", "lotr", "lotrf"], "a": ["TA", "FO"]}
+}

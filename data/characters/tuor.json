@@ -1,0 +1,7 @@
+{
+ "key": "Tuor",
+ "details": {"s": "Tuor was an Adan of the House of Hador and a great hero of Men; the only son of Huor and Rían. He was the cousin of Túrin Turambar.", "f": [["Title", "Lord of the House of the Wing, Lord of Arvernien"], ["Also known as", "Tûr, Eladar (\"Starfather\"), Ulmondil (\"Friend of Ulmo\")"], ["Race", "Men"], ["Culture", "Edain (House of Hador), Eldar, Gondolindrim"], ["Born", "FA 472"], ["Died", "FA 525 (sailed West; aged 53)"], ["Height", "Tallest of all the Edain"], ["Hair", "Golden"], ["Weapon", "Dramborleg, sword"]], "u": "https://lotr.fandom.com/wiki/Tuor"},
+ "gallery": [{"f": "images/g/4fd847002be8.webp", "c": "Tuor, by Ted Nasmith", "t": "art"}, {"f": "images/g/117c8e544b6d.webp", "c": "Tuor meeting the Vala Ulmo - by David Greset", "t": "art"}, {"f": "images/g/65ca2658e6bd.webp", "c": "Ulmo speaks with Tuor - by John Howe", "t": "art"}, {"f": "images/g/621062f0d41d.webp", "c": "Tuor when armed, by Līga Kļaviņa", "t": "art"}],
+ "portrait": "images/89fe84ad95.webp",
+ "appear": {"w": ["hom", "ut"], "a": ["FA"]}
+}

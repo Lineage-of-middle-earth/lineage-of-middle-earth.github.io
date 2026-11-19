@@ -1,0 +1,7 @@
+{
+ "key": "Dark Wizard",
+ "details": {"s": "", "f": [["Title", "Dark Wizard"], ["Race", "Ainur"], ["Culture", "Maiar (Order of Wizards)"], ["Born", "Before the creation of Arda"], ["Height", "5' 11\""], ["Hair", "Black, greying"], ["Eyes", "Hazel"], ["Weapon", "Wizard's staff"], ["Played by", "Ciarán Hinds"]], "u": "https://lotr.fandom.com/wiki/Dark_Wizard"},
+ "gallery": [{"f": "images/g/61c4d2c34571.webp", "c": "", "t": "art"}, {"f": "images/g/c745d8ccb8ef.webp", "c": "The Dark Wizard in Caras Gaer", "t": "art"}],
+ "portrait": "images/0a37e5beee.webp",
+ "appear": {"w": ["hom", "lotr", "lotrf", "rop", "ut"], "a": []}
+}

@@ -1,0 +1,7 @@
+{
+ "key": "Thorin III Stonehelm",
+ "details": {"s": "Thorin III \"Stonehelm\" was the son and heir of Dáin II of Durin's Folk, who was king of the Dwarves of Erebor and the Iron Hills in Rhovanion.", "f": [["Title", "Stonehelm, King of Durin's Folk, King under the Mountain"], ["Race", "Dwarves"], ["Culture", "Durin's Folk"], ["Born", "TA 2866"], ["Died", "Early Fourth Age"], ["Height", "About 4'0\" at least}}"]], "u": "https://lotr.fandom.com/wiki/Thorin_III"},
+ "gallery": [{"f": "images/g/e94203f31759.webp", "c": "Thorin Stonehelm in The Lord of the Rings: The Card Game, Wraith and Ruin Adventure Pack", "t": "game"}, {"f": "images/g/fa22bbb0faec.webp", "c": "Thorin's miniature in the", "t": "art"}, {"f": "images/g/f483781024f4.webp", "c": "Thorin III in", "t": "art"}],
+ "portrait": "images/2b2da08294.webp",
+ "appear": {"w": [], "a": ["TA", "FO"]}
+}

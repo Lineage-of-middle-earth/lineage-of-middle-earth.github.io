@@ -1,0 +1,7 @@
+{
+ "key": "Barahir",
+ "details": {"s": "Barahir was an Edain man of Dorthonion during the First Age, heir to the House of Bëor and youngest child of Bregor, fifth chieftain of the People of Bëor. He was also the fourth Lord of Ladros and the seventh and probably last Chieftain of the Bëorians after his deceased elder brother Bregolas. Besides his elder brother, Barahir had three elder sisters: Bregil, Hirwen, and Gilwen.", "f": [["Title", "Chieftain of the House of Bëor, Lord of Ladros, Captain of the Outlaws of Dorthonion"], ["Race", "Men"], ["Culture", "Edain (House of Bëor)"], ["Born", "FA 400"], ["Died", "FA 460"], ["Hair", "Possibly dark"], ["Weapon", "Sword, bow"]], "u": "https://lotr.fandom.com/wiki/Barahir"},
+ "gallery": [{"f": "images/g/11599c1bbeb4.webp", "c": "Barahir with Finrod Felagund © Antti Autio", "t": "art"}],
+ "portrait": "images/750e0d0c0c.webp",
+ "appear": {"w": ["hom", "sil"], "a": ["FA"]}
+}

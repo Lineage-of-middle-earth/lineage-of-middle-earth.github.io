@@ -1,0 +1,7 @@
+{
+ "key": "Finarfin",
+ "details": {"s": "Finarfin was a Ñoldorin Elf of Valinor.", "f": [["Title", "High King of the Ñoldor (in Valinor)"], ["Also known as", "Arafinwë, Ingoldo"], ["Race", "Elves"], ["Culture", "Ñoldor (House of Finwë)"], ["Born", "YT 1230"], ["Died", "Immortal"], ["Hair", "Golden"]], "u": "https://lotr.fandom.com/wiki/Finarfin"},
+ "gallery": [{"f": "images/g/959e8cc7d874.webp", "c": "Finarfin, by Maureval", "t": "art"}, {"f": "images/g/d03cb1a8699c.webp", "c": "Finarfin and Eärwen, by Līga Kļaviņa", "t": "art"}],
+ "portrait": "images/c5919f1c6a.webp",
+ "appear": {"w": ["hom", "sil"], "a": ["YT", "FA"]}
+}

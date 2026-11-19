@@ -1,0 +1,7 @@
+{
+ "key": "Fëanor",
+ "details": {"s": "Fëanor was a Ñoldorin Elf, second King of the Noldor. It was he who led his people from Valinor in pursuit of Morgoth after the latter destroyed the Two Trees of Valinor and stole the Silmarils.", "f": [["Title", "King of the Ñoldor, Lord of the Lights"], ["Also known as", "Curufinwë, Fëanáro"], ["Race", "Elves"], ["Culture", "Ñoldor, (House of Finwë)"], ["Born", "YT 1169, Valinor"], ["Died", "YT 1497, Battle Under the Stars"], ["Height", "Tall"], ["Hair", "Raven-dark"], ["Weapon", "Elven sword"]], "u": "https://lotr.fandom.com/wiki/F%C3%ABanor"},
+ "gallery": [{"f": "images/g/69f3971b97d3.webp", "c": "Fëanor, by Soni Alcorn-Hender", "t": "art"}, {"f": "images/g/abcb5ebc6f86.webp", "c": "\"Get thee gone, and take thy due place!\" (by Jenny Dolfen)", "t": "art"}, {"f": "images/g/7de112ff912c.webp", "c": "Fëanor and his sons swear the Oath of Fëanor", "t": "art"}, {"f": "images/g/c15def794ac2.webp", "c": "Fëanor as King, by Venlian", "t": "art"}, {"f": "images/g/2968f2582c81.webp", "c": "Fëanor's hammer in, in which it is used by Celebrimbor", "t": "series"}],
+ "portrait": "images/0f38fed641.webp",
+ "appear": {"w": ["hom", "rop", "sil"], "a": ["YT"]}
+}

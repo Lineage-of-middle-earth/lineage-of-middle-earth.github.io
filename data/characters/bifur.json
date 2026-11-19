@@ -1,0 +1,7 @@
+{
+ "key": "Bifur",
+ "details": {"s": "Bifur was a Dwarf of the late Third Age. He is best known for being a companion to Bilbo Baggins and Thorin II on the quest to regain the Lonely Mountain, along with his cousins Bofur and Bombur.", "f": [["Race", "Dwarves"], ["Culture", "Dwarves of Khazad-dûm"], ["Born", "Late Third Age"], ["Died", "Before FO 91"], ["Height", "About 4'0\" at least"], ["Hair", "Black and white"], ["Weapon", "Boar spear"], ["Played by", "William Kircher"]], "u": "https://lotr.fandom.com/wiki/Bifur"},
+ "gallery": [{"f": "images/g/b552c0260a6a.webp", "c": "Bifur, as he appears in The Hobbit: An Unexpected Journey", "t": "art"}, {"f": "images/g/2b193baf19db.webp", "c": "Bifur (1977)", "t": "movie"}, {"f": "images/g/188c4d43ce90.webp", "c": "Bifur as portrayed in The Hobbit film trilogy", "t": "movie"}],
+ "portrait": "images/e301ef8b8f.webp",
+ "appear": {"w": [], "a": ["TA", "FO"]}
+}

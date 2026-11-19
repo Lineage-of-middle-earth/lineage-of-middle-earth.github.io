@@ -1,0 +1,7 @@
+{
+ "key": "Dior",
+ "details": {"s": "Dior, also known as Dior Eluchîl, was the son of Beren Erchamion of the House of Bëor and the princess Lúthien Tinúviel, daughter of King Thingol and Melian. He later became the second (and last) King of Doriath as the only heir of Thingol, and thereby the High King of the Sindar also. Dior was called the Fair and was the first Half-elf in Middle-earth's history, for his father was of the race of Men, and his mother inherited Elven blood.", "f": [["Title", "King of Doriath, High King of the Sindar"], ["Also known as", "The Fair, Aranel, Ausir, Eluchîl"], ["Race", "Half-elves (¼ Elf, ½ Man, ¼ Maia)"], ["Culture", "Edain (House of Bëor), Sindar (House of Thingol)"], ["Born", "FA 470, Tol Galen"], ["Died", "FA 506, Second Kinslaying (aged 36)"], ["Height", "Tall"], ["Hair", "Dark"], ["Eyes", "Grey"], ["Weapon", "Aranrúth (sword)"]], "u": "https://lotr.fandom.com/wiki/Dior"},
+ "gallery": [{"f": "images/g/39c18b2b7027.webp", "c": "Dior Eluchîl, by vinyatar", "t": "art"}],
+ "portrait": "images/fbeee3fab2.webp",
+ "appear": {"w": ["hom", "sil"], "a": ["FA"]}
+}

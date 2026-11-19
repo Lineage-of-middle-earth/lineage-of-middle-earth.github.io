@@ -1,0 +1,7 @@
+{
+ "key": "Ecthelion II",
+ "details": {"s": "Ecthelion II was the twenty-fifth Ruling Steward of Gondor.", "f": [["Title", "Ruling Steward of Gondor, Lord of Gondor"], ["Race", "Men"], ["Culture", "Men of Gondor (House of Húrin)"], ["Born", "TA 2886"], ["Died", "TA 2984 (aged 98)"]], "u": "https://lotr.fandom.com/wiki/Ecthelion_II"},
+ "gallery": [{"f": "images/g/b1982c085e19.webp", "c": "The White Sanctuary\" (Ecthelion II) by Maelstromarts.deviantart.com on @deviantART", "t": "art"}],
+ "portrait": "images/c45750ab84.webp",
+ "appear": {"w": ["hom"], "a": ["TA"]}
+}

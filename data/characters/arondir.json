@@ -1,0 +1,7 @@
+{
+ "key": "Arondir",
+ "details": {"s": "Arondir was a Silvan Elf of the Second Age.", "f": [], "u": "https://lotr.fandom.com/wiki/Arondir"},
+ "gallery": [{"f": "images/g/7b05cdd8db24.webp", "c": "Arondir finds a moment to speak to Bronwyn", "t": "art"}, {"f": "images/g/f8ffe5fe3860.webp", "c": "Arondir while in captivity under Magrot", "t": "art"}, {"f": "images/g/0287ce44a737.webp", "c": "Arondir and Theo after meeting Galadriel at Tirharad", "t": "art"}, {"f": "images/g/d0ef81cc8d5f.webp", "c": "Arondir speaks to Winterbloom", "t": "art"}],
+ "portrait": "images/f34aeefa7c.webp",
+ "appear": {"w": ["rop"], "a": []}
+}

@@ -1,0 +1,7 @@
+{
+ "key": "Thorin II",
+ "details": {"s": "Thorin II \"Oakenshield\", eventually called King under the Mountain or Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of Five Armies.", "f": [], "u": "https://lotr.fandom.com/wiki/Thorin_II"},
+ "gallery": [{"f": "images/g/5d275577bf15.webp", "c": "Thorin as a prince, portrayed by Richard Armitage", "t": "art"}, {"f": "images/g/89e788759431.webp", "c": "Thorin Oakenshield, by TolmanCotton of DeviantArt", "t": "art"}, {"f": "images/g/af761c095977.webp", "c": "Thorin on his deathbed, with Bilbo and Gandalf, by Darrell Sweet", "t": "art"}, {"f": "images/g/c358f93b9962.webp", "c": "Thorin II Oakenshield (1977)", "t": "movie"}, {"f": "images/g/9cd2a0ec639e.webp", "c": "Thorin with his sword, Orcrist", "t": "art"}],
+ "portrait": "images/4e5eb08538.webp",
+ "appear": {"w": ["hob", "hobf", "lotr", "lotrf"], "a": []}
+}

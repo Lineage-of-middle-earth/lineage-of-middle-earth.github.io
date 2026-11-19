@@ -1,0 +1,7 @@
+{
+ "key": "Bofur",
+ "details": {"s": "Bofur was a Dwarf who lived in the late Third Age. He is best known as a companion of Bilbo Baggins, Thorin Oakenshield, and Gandalf on the quest to reclaim the Lonely Mountain from the dragon Smaug, along with his brother Bombur and cousin Bifur.", "f": [["Race", "Dwarves"], ["Culture", "Unknown; possibly Firebeards or Broadbeams"], ["Born", "Late Third Age"], ["Died", "Before FO 91"], ["Hair", "Brown"], ["Eyes", "Hazelnut"], ["Played by", "James Nesbitt (in the Peter Jackson trilogy)"]], "u": "https://lotr.fandom.com/wiki/Bofur"},
+ "gallery": [{"f": "images/g/a3203a7688db.webp", "c": "Bofur played by James Nesbitt in the The Hobbit film trilogy", "t": "movie"}, {"f": "images/g/8c39ac53aeb7.webp", "c": "Bofur (1977)", "t": "movie"}, {"f": "images/g/b39ff07860c4.webp", "c": "Bofur in The Hobbit: An Unexpected Journey", "t": "art"}],
+ "portrait": "images/d4f1922d55.webp",
+ "appear": {"w": [], "a": ["TA", "FO"]}
+}

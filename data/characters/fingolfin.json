@@ -1,0 +1,7 @@
+{
+ "key": "Fingolfin",
+ "details": {"s": "Fingolfin was the first High King of the Ñoldor in Beleriand. He was the eldest son of Finwë and Indis, younger brother of Findis, older brother of Irimë and Finarfin, and the younger half-brother of Fëanor. He founded the House of Fingolfin, which ruled the Ñoldor in Middle-earth.", "f": [["Title", "High King of the Ñoldor, King of Hithlum"], ["Also known as", "Ñolofinwë Arakáno"], ["Race", "Elves"], ["Culture", "Ñoldor (House of Finwë)"], ["Born", "YT 1190, Tirion"], ["Died", "FA 456, Angband"], ["Hair", "Dark"], ["Weapon", "Ringil"]], "u": "https://lotr.fandom.com/wiki/Fingolfin"},
+ "gallery": [{"f": "images/g/9c2524735772.webp", "c": "Fingolfin as king, by Mathia Arkoniel", "t": "art"}, {"f": "images/g/8d2d5689bfee.webp", "c": "Fingolfin Leads the Host Across the Helcaraxë, by Ted Nasmith", "t": "art"}, {"f": "images/g/e973afeb25ff.webp", "c": "Morgoth before Fingolfin", "t": "art"}],
+ "portrait": "images/e47724f8f2.webp",
+ "appear": {"w": ["hom", "sil"], "a": ["YT", "FA"]}
+}

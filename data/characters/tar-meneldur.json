@@ -1,0 +1,7 @@
+{
+ "key": "Tar-Meneldur",
+ "details": {"s": "Tar-Meneldur, also known as Elentirmo and Irimon, was the fifth King of Númenor. His two older sisters were Silmariën and Isilmë. During his time the Númenóreans began to return to Middle-earth, and great fleets of ships were built to explore all the lands east of Númenor.", "f": [["Title", "King of Númenor"], ["Also known as", "Elentirmo, Irimon"], ["Race", "Men"], ["Culture", "Númenóreans (House of Elros)"], ["Born", "SA 543"], ["Died", "SA 942"], ["Weapon", "Aranrúth"]], "u": "https://lotr.fandom.com/wiki/Tar-Meneldur"},
+ "gallery": [{"f": "images/g/5007fd3b7e41.webp", "c": "Tar-Meneldur, by SarkaSkorpikova", "t": "art"}],
+ "portrait": "images/c55e48225f.webp",
+ "appear": {"w": ["ut"], "a": ["SA"]}
+}

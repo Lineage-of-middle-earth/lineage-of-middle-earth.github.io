@@ -1,0 +1,7 @@
+{
+ "key": "Silmariën",
+ "details": {"s": "Silmariën was a princess of Númenór known as the ancestor of the Lords of Andúnië, and receiver of many heirlooms passed to her descendants.", "f": [["Race", "Men"], ["Culture", "Númenóreans (House of Elros)"], ["Born", "SA 521"], ["Died", "Unknown"]], "u": "https://lotr.fandom.com/wiki/Silmari%C3%ABn"},
+ "gallery": [{"f": "images/g/40f568efb097.webp", "c": "Silmariën by Sara M. Morello", "t": "art"}],
+ "portrait": "images/67413c63d7.webp",
+ "appear": {"w": ["hom", "ut"], "a": ["SA"]}
+}

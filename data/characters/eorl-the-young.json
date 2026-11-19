@@ -1,0 +1,7 @@
+{
+ "key": "Eorl the Young",
+ "details": {"s": "Eorl was the last Lord of the Éothéod and the first King of Rohan. He was the founder of the House of Eorl, the royal dynasty which ruled Rohan.", "f": [["Title", "Lord of the Éothéod, King of Rohan, The Young"], ["Race", "Men"], ["Culture", "Éothéod, Rohirrim"], ["Born", "TA 2485"], ["Died", "TA 2545"], ["Hair", "Blond"], ["Weapon", "King's sword"]], "u": "https://lotr.fandom.com/wiki/Eorl_the_Young"},
+ "gallery": [{"f": "images/g/9051ba593781.webp", "c": "tapestry", "t": "art"}, {"f": "images/g/069fb04148f9.webp", "c": "Depiction of Eorl on a tapestry in the films", "t": "movie"}, {"f": "images/g/0c486b18cc55.webp", "c": "Statues of Eorl (right) and Cirion erected near the site of their first meeting (", "t": "art"}],
+ "portrait": "images/066f52191f.webp",
+ "appear": {"w": [], "a": ["TA"]}
+}

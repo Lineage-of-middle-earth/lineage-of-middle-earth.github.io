@@ -1,0 +1,7 @@
+{
+ "key": "Imrahil",
+ "details": {"s": "Imrahil, also known as Prince Imrahil, was the twenty-second Prince of Dol Amroth. He had two older sisters, Ivriniel and Finduilas. His daughter Lothíriel wedded Éomer, King of Rohan, in the last year of the Third Age.", "f": [["Title", "Prince of Dol Amroth"], ["Also known as", "Imrahil the Fair"], ["Race", "Men"], ["Culture", "Dúnedain (House of Dol Amroth), Men of Gondor"], ["Born", "TA 2955"], ["Died", "FO 34"], ["Height", "Tall"], ["Hair", "Black"], ["Eyes", "Grey"], ["Weapon", "Sword, lance"]], "u": "https://lotr.fandom.com/wiki/Imrahil"},
+ "gallery": [{"f": "images/g/3a168b636a24.webp", "c": "Imrahil as seen in", "t": "art"}, {"f": "images/g/c521cfc515b9.webp", "c": "Prince Imrahil in", "t": "art"}],
+ "portrait": "images/13a84f1405.webp",
+ "appear": {"w": ["hom", "lotr"], "a": ["TA", "FO"]}
+}

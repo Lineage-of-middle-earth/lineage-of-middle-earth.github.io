@@ -1,0 +1,6 @@
+{
+ "key": "Goblins",
+ "portrait": "images/b/0b0db9fefc.webp",
+ "details": {"s": "Goblin is another name for Orc, used for the Orcs of the Misty Mountains in The Hobbit. Their Great Goblin ruled beneath the mountains and captured Thorin's Company.", "f": [], "u": "https://lotr.fandom.com/wiki/Goblins"},
+ "appear": {"w": ["hob", "lotr", "sil"], "a": []}
+}

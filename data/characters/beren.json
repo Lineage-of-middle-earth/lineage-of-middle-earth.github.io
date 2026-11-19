@@ -1,0 +1,7 @@
+{
+ "key": "Beren",
+ "details": {"s": "Beren, also called Beren Erchamion, was a man of the First House of the Edain, and one time Lord of Dorthonion. He was a hero whose romance with the Elf-maiden Lúthien was one of the great stories of the Elder Days told for many ages after.", "f": [["Title", "Chieftain of the House of Bëor, Lord of Tol Galen"], ["Also known as", "Erchamion, Camlost"], ["Race", "Men"], ["Culture", "Edain (House of Bëor, XII Bëorings)"], ["Born", "FA 432"], ["Died", "FA 466 (subsequently resurrected), FA 503 (aged 71)"], ["Height", "Tall"], ["Hair", "Golden-brown"], ["Eyes", "Grey"], ["Weapon", "Dagmor (sword), Angrist (knife), bow"]], "u": "https://lotr.fandom.com/wiki/Beren"},
+ "gallery": [{"f": "images/g/6fd3c03b5fbf.webp", "c": "Depiction of Beren by Eve Ventrue", "t": "art"}, {"f": "images/g/b003f496d1ae.webp", "c": "Beren being revived by Lúthien - by Justin Gerard", "t": "art"}, {"f": "images/g/c4095ea40ee1.webp", "c": "A depiction of Beren", "t": "art"}],
+ "portrait": "images/0cf6db6a47.webp",
+ "appear": {"w": ["hom", "sil"], "a": ["FA"]}
+}

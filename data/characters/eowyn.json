@@ -1,0 +1,7 @@
+{
+ "key": "Éowyn",
+ "details": {"s": "Éowyn was a shieldmaiden of Rohan, daughter of Éomund and Théodwyn, younger sister of Éomer and niece of King Théoden. After the War of the Ring, she married Faramir and had one son with him, Elboron.", "f": [["Title", "White Lady of, Rohan, Shieldmaiden of Rohan, Lady of the Shield-arm, Lady of Ithilien, Lady of Emyn Arnen"], ["Also known as", "Dernhelm"], ["Race", "Men"], ["Culture", "Rohirrim (House of Eorl)"], ["Born", "TA 2995"], ["Died", "Early Fourth Age"], ["Hair", "Pale gold"], ["Eyes", "Grey"], ["Played by", "Miranda Otto"]], "u": "https://lotr.fandom.com/wiki/%C3%89owyn"},
+ "gallery": [{"f": "images/g/aa778a23f92a.webp", "c": "Éowyn as depicted by Soni Alcorn-Hender", "t": "art"}, {"f": "images/g/43a1a042546b.webp", "c": "Éowyn as seen in", "t": "movie"}, {"f": "images/g/9f60d4d9c445.webp", "c": "Éowyn in The Lord of the Rings: The Two Towers", "t": "art"}, {"f": "images/g/d16560927fe3.webp", "c": "Éowyn at Edoras", "t": "art"}, {"f": "images/g/2cebb818a33d.webp", "c": "", "t": "art"}, {"f": "images/g/d5778b3cb1ae.webp", "c": "Éowyn from Rankin-Bass (1980)", "t": "movie"}, {"f": "images/g/0e3d177da332.webp", "c": "Éowyn with Faramir (1980)", "t": "movie"}, {"f": "images/g/8156037fbcb0.webp", "c": "Her depiction in 1978", "t": "movie"}],
+ "portrait": "images/e68ce189cd.webp",
+ "appear": {"w": ["hom", "lotr", "lotrf"], "a": ["TA", "FO"]}
+}

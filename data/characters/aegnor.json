@@ -1,0 +1,7 @@
+{
+ "key": "Aegnor",
+ "details": {"s": "Aegnor was a Ñoldorin Elf, the third son of Finarfin, elder brother of Galadriel, younger brother of Finrod Felagund and Angrod and lord of the Ñoldor of Dorthonion in the First Age.", "f": [["Title", "Lord of Dorthonion with Angrod"], ["Also known as", "Egnor, Aikanár, Aikanáro"], ["Race", "Elves"], ["Culture", "Ñoldor (House of Finarfin), Falmari (House of Olwë)"], ["Born", "YT ? during the Noontide of Valinor"], ["Died", "FA 455"], ["Hair", "Golden"]], "u": "https://lotr.fandom.com/wiki/Aegnor"},
+ "gallery": [{"f": "images/g/f012c0465044.webp", "c": "Aegnor, son of Finarfin, by Marya Filatova", "t": "art"}, {"f": "images/g/e69e69c8c74a.webp", "c": "Aegnor first meets Andreth, by Szilvia Szarvas", "t": "art"}, {"f": "images/g/003a7e93e1e8.webp", "c": "Aegnor with his love, Andreth, by Marya Filatova", "t": "art"}],
+ "portrait": "images/cb196a4862.webp",
+ "appear": {"w": ["hom", "sil"], "a": ["YT", "FA"]}
+}

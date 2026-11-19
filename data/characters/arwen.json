@@ -1,0 +1,7 @@
+{
+ "key": "Arwen",
+ "details": {"s": "Arwen was the Half-elven daughter of Elrond and Celebrían. She was often called Arwen Undómiel or \"Evenstar\".", "f": [["Title", "Lady of Rivendell, Queen of the Reunited Kingdom"], ["Also known as", "Undómiel (Quenya for \"Evenstar\")"], ["Race", "Half-elf (chose to be mortal)"], ["Culture", "Elves of Lindon, Elves of Rivendell"], ["Born", "TA 241"], ["Died", "FO 121 (aged 2901), Cerin Amroth"], ["Hair", "Black"], ["Eyes", "Grey"], ["Played by", "Liv Tyler"]], "u": "https://lotr.fandom.com/wiki/Arwen"},
+ "gallery": [{"f": "images/g/8eb6994efbf4.webp", "c": "Liv Tyler portrays Arwen in The Lord of the Rings films", "t": "movie"}, {"f": "images/g/bd5efa2d2c12.webp", "c": "Arwen at the departure of the Fellowship in (2001)", "t": "movie"}, {"f": "images/g/86ac1a8b22f2.webp", "c": "Arwen and Asfaloth", "t": "art"}, {"f": "images/g/43bc7d975a99.webp", "c": "Arwen at the end of the Third Age", "t": "art"}, {"f": "images/g/b17db7c257f7.webp", "c": "Arwen and Galadriel (portrayed by Liv Tyler and Cate Blanchett)", "t": "art"}, {"f": "images/g/27c20d0409c8.webp", "c": "Arwen in Rivendell", "t": "art"}, {"f": "images/g/5c90c74fa757.webp", "c": "Queen Arwen and King Aragorn Elessar are wed in", "t": "movie"}, {"f": "images/g/a718df477b27.webp", "c": "Arwen and Aragorn in the", "t": "movie"}],
+ "portrait": "images/b12f81b447.webp",
+ "appear": {"w": ["lotr", "lotrf"], "a": ["TA", "FO"]}
+}

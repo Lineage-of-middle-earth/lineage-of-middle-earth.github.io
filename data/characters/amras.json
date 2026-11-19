@@ -1,0 +1,7 @@
+{
+ "key": "Amras",
+ "details": {"s": "Amras and his younger twin brother, Amrod, were Ñoldorin princes, the youngest of the seven Sons of Fëanor. Through their mother Nerdanel's line, they inherited red hair, instead of Fëanor's dark hair.", "f": [["Title", "Lord of Estolad"], ["Also known as", "Pityafinwë, Nityafinwë, Minyarussa, Umbarto/Ambarto and Ambarussa (Q, mn), Minyarussa and Atyarussa (Q, epessë), Ambarussa"], ["Race", "Elves"], ["Culture", "Ñoldor (House of Fëanor)"], ["Born", "After YT 1190"], ["Died", "FA 538"], ["Hair", "Red"], ["Weapon", "Sword ?, Bow"]], "u": "https://lotr.fandom.com/wiki/Amras"},
+ "gallery": [{"f": "images/g/efbab6b9a913.webp", "c": "Amras, by Venlian", "t": "art"}],
+ "portrait": "images/a5035ee9ce.webp",
+ "appear": {"w": ["hom", "sil"], "a": ["YT", "FA"]}
+}

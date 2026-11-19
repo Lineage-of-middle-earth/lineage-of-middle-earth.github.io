@@ -1,0 +1,7 @@
+{
+ "key": "Farin",
+ "details": {"s": "Farin was a Dwarf of the line of Durin's Folk.", "f": [["Race", "Dwarves"], ["Culture", "Durin's Folk, Dwarves of the Grey Mountains, Dwarves of the Lonely Mountain, Dwarves of Thorin's Halls"], ["Born", "TA 2560"], ["Died", "TA 2803"], ["Height", "About 4'0\" at least"], ["Weapon", "unknown, possibly a Battle-axe"]], "u": "https://lotr.fandom.com/wiki/Farin"},
+ "gallery": [{"f": "images/g/7def0e600185.webp", "c": "Farin in", "t": "art"}],
+ "portrait": "images/cdece6a314.webp",
+ "appear": {"w": [], "a": ["TA"]}
+}

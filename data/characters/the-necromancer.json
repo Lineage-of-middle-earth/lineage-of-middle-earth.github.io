@@ -1,0 +1,5 @@
+{
+ "key": "The Necromancer",
+ "portrait": "images/11f502311e.webp",
+ "appear": {"w": ["hob", "hobf", "lotr"], "a": ["TA"]}
+}

@@ -1,0 +1,7 @@
+{
+ "key": "Tar-Palantir",
+ "details": {"s": "Tar-Palantir was the twenty-fourth King of Númenor.", "f": [["Title", "King of Númenor, \"the Farsighted\""], ["Also known as", "Ar-Inziladûn"], ["Race", "Men"], ["Culture", "Númenóreans (House of Elros), The Faithful"], ["Born", "SA 3035"], ["Died", "SA 3255"], ["Weapon", "Aranrúth"], ["Played by", "Ken Blackburn"]], "u": "https://lotr.fandom.com/wiki/Tar-Palantir"},
+ "gallery": [{"f": "images/g/a35bb79f5ca8.webp", "c": "Ken Blackburn as Tar-Palantir in", "t": "series"}],
+ "portrait": "images/02bb9f5fd5.webp",
+ "appear": {"w": ["rop"], "a": ["SA"]}
+}

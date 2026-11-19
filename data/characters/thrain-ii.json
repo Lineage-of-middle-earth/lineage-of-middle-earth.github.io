@@ -1,0 +1,7 @@
+{
+ "key": "Thráin II",
+ "details": {"s": "Thráin II was the father of Thorin II, and the son of King Thrór, making him a direct descendant of Durin the Deathless. After his father Thrór was beheaded by Azog in Moria, Thráin became the rightful King under the Mountain as well as the King of Durin's Folk.", "f": [], "u": "https://lotr.fandom.com/wiki/Thr%C3%A1in_II"},
+ "gallery": [{"f": "images/g/3390d7c23f1d.webp", "c": "Thráin in .", "t": "movie"}, {"f": "images/g/f2d646dd9b6e.webp", "c": "Thráin II sitting wearily after the Battle of Azanulbizar, by Justin Gerard", "t": "art"}, {"f": "images/g/d54f985c1653.webp", "c": "Depiction of Thrór's Key in Peter Jackson's", "t": "movie"}, {"f": "images/g/0a1ea630daa8.webp", "c": "Thráin as he appears in the extended edition of The Hobbit: The Desolation of Smaug", "t": "art"}, {"f": "images/g/bc13351768ef.webp", "c": "Thráin in", "t": "art"}],
+ "portrait": "images/8e68070836.webp",
+ "appear": {"w": ["hobf", "hom", "lotr"], "a": []}
+}

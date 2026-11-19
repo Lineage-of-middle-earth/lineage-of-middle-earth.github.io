@@ -1,0 +1,7 @@
+{
+ "key": "Eärnur",
+ "details": {"s": "Eärnur was the thirty-third and last King of Gondor until the accession of Aragorn II Elessar. He took the throne upon the death of his father Eärnil II in TA 2043, and after his disappearance the Stewards of Gondor ruled in his name for many generations.", "f": [["Title", "King of Gondor"], ["Race", "Men"], ["Culture", "Dúnedain, Men of Gondor (House of Anárion)"], ["Born", "TA 1928"], ["Died", "In or after TA 2050"], ["Weapon", "King's sword"]], "u": "https://lotr.fandom.com/wiki/E%C3%A4rnur"},
+ "gallery": [{"f": "images/g/30b643098739.webp", "c": "", "t": "art"}, {"f": "images/g/3e76acd0011e.webp", "c": "Eärnur during his life in", "t": "art"}, {"f": "images/g/56c412391a4c.webp", "c": "Eärnur as Mordirith, the Steward of Angmar in The Lord of the Rings Online", "t": "art"}, {"f": "images/g/87015f3faec0.webp", "c": "Eärnur model from the", "t": "art"}],
+ "portrait": "images/40c9af5deb.webp",
+ "appear": {"w": ["hom"], "a": ["TA"]}
+}

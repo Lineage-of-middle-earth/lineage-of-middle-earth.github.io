@@ -1,0 +1,7 @@
+{
+ "key": "Anárion",
+ "details": {"s": "Anárion was the youngest son of Elendil, the High King of Arnor and Gondor. He and his brother Isildur jointly ruled Gondor, while their father dwelt in the North. Following his father's death during the Siege of Barad-dûr, and Isildur's death at the Disaster of the Gladden Fields, the kingship of Gondor was committed to the line of Anárion beginning with his son, Meneldil.", "f": [["Title", "King of Gondor"], ["Race", "Men"], ["Born", "SA 3219"], ["Died", "SA 3440"], ["Played by", "Andrew Richardson"]], "u": "https://lotr.fandom.com/wiki/An%C3%A1rion"},
+ "gallery": [{"f": "images/g/90ee57f8349a.webp", "c": "", "t": "art"}],
+ "portrait": "images/a8222b8368.webp",
+ "appear": {"w": ["hom", "lotrf"], "a": ["SA"]}
+}

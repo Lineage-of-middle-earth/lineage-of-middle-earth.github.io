@@ -1,0 +1,7 @@
+{
+ "key": "Caranthir",
+ "details": {"s": "Caranthir, also known as Caranthir the Dark, was an Elf, the fourth son of Fëanor and the harshest and the quickest to anger of his seven brothers.", "f": [["Title", "Lord of Thargelion, Prince of the Ñoldor"], ["Also known as", "Cranthir, Caranthir the Dark, Carnistir, Morifinwë"], ["Race", "Elves"], ["Culture", "Ñoldor (House of Fëanor)"], ["Born", "During the Noontide of Valinor"], ["Died", "FA 506"], ["Hair", "Dark"], ["Eyes", "Grey"], ["Weapon", "Sword, crossbow"]], "u": "https://lotr.fandom.com/wiki/Caranthir"},
+ "gallery": [{"f": "images/g/f0453db7e684.webp", "c": "Caranthir, by Sara Maria Morello", "t": "art"}],
+ "portrait": "images/53cf287812.webp",
+ "appear": {"w": ["hom", "sil"], "a": ["FA"]}
+}

@@ -1,0 +1,7 @@
+{
+ "key": "Legolas",
+ "details": {"s": "Legolas was a Sindar Elf who joined the Fellowship of the Ring in the Third Age. Son of the Elvenking Thranduil of Mirkwood, Legolas was Mirkwood's prince, a messenger, and a master archer. With his keen eyesight, sensitive hearing, and excellent bowmanship, Legolas was valuable to the Fellowship in their journey across Middle-earth.", "f": [["Title", "Prince of the Woodland Realm"], ["Also known as", "Greenleaf"], ["Race", "Elves"], ["Culture", "Sindar (Elves of Mirkwood)"], ["Died", "Departed to Aman in FO 120 from Ithilien"], ["Height", "At least 6'0\""], ["Weapon", "Bow and \"long white knife\""], ["Played by", "Orlando Bloom ; Olga Serebryakova, (Khraniteli)"]], "u": "https://lotr.fandom.com/wiki/Legolas"},
+ "gallery": [{"f": "images/g/57f4198ed8e0.webp", "c": "Legolas, by Donato Giancola", "t": "art"}, {"f": "images/g/3754ffaff614.webp", "c": "Legolas and Gimli at Helm's Deep, by John Howe", "t": "art"}, {"f": "images/g/2c048dc19b61.webp", "c": "Legolas in combat with the Orcs during the Battle of the Bridge of Khazad-dûm", "t": "art"}, {"f": "images/g/45969e3852fe.webp", "c": "\"A Shot in the Dark\", by Ralph Damiani", "t": "art"}, {"f": "images/g/d71c6073ce3c.webp", "c": "Legolas in Ralph Bakshi's .", "t": "movie"}],
+ "portrait": "images/5cfc41b7ec.webp",
+ "appear": {"w": ["hob", "hobf", "hom", "lotr", "lotrf"], "a": ["FO"]}
+}

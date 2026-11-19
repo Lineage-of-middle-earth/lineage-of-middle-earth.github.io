@@ -1,0 +1,6 @@
+{
+ "key": "Fell beasts",
+ "portrait": "images/b/ea58556e9e.webp",
+ "details": {"s": "Fell beasts were great winged creatures that the Nazgûl rode after the Ring was found. A fell beast carried the Witch-king into the Battle of the Pelennor Fields.", "f": [], "u": "https://lotr.fandom.com/wiki/Fell_beasts"},
+ "appear": {"w": ["lotr", "sil"], "a": []}
+}

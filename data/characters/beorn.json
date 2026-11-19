@@ -1,0 +1,6 @@
+{
+ "key": "Beorn",
+ "portrait": "images/b/f3e94c33b7.webp",
+ "details": {"s": "Beorn was a skin-changer who lived in a wooden hall near the Carrock and took the shape of a great bear. He sheltered Thorin's Company and fought in the Battle of the Five Armies.", "f": [], "u": "https://lotr.fandom.com/wiki/Beorn"},
+ "appear": {"w": ["hob", "hobf", "lotr"], "a": []}
+}

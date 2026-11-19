@@ -1,0 +1,7 @@
+{
+ "key": "Finrod",
+ "details": {"s": "Finrod, known fully as Finrod Felagund, was a Ñoldor Elf who was born in Aman. He was King of Nargothrond and the eldest son of Finarfin and Eärwen, and the brother of Galadriel, Angrod and Aegnor. Finrod was one of the noblest Elves of the House of Finarfin and a friend of Men.", "f": [["Title", "King of Nargothrond, Lord of Narog, Faithful, Friend-of-Men, Master of Caves"], ["Also known as", "Felagund, Ingoldo, Findarato/Artafinde, Nóm or Nómin, Finarfin (in earlier texts)"], ["Race", "Elves"], ["Culture", "Ñoldor (House of Finarfin), Falmari (House of Olwë), Nargothronders"], ["Born", "YT 1300"], ["Died", "FA 465, Tol-in-Gaurhoth"], ["Hair", "Golden"], ["Weapon", "Sword, bow"], ["Played by", "Will Fletcher"]], "u": "https://lotr.fandom.com/wiki/Finrod"},
+ "gallery": [{"f": "images/g/4c4d40b380e0.webp", "c": "Finrod, by Elena Kukanova", "t": "art"}, {"f": "images/g/aacd34b30291.webp", "c": "Finrod after crossing the Helcaraxë, by Maureval", "t": "art"}, {"f": "images/g/7df4d0f690da.webp", "c": "Finrod shortly before his death, by Anke Eissmann", "t": "art"}, {"f": "images/g/440be271bb56.webp", "c": "Finrod swore an oath of abiding friendship and aid in every need to Barahir and all his kin, by Anke Eissmann", "t": "art"}, {"f": "images/g/8f931709a364.webp", "c": "Finrod speaks to a young Galadriel near Tirion", "t": "series"}],
+ "portrait": "images/67cac66e41.webp",
+ "appear": {"w": ["hom", "rop", "sil"], "a": ["YT", "FA"]}
+}

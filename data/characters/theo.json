@@ -1,0 +1,7 @@
+{
+ "key": "Theo",
+ "details": {"s": "Theo was a resident of Tirharad in the Second Age, and the son of Bronwyn.", "f": [["Race", "Men"], ["Hair", "Black"], ["Eyes", "Brown |first seen=\"\"}}"], ["Played by", "Tyroe Muhafidin"]], "u": "https://lotr.fandom.com/wiki/Theo"},
+ "gallery": [{"f": "images/g/135032d7505c.webp", "c": "", "t": "art"}, {"f": "images/g/cab267f8772c.webp", "c": "Theo uses the dark hilt to escape Vrath", "t": "art"}, {"f": "images/g/4fde23fe55fe.webp", "c": "Theo travels with Galadriel to safety", "t": "art"}],
+ "portrait": "images/648c4b8411.webp",
+ "appear": {"w": ["rop"], "a": []}
+}
