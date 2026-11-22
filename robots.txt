@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /tools/
 
-Sitemap: https://lineage-of-middle-earth.github.io/sitemap.xml
+Sitemap: https://lineage.siddharthpushkar.com/sitemap.xml
