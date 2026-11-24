@@ -96,6 +96,7 @@ ${GA}
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="canonical" href="${canonical}">
 <meta property="og:type" content="article"><meta property="og:site_name" content="${NAME}">
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}">
