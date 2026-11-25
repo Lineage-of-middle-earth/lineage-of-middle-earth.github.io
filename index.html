@@ -282,11 +282,6 @@ nav.tabs.kinds button[aria-selected="true"]{background:var(--ink);color:var(--bg
 .controls{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
 .controls .seg{flex:none}
 .seg button{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 14px}
-.seg a.segl{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 14px;border-radius:999px;font-family:var(--f-body);font-weight:500;font-size:14px;color:var(--muted);text-decoration:none;position:relative;transition:color .22s,scale .14s var(--e-out)}
-.seg a.segl:hover{color:var(--ink)}
-.seg a.segl:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.seg a.segl:active{scale:.96}
-.seg a.segl svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .seg button svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .search{flex:1 1 260px;min-width:200px;position:relative;display:flex;align-items:center}
 .search>svg{position:absolute;left:14px;width:16px;height:16px;fill:none;stroke:var(--muted);stroke-width:1.8;stroke-linecap:round;pointer-events:none}
@@ -304,7 +299,40 @@ nav.tabs.kinds button[aria-selected="true"]{background:var(--ink);color:var(--bg
 .sw input:focus-visible+.trk{outline:2px solid var(--accent);outline-offset:2px}
 .sw:has(input:checked){color:var(--ink)}
 body[data-view="tree"][data-src="series"] nav.tabs.kinds{display:none}
-@media (max-width:640px){.controls .seg:first-child{order:1}.search{order:0;flex-basis:100%}.seg{order:1}.sw{order:2}}
+/* bar refresh: tinted kind chips with scroll arrows; search first, then quieter filters, view + map on the right */
+.krail{position:relative;display:flex;align-items:center;min-width:0}
+.krail nav.tabs.kinds{flex:1;min-width:0}
+.kscr{position:absolute;top:50%;z-index:3;width:30px;height:30px;margin-top:-15px;display:grid;place-items:center;border:1px solid var(--rule);border-radius:50%;background:var(--panel);color:var(--ink);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .2s,scale .14s var(--e-out);box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.kscr svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.kscr:hover{border-color:var(--muted)}.kscr:active{scale:.92}
+.kprev{left:-4px}.knext{right:-4px}
+.krail:has(.kinds.fadeL) .kprev,.krail:has(.kinds.fadeR) .knext{opacity:1;pointer-events:auto}
+@media (pointer:coarse){.kscr{display:none}}
+nav.tabs.kinds button[aria-selected="true"]{background:color-mix(in srgb,var(--c,var(--ink)) 16%,var(--panel));color:var(--ink);border-color:color-mix(in srgb,var(--c,var(--ink)) 45%,transparent)}
+.kinds .pill{background:color-mix(in srgb,var(--pc,var(--ink)) 16%,var(--panel));box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--pc,var(--ink)) 45%,transparent)}
+.controls{gap:8px}
+.search{order:0;flex:1 1 280px}
+.search input{height:40px;border-radius:999px}
+.seg{height:40px;align-items:center}
+.seg .pill{background:color-mix(in srgb,var(--ink) 11%,var(--panel));box-shadow:0 0 0 1px color-mix(in srgb,var(--ink) 14%,transparent),0 1px 2px rgba(0,0,0,.2)}
+.chipt{display:inline-flex;align-items:center;gap:7px;height:40px;padding:0 14px 0 12px;border:1px solid var(--rule);border-radius:999px;background:var(--panel);color:var(--muted);font:500 14px var(--f-body);cursor:pointer;user-select:none;position:relative;transition:color .2s,background .2s,border-color .2s,scale .14s var(--e-out)}
+.chipt input{position:absolute;opacity:0;width:0;height:0}
+.chipt svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round;transition:fill .2s,transform .32s var(--e-back)}
+.chipt:hover{color:var(--ink)}
+.chipt:active{scale:.96}
+.chipt:has(input:checked){color:var(--ink);background:color-mix(in srgb,var(--accent) 18%,var(--panel));border-color:color-mix(in srgb,var(--accent) 55%,transparent)}
+.chipt:has(input:checked) svg{fill:var(--accent);stroke:var(--accent);transform:rotate(72deg)}
+.chipt:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
+.vgrp{margin-left:auto;display:flex;align-items:center;gap:8px}
+.maplink{display:inline-flex;align-items:center;gap:7px;height:40px;padding:0 15px 0 13px;border:1px solid var(--rule);border-radius:999px;background:var(--panel);color:var(--ink);text-decoration:none;font:500 14px var(--f-body);transition:border-color .15s,background .15s,scale .14s var(--e-out)}
+.maplink svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.maplink:hover{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 10%,var(--panel))}
+.maplink:active{scale:.96}
+.maplink:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* phones: search on its own row, then source / key / view / map share one row */
+@media (max-width:640px){.controls{gap:6px}.search{flex-basis:100%}.vgrp{margin-left:auto;gap:6px}
+ .chipt span,.maplink span{display:none}.chipt,.maplink{padding:0 11px}
+ #srcs{flex:1 1 0;min-width:0}#srcs button{padding:0 6px;font-size:13px}#vg,#vt{padding:0 9px}}
 </style>
 <style>
 /* motion and interaction layer: one set of curves; everything answers an action except the first-load sequence */
@@ -332,12 +360,12 @@ header p{animation:rise .6s var(--e-out) .14s backwards}
 .pill{position:absolute;left:0;top:0;border-radius:999px;background:var(--ink);pointer-events:none}
 .pill.live{transition:transform .38s var(--e-out),width .38s var(--e-out),height .38s var(--e-out),opacity .15s}
 .haspill>button{position:relative;z-index:1}
-nav.tabs.kinds.haspill button[aria-selected="true"],nav.tabs.kinds.haspill button[aria-selected="true"]:hover{background:transparent;border-color:transparent;color:var(--bg)}
+nav.tabs.kinds.haspill button[aria-selected="true"],nav.tabs.kinds.haspill button[aria-selected="true"]:hover{background:transparent;border-color:transparent;color:var(--ink)}
 .seg.haspill button[aria-pressed="true"]{background:transparent}
 nav.tabs.kinds button{transition:background .15s,color .22s,scale .14s var(--e-out)}
 .seg button{transition:color .22s,scale .14s var(--e-out)}
 .seg button:hover{color:var(--ink)}
-.seg.haspill button[aria-pressed="true"]:hover{color:var(--bg)}
+.seg.haspill button[aria-pressed="true"],.seg.haspill button[aria-pressed="true"]:hover{color:var(--ink)}
 nav.tabs button svg.em{transition:stroke .22s}
 nav.tabs button[aria-selected="true"] svg.em{animation:pop .42s var(--e-back)}
 nav.tabs.kinds button:active,.seg button:active,.themebtn:active,.chip:active,.jump:active,.gfil button:active,.clr:active,.stool button:active{scale:.96}
@@ -504,8 +532,6 @@ body.panned .stage::after{opacity:0}
   #srcs button{flex:1;justify-content:center;padding:0 8px}
   #srcs .n{display:none}
   #vg,#vt{font-size:0;gap:0;padding:0 11px}
-  .sw>span:last-child{font-size:0}
-  .sw>span:last-child::before{content:"★";font-size:14px}
 }
 @media (max-width:700px){
   .dimg{touch-action:none}
@@ -527,12 +553,19 @@ body.panned .stage::after{opacity:0}
 </header>
 
 <div class="bar">
+<div class="krail">
+<button type="button" class="kscr kprev" data-dir="-1" aria-label="Scroll kinds left" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
 <nav class="tabs kinds" id="tabs" role="tablist" aria-label="Kind"></nav>
+<button type="button" class="kscr knext" data-dir="1" aria-label="Scroll kinds right" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
 <div class="controls">
-  <div class="seg" id="srcs" role="group" aria-label="Source"></div>
   <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4-4"/></svg><input id="q" type="search" placeholder="Search characters, spouses, titles" aria-label="Search names"><kbd>/</kbd><button type="button" id="qx" class="qx" aria-label="Clear search" hidden>×</button></label>
-  <div class="seg" role="group" aria-label="View"><button id="vg" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>Gallery</button><button id="vt" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/><path d="M12 7v4M12 11H6v6M12 11h6v6"/></svg>Tree</button><a class="segl" href="/map/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4 3 6.5v13.5l6-2.5 6 2.5 6-2.5V4l-6 2.5z"/><path d="M9 4v13.5M15 6.5V20"/></svg>Map</a></div>
-  <label class="sw gridonly"><input type="checkbox" id="keyonly"><span class="trk"></span><span>Key characters</span></label>
+  <div class="seg" id="srcs" role="group" aria-label="Source"></div>
+  <label class="chipt gridonly" title="Only characters from The Lord of the Rings and The Hobbit"><input type="checkbox" id="keyonly"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l2.6 5.3 5.9.9-4.25 4.1 1 5.8L12 16.9l-5.25 2.7 1-5.8L3.5 9.7l5.9-.9z"/></svg><span>Key characters</span></label>
+  <div class="vgrp">
+    <div class="seg" role="group" aria-label="View"><button id="vg" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>Gallery</button><button id="vt" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/><path d="M12 7v4M12 11H6v6M12 11h6v6"/></svg>Tree</button></div>
+    <a class="maplink" href="/map/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4 3 6.5v13.5l6-2.5 6 2.5 6-2.5V4l-6 2.5z"/><path d="M9 4v13.5M15 6.5V20"/></svg><span>Map</span></a>
+  </div>
 </div>
 </div>
 <div class="legend treeonly">
@@ -792,7 +825,7 @@ function pill(box){let p=box._pill;if(!p){p=box._pill=document.createElement("sp
   if(box.scrollWidth>box.clientWidth)box.scrollTo({left:b.offsetLeft-(box.clientWidth-b.offsetWidth)/2,behavior:calm()?"auto":"smooth"});edges(box)}
 function placePill(box){const p=box._pill,b=box.querySelector('button[aria-selected="true"],button[aria-pressed="true"]');
   if(!b||!b.offsetWidth){p.style.opacity=0;return null}
-  p.style.cssText=`opacity:1;width:${b.offsetWidth}px;height:${b.offsetHeight}px;transform:translate(${b.offsetLeft}px,${b.offsetTop}px)`;return b}
+  p.style.cssText=`opacity:1;width:${b.offsetWidth}px;height:${b.offsetHeight}px;transform:translate(${b.offsetLeft}px,${b.offsetTop}px);--pc:${b.style.getPropertyValue("--c")||"var(--ink)"}`;return b}
 /* counts roll after a filter change, so buttons keep resizing after the first measurement: follow them */
 const pillRO=new ResizeObserver(es=>new Set(es.map(e=>e.target.parentNode)).forEach(box=>{if(box&&box._pill){placePill(box);edges(box)}}));
 function edges(box){const m=box.scrollWidth-box.clientWidth;box.classList.toggle("fadeL",m>1&&box.scrollLeft>4);box.classList.toggle("fadeR",m>1&&box.scrollLeft<m-4)}
@@ -949,6 +982,8 @@ document.getElementById("panel").addEventListener("click",e=>{
   const j=e.target.closest(".jump");if(j){const c=j.closest(".card"),to=c&&jumpTarget(PEOPLE[c.dataset.id].o);kind=j.dataset.j;src="all";saveSel();render();document.getElementById("tabs").scrollIntoView({behavior:calm()?"auto":"smooth",block:"start"});
     if(to){const n=pnl.querySelector(`.card[data-id="${to.id}"]`);if(n)centerOn(n)}}
 });
+/* arrows page the kind chips when they overflow */
+document.querySelector(".krail").addEventListener("click",e=>{const b=e.target.closest(".kscr");if(!b)return;const t=document.getElementById("tabs");t.scrollBy({left:+b.dataset.dir*t.clientWidth*.7,behavior:calm()?"auto":"smooth"})});
 function clearAll(){query="";keyOnly=false;kind="all";src="all";document.getElementById("q").value="";document.getElementById("keyonly").checked=false;saveSel();render()}
 qx.addEventListener("click",e=>{e.preventDefault();const q=document.getElementById("q");q.value="";query="";render();q.focus()});
 document.getElementById("q").addEventListener("input",e=>{query=e.target.value.trim().toLowerCase();
