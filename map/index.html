@@ -1,0 +1,84 @@
+<!doctype html><html><head><meta charset=utf8><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X5KXK4KFJW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X5KXK4KFJW');
+</script>
+<script>
+/* every click on a button, link, card or control goes to GA as ui_click */
+document.addEventListener("click",e=>{const el=e.target.closest("a,button,input,select,summary,[role=button],[data-id]");if(!el)return;
+  const d=el.dataset,nm=el.querySelector(".gnm,.nm"),lb=el.labels&&el.labels[0],
+    txt=((nm&&nm.textContent)||el.getAttribute("aria-label")||el.title||(lb&&lb.innerText)||(el.innerText||"").trim().split(/\r?\n/)[0]||el.value||el.alt||"").trim().slice(0,100);
+  gtag("event","ui_click",{click_text:txt,click_element:el.tagName.toLowerCase()+(el.type&&el.tagName!=="A"?":"+el.type:""),click_class:typeof el.className=="string"?el.className.trim().split(/\s+/)[0]:"",
+    click_target:d.id||d.open||d.k||d.s||d.j||d.p||d.clear||(el.href?el.getAttribute("href"):"")||el.name||el.id||"",click_area:el.closest("#drawer")?"profile":el.closest("header")?"header":"page",outbound:!!(el.href&&el.host!==location.host)})},true);
+</script>
+<title>Map of Middle-earth | Lineages of Middle-earth</title>
+<meta name="description" content="An illustrated, zoomable map of Tolkien's Middle-earth in the Third Age. Zoom from the great regions down to cities, havens and ruins, and read about each place.">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Alegreya:ital,wght@0,400;0,600;1,400&family=Alegreya+Sans+SC:wght@500;700&display=swap">
+<style>
+:root{
+  --bg:#eceee8; --panel:#f7f8f4; --ink:#1c2320; --muted:#5b655f; --rule:#b9bfb5; --accent:#8c5f1a;
+  --elf:#3d6f9e; --half:#6f4f9a; --men:#9a3b33; --hob:#4f7a32; --dwa:#b0601c; --wiz:#5a6a8c; --spc:#2f7d73; --drk:#8a2a58;
+  --hl:#f2d98a; --branch:#8a7a5a;
+  --f-display:"Marcellus SC","Trajan Pro",Georgia,serif;
+  --f-body:"Alegreya",Georgia,"Times New Roman",serif;
+  --f-label:"Alegreya Sans SC","Gill Sans",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#111518; --panel:#181d21; --ink:#e3e6df; --muted:#9aa49d; --rule:#3a4440; --accent:#d9a650;
+  --elf:#86b4e0; --half:#b79be0; --men:#e08a80; --hob:#9cc77a; --dwa:#e7a062; --wiz:#aab8d8; --spc:#6fc4b6; --drk:#e07aa6; --hl:#5c4a17; --branch:#7d6c4c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111518; --panel:#181d21; --ink:#e3e6df; --muted:#9aa49d; --rule:#3a4440; --accent:#d9a650;
+  --elf:#86b4e0; --half:#b79be0; --men:#e08a80; --hob:#9cc77a; --dwa:#e7a062; --wiz:#aab8d8; --spc:#6fc4b6; --drk:#e07aa6; --hl:#5c4a17; --branch:#7d6c4c; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 56px}
+.wrap{max-width:1400px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+nav.crumbs{font-family:var(--f-label);letter-spacing:.06em;font-size:14px}
+nav.crumbs a{color:var(--muted);text-decoration:none}nav.crumbs a:hover{color:var(--ink)}
+nav.crumbs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.age{font-family:var(--f-label);letter-spacing:.12em;font-size:13px;color:var(--accent);text-transform:uppercase}
+h1{font-family:var(--f-display);font-weight:400;font-size:clamp(30px,5vw,48px);line-height:1.1;margin:0;letter-spacing:.02em}
+.mapsec{display:flex;flex-direction:column;gap:12px;scroll-margin-top:16px}
+.mapsec h2{font-family:var(--f-display);font-weight:400;font-size:clamp(24px,3.4vw,34px);margin:0;letter-spacing:.02em}
+.mapsec .lede{margin:0;color:var(--muted);max-width:68ch}
+.mapbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.mapbar select{font:inherit;font-size:16px;padding:8px 12px;border:1px solid var(--rule);border-radius:8px;background:var(--panel);color:var(--ink);min-width:0;max-width:100%}
+.mapbox{position:relative;border:1px solid var(--rule);border-radius:12px;overflow:hidden;background:var(--panel)}
+#mapcv{display:block;width:100%;aspect-ratio:1000/760;min-height:320px;max-height:82vh;touch-action:none;cursor:grab;outline-offset:-3px}
+#mapcv:focus-visible{outline:2px solid var(--accent)}
+#mapctl{position:absolute;top:10px;right:10px;display:flex;flex-direction:column;gap:6px}
+#mapctl button{width:36px;height:36px;border:1px solid var(--rule);border-radius:8px;background:var(--panel);color:var(--ink);font:inherit;font-size:20px;line-height:1;cursor:pointer}
+#mapctl button:hover{border-color:var(--accent)}
+#mapctl button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.mapzoom{position:absolute;left:10px;bottom:8px;font-family:var(--f-label);font-size:12px;letter-spacing:.08em;color:var(--muted)}
+#mapinfo{position:absolute;left:10px;top:10px;max-width:min(320px,calc(100% - 70px));background:var(--panel);border:1px solid var(--rule);border-radius:10px;padding:10px 14px;box-shadow:0 2px 10px rgba(0,0,0,.18)}
+#mapinfo[hidden]{display:none}
+#mapinfo h3{margin:0;font-family:var(--f-display);font-weight:400;font-size:20px}
+#mapinfo small{font-family:var(--f-label);letter-spacing:.08em;color:var(--accent);text-transform:uppercase;font-size:12px}
+#mapinfo p{margin:4px 0 0;font-size:15px;line-height:1.4}
+.mapnote{margin:0;font-size:14px;color:var(--muted)}
+</style>
+</head><body>
+<div class="wrap">
+<nav class="crumbs"><a href="/">← Lineages of Middle-earth</a></nav>
+<header><div class="age">The Third Age</div><h1>Map of Middle-earth</h1></header>
+<section class="mapsec" id="map" aria-label="Map">
+    <p class="lede">The lands of the Third Age, from Forlindon and the Grey Havens in the west to Rhûn and Khand in the east, and from the Grey Mountains down to Harad and Umbar. Scroll or pinch to zoom: zoomed out you see the regions, and zooming in brings up cities, havens and ruins. Drag to pan, and tap a region or a place to read about it.</p>
+  <div class="mapbar"><label for="maplist">Find a place</label><select id="maplist"><option value="">Choose…</option></select></div>
+  <div class="mapbox">
+    <canvas id="mapcv" data-base="/images/middle-earth-map-2.webp" tabindex="0" role="img" aria-label="Map of Middle-earth. Use the arrow keys to pan and plus and minus to zoom."></canvas>
+    <div id="mapctl" role="group" aria-label="Map controls"><button type="button" data-m="in" aria-label="Zoom in">+</button><button type="button" data-m="out" aria-label="Zoom out">−</button><button type="button" data-m="fit" aria-label="Show whole map">⤢</button></div>
+    <div id="mapinfo" hidden aria-live="polite"></div>
+    <div class="mapzoom" id="mapzoom" aria-hidden="true"></div>
+  </div>
+  <p class="mapnote">An illustrated map, not Tolkien's own, so coastlines and distances are approximate. It also shows Aman in the far West and the island of Númenor.</p>
+</section>
+</div>
+<script src="/map.js"></script>
+</body></html>

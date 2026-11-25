@@ -282,6 +282,11 @@ nav.tabs.kinds button[aria-selected="true"]{background:var(--ink);color:var(--bg
 .controls{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
 .controls .seg{flex:none}
 .seg button{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 14px}
+.seg a.segl{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 14px;border-radius:999px;font-family:var(--f-body);font-weight:500;font-size:14px;color:var(--muted);text-decoration:none;position:relative;transition:color .22s,scale .14s var(--e-out)}
+.seg a.segl:hover{color:var(--ink)}
+.seg a.segl:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.seg a.segl:active{scale:.96}
+.seg a.segl svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .seg button svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .search{flex:1 1 260px;min-width:200px;position:relative;display:flex;align-items:center}
 .search>svg{position:absolute;left:14px;width:16px;height:16px;fill:none;stroke:var(--muted);stroke-width:1.8;stroke-linecap:round;pointer-events:none}
@@ -526,7 +531,7 @@ body.panned .stage::after{opacity:0}
 <div class="controls">
   <div class="seg" id="srcs" role="group" aria-label="Source"></div>
   <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4-4"/></svg><input id="q" type="search" placeholder="Search characters, spouses, titles" aria-label="Search names"><kbd>/</kbd><button type="button" id="qx" class="qx" aria-label="Clear search" hidden>×</button></label>
-  <div class="seg" role="group" aria-label="View"><button id="vg" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>Gallery</button><button id="vt" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/><path d="M12 7v4M12 11H6v6M12 11h6v6"/></svg>Tree</button></div>
+  <div class="seg" role="group" aria-label="View"><button id="vg" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>Gallery</button><button id="vt" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/><path d="M12 7v4M12 11H6v6M12 11h6v6"/></svg>Tree</button><a class="segl" href="/map/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4 3 6.5v13.5l6-2.5 6 2.5 6-2.5V4l-6 2.5z"/><path d="M9 4v13.5M15 6.5V20"/></svg>Map</a></div>
   <label class="sw gridonly"><input type="checkbox" id="keyonly"><span class="trk"></span><span>Key characters</span></label>
 </div>
 </div>
@@ -538,6 +543,7 @@ body.panned .stage::after{opacity:0}
 </div>
 
 <section class="panel" id="panel"></section>
+
 
 <footer><p><a href="/characters/">Browse all characters A–Z</a></p>Compiled from Tolkien's published texts, chiefly the Appendices to The Lord of the Rings and The Silmarillion. Where Tolkien changed his mind (for example Gil-galad's parentage) the published reading is shown and the alternative noted. Long royal lines are abridged where marked; every person named in the novels' family trees for the main characters is included.</footer>
 </div>
